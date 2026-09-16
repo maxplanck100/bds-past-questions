@@ -1,0 +1,558 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Pathology Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries}{{\thesection}}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=gray!5!white,
+  colframe=black!50,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{PATHOLOGY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+%========================================
+\section{Past Examination Questions and Solutions (2015--2022)}
+%========================================
+
+%----------------------------------------
+\subsection{Examination: May 18, 2022 (End Semester Exam)}
+\textbf{Subject:} Pathology \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [3+2+1=6 Marks]}
+Describe the pathogenesis of septic shock, stages of shock and write down the morphological changes in shock.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Pathogenesis of Septic Shock:}
+
+Septic shock is the most common form of distributive shock; caused predominantly by Gram-negative bacteraemia (LPS = endotoxin) but also Gram-positive (peptidoglycan, lipoteichoic acid) and fungal infections.
+
+\begin{enumerate}[leftmargin=*]
+    \item Microorganisms release LPS (Gram$-$) or lipoteichoic acid (Gram$+$) → bind TLR4 (LPS + CD14 + MD-2) or TLR2 (Gram$+$).
+    \item Massive activation of macrophages and monocytes → release of pro-inflammatory cytokines: \textbf{TNF-$\alpha$}, \textbf{IL-1}, \textbf{IL-6}, \textbf{IL-12}.
+    \item \textbf{TNF-$\alpha$ effects:} Activates endothelium (ICAM-1, E-selectin upregulation) → neutrophil adhesion; induces endothelial damage; stimulates coagulation cascade.
+    \item Activation of complement and coagulation → widespread fibrin deposition → Disseminated Intravascular Coagulation (DIC).
+    \item \textbf{Nitric Oxide (iNOS) release} from macrophages and endothelium → profound vasodilation → reduced SVR → distributive hypoperfusion.
+    \item Endothelial injury → capillary leak → tissue oedema → reduced effective circulating volume.
+    \item Net result: Hypotension + impaired organ perfusion → \textbf{multi-organ dysfunction syndrome (MODS)}.
+\end{enumerate}
+
+\textbf{Stages of Shock:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Stage 1 -- Compensated (Non-progressive):} Baroreceptor activation → sympathoadrenal response (tachycardia, vasoconstriction, ↑ADH, ↑Angiotensin II). Vital organ perfusion maintained. Urine output maintained (\textgreater{}0.5 mL/kg/h).
+    \item \textbf{Stage 2 -- Progressive (Decompensated):} Compensatory mechanisms fail. Widespread cellular hypoxia → anaerobic glycolysis → lactic acidosis → vasodilation. Capillary bed dilation; blood pooling. Myocardial depression. Urine output falls (\textless{}0.5 mL/kg/h). Clinical: Hypotension, confusion, oliguria.
+    \item \textbf{Stage 3 -- Irreversible:} Severe cell injury → organ failure. Gut barrier failure → bacterial translocation (worsening endotoxaemia). DIC. Endothelial disruption → refractory hypotension. Death from MODS (renal, hepatic, pulmonary failure) even if original cause is treated.
+\end{enumerate}
+
+\textbf{Morphological Changes in Shock:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Brain:} Ischaemic encephalopathy; watershed infarcts (between ACA-MCA and MCA-PCA territories).
+    \item \textbf{Heart:} Focal areas of necrosis (``shock myocardium''); subendocardial haemorrhagic necrosis.
+    \item \textbf{Kidney:} Acute tubular necrosis (ATN); pale, swollen; ischaemic necrosis of proximal tubular epithelium + medullary thick ascending limb.
+    \item \textbf{Lung:} Shock lung / Acute Respiratory Distress Syndrome (ARDS): diffuse alveolar damage, hyaline membranes, type II pneumocyte proliferation.
+    \item \textbf{Liver:} Centrilobular haemorrhagic necrosis (zone 3 most susceptible to hypoxia in hepatic vein territory).
+    \item \textbf{GI Tract:} Haemorrhagic enteropathy; stress ulcers (Curling's ulcers in burns, Cushing's ulcers in brain injury); gut mucosal barrier failure.
+    \item \textbf{Adrenal glands:} Haemorrhage and cortical lipid depletion; Waterhouse-Friderichsen syndrome in meningococcal sepsis.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [3+2=5 Marks]}
+Describe vascular and cellular events of inflammation. Write factors affecting wound healing.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Vascular Events of Acute Inflammation:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Transient vasoconstriction:} Lasting seconds; neurogenic reflex.
+    \item \textbf{Vasodilation:} Arteriolar and capillary dilation (mediators: histamine, prostaglandins PGI$_2$, nitric oxide). $\rightarrow$ \textbf{Redness (rubor) and Heat (calor)}.
+    \item \textbf{Increased vascular permeability:} Endothelial cell contraction (gaps form); endothelial injury (direct/leukocyte-mediated); transcytosis. Plasma protein leakage $\rightarrow$ exudate $\rightarrow$ \textbf{Swelling (tumor) and Pain (dolor)}.
+    \item \textbf{Stasis:} Slowing of blood flow due to increased viscosity (plasma lost, RBCs concentrated) $\rightarrow$ margination of leukocytes.
+\end{enumerate}
+
+\textbf{Cellular Events (Leukocyte Migration):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Margination:} WBCs (neutrophils first) move to periphery of vessel.
+    \item \textbf{Rolling:} Selectins (E-selectin, P-selectin on endothelium; L-selectin on leukocytes) bind leukocyte carbohydrate ligands → slow rolling.
+    \item \textbf{Adhesion:} Chemokines (IL-8, C5a, LTB$_4$) activate leukocyte integrins (LFA-1, Mac-1) → firm binding to ICAM-1 on endothelium.
+    \item \textbf{Transmigration (Diapedesis):} Through endothelial junctions (PECAM-1 mediated); dissolved by collagenases; leukocyte traverses basement membrane.
+    \item \textbf{Chemotaxis:} Directional migration along chemical gradient (C5a, LTB$_4$, IL-8, bacterial peptides fMLP) toward site of injury.
+    \item \textbf{Phagocytosis and Killing:}
+    \begin{itemize}
+        \item Opsonisation (IgG, C3b) $\rightarrow$ recognition $\rightarrow$ engulfment (pseudopods, phagosome formation).
+        \item Fusion with lysosome $\rightarrow$ phagolysosome.
+        \item \textbf{Oxygen-dependent killing:} NADPH oxidase $\rightarrow$ superoxide ($O_2^-$) $\rightarrow$ H$_2$O$_2$ $\rightarrow$ HOCl (via myeloperoxidase) $\rightarrow$ respiratory burst.
+        \item \textbf{Oxygen-independent killing:} Lysozyme, lactoferrin, defensins, elastase, major basic protein (eosinophils).
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Factors Affecting Wound Healing:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Local factors:} Infection (most important impediment), poor blood supply, foreign body, radiation damage, poor wound apposition, tension.
+    \item \textbf{Systemic factors:} Malnutrition (Vitamin C deficiency $\rightarrow$ impaired collagen hydroxylation; protein deficiency); Diabetes mellitus (impaired leukocyte function, microangiopathy); Corticosteroids (suppress inflammation and collagen synthesis); Jaundice (bile salts toxic to fibroblasts); Anaemia (impaired tissue oxygenation).
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [3+2=5 Marks]}
+Write mechanism of Apoptosis. Describe modes of spread of malignant tumor.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Mechanism of Apoptosis:}
+
+Apoptosis (programmed cell death) is an orderly, energy-dependent, caspase-mediated process resulting in cell shrinkage and phagocytosis without inflammation.
+
+\textbf{Two Main Pathways:}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Intrinsic (Mitochondrial) Pathway:}
+    \begin{itemize}
+        \item Stimuli: DNA damage, growth factor withdrawal, hypoxia, oxidative stress.
+        \item Pro-apoptotic Bcl-2 proteins (Bax, Bak, Bad, Bid) predominate over anti-apoptotic (Bcl-2, Bcl-XL).
+        \item \textbf{Mitochondrial outer membrane permeabilisation} $\rightarrow$ release of \textbf{Cytochrome c} into cytosol.
+        \item Cytochrome c + Apaf-1 + ATP $\rightarrow$ \textbf{Apoptosome} $\rightarrow$ activates \textbf{caspase-9} (initiator caspase).
+        \item Caspase-9 activates \textbf{effector caspases (caspase-3, 6, 7)} $\rightarrow$ nuclear condensation, DNA fragmentation (internucleosomal ``DNA ladder''), cell shrinkage, membrane blebbing, apoptotic body formation.
+        \item Apoptotic bodies phagocytosed by macrophages/adjacent cells $\rightarrow$ \textbf{no inflammation}.
+    \end{itemize}
+    \item \textbf{Extrinsic (Death Receptor) Pathway:}
+    \begin{itemize}
+        \item \textbf{Fas/FasL} (T-lymphocyte Fas ligand binds Fas receptor = CD95) or \textbf{TNF/TNFR1}.
+        \item Receptor trimerisation $\rightarrow$ DISC (Death-Inducing Signalling Complex) $\rightarrow$ activates \textbf{caspase-8} (initiator) $\rightarrow$ effector caspases.
+        \item Examples: Cytotoxic T-lymphocyte killing; elimination of autoreactive lymphocytes.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Modes of Spread of Malignant Tumour:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Direct (Local) Invasion:} Tumour cells infiltrate adjacent tissues, destroy normal architecture, and produce ECM-degrading enzymes (MMPs, hyaluronidase).
+    \item \textbf{Lymphatic Spread:} Most common route for \textbf{carcinomas}. Tumour emboli enter lymphatics $\rightarrow$ regional lymph nodes $\rightarrow$ sentinel node (first node in lymphatic drainage basin). Skip metastases can occur.
+    \item \textbf{Haematogenous Spread:} Common for \textbf{sarcomas} and some carcinomas (renal, follicular thyroid, hepatocellular). Via veins (portal $\rightarrow$ liver; systemic $\rightarrow$ lungs, then anywhere: bone, brain, adrenal). Arterial spread rare.
+    \item \textbf{Transcoelomic (Surface) Spread:} Across body cavities. Peritoneal seeding (e.g., gastric/ovarian carcinoma $\rightarrow$ Krukenberg tumour of ovary; malignant ascites). Pleural seeding (malignant pleural effusion).
+    \item \textbf{Perineural Spread:} Along nerve sheaths; characteristic of head/neck and pancreatic carcinomas.
+    \item \textbf{Implantation/Iatrogenic:} Seeding during surgery or biopsy (uncommon with modern technique).
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3$\times$3=9 Marks]}
+Write short notes on: (a) Pathological calcification \quad (b) Paraneoplastic syndrome \quad (c) Carcinogenesis
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Pathological Calcification:}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Dystrophic calcification:} Ca$^{2+}$ deposition in \textbf{dead or necrotic} tissue; serum calcium is \textbf{normal}. Mechanism: dead cell membranes expose phosphatidylserine; pH rises locally; hydroxyapatite crystals form. Examples: Ghon focus in healed TB, atherosclerotic plaques, calcified heart valves, tumour psammoma bodies (meningioma, papillary thyroid carcinoma, serous cystadenocarcinoma of ovary), Monckeberg's medial calcification.
+    \item \textbf{Metastatic calcification:} Ca$^{2+}$ deposition in \textbf{normal tissues} due to \textbf{hypercalcaemia}. Causes: Hyperparathyroidism (primary/secondary), hypervitaminosis D, milk-alkali syndrome, widespread bone metastases, sarcoidosis. Sites: Gastric mucosa, kidneys (nephrocalcinosis), lungs, systemic arteries.
+\end{itemize}
+
+\textbf{(b) Paraneoplastic Syndrome:}
+
+Symptoms caused by tumours that are not related to local tumour effects, metastases, or therapy. Due to hormones/cytokines secreted ectopically or immune cross-reactivity (autoantibodies/T cells directed at tumour antigens that also attack normal tissues).
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Syndrome} & \textbf{Tumour Type} \\
+\midrule
+Hypercalcaemia (PTHrP ectopic) & Squamous cell carcinoma of lung, renal, breast \\
+SIADH (ectopic ADH) & Small cell lung carcinoma \\
+Cushing's syndrome (ectopic ACTH) & Small cell lung carcinoma \\
+Carcinoid syndrome (serotonin) & Carcinoid tumour \\
+Eaton-Lambert syndrome & Small cell lung carcinoma \\
+Cerebellar degeneration (anti-Yo) & Ovarian/breast carcinoma \\
+Dermatomyositis & Lung, GI, ovarian tumours \\
+Migratory thrombophlebitis (Trousseau's sign) & Pancreatic/GI carcinoma \\
+Acanthosis nigricans & GI, lung carcinoma \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{(c) Carcinogenesis (Multistep Process):}
+
+Carcinogenesis is the transformation of normal cells into malignant cells through sequential accumulation of genetic mutations in key regulatory genes.
+
+\textbf{Stages:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Initiation:} Irreversible, rapid, permanent DNA mutation from carcinogen exposure. Initiated cells appear normal but carry mutations.
+    \item \textbf{Promotion:} Reversible proliferative expansion of initiated cells by promoters (not carcinogens themselves). Increases number of cells at risk.
+    \item \textbf{Progression:} Accumulation of further mutations, chromosomal instability, angiogenesis, invasion, and metastasis.
+\end{enumerate}
+
+\textbf{Genes involved:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Proto-oncogenes} $\rightarrow$ oncogenes (gain-of-function mutations): \textit{RAS, MYC, HER2, BCL-2}. Act in a dominant fashion (one mutant allele sufficient).
+    \item \textbf{Tumour suppressor genes} (loss-of-function, recessive ``two-hit'' Knudson hypothesis): \textit{RB1} (retinoblastoma), \textit{TP53} (most frequently mutated in human cancers, guardian of genome), \textit{APC} (colorectal carcinoma), \textit{BRCA1/2} (breast/ovarian carcinoma).
+    \item \textbf{DNA repair genes:} \textit{HNPCC} genes -- microsatellite instability; \textit{BRCA1/2}.
+    \item \textbf{Telomerase activation:} Allows unlimited cell divisions (immortality).
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [1+5=6 Marks]}
+Define anemia. Write laboratory diagnosis of Iron deficiency anemia.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Anaemia:} A decrease in the total circulating red blood cell mass, reflected by a reduction in haemoglobin concentration below normal for age and sex:
+\begin{itemize}[leftmargin=*]
+    \item Men: Hb $<$ 13 g/dL; Women: Hb $<$ 12 g/dL; Children: varies by age.
+\end{itemize}
+
+\textbf{Laboratory Diagnosis of Iron Deficiency Anaemia (IDA):}
+
+IDA is the most common type of anaemia worldwide; caused by dietary deficiency, chronic blood loss (GI, menstrual), or malabsorption.
+
+\textbf{1. Complete Blood Count (CBC):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Hb:} Reduced.
+    \item \textbf{MCV:} \textless{}80 fL (microcytic).
+    \item \textbf{MCH:} \textless{}27 pg (hypochromic).
+    \item \textbf{MCHC:} \textless{}32 g/dL.
+    \item \textbf{RDW (Red Cell Distribution Width):} Increased ($>$14.5\%) --- anisocytosis; RDW elevated early in IDA.
+    \item \textbf{Platelets:} Often elevated (reactive thrombocytosis).
+    \item \textbf{Reticulocyte count:} Low (hypoproliferative anaemia).
+\end{itemize}
+
+\textbf{2. Peripheral Blood Smear (PBS):}
+\begin{itemize}[leftmargin=*]
+    \item Microcytic, hypochromic RBCs (central pallor \textgreater{} 1/3 diameter).
+    \item Anisopoikilocytosis: pencil cells (elliptocytes), target cells (codocytes), elongated cells.
+    \item No nucleated RBCs.
+\end{itemize}
+
+\textbf{3. Iron Studies (Serum):}
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+\textbf{Parameter} & \textbf{IDA} & \textbf{ACD} & \textbf{Normal} \\
+\midrule
+Serum Iron & $\downarrow$ & $\downarrow$ & 60--170 µg/dL \\
+TIBC & $\uparrow$ & $\downarrow$ / N & 240--360 µg/dL \\
+Serum Ferritin & $\downarrow\downarrow$ & $\uparrow$ / N & 12--150 ng/mL \\
+Transferrin Saturation & $\downarrow$ (\textless{}16\%) & $\downarrow$ & 20--50\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{4. Bone Marrow Examination (if diagnosis uncertain):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Prussian blue (Perls') stain:} Absence of iron stores (haemosiderin/ferritin granules) in macrophages and erythroblasts (ring sideroblasts absent). Most specific test for IDA.
+\end{itemize}
+
+\textbf{5. Other tests:}
+\begin{itemize}[leftmargin=*]
+    \item Stool for occult blood (chronic GI loss).
+    \item Serum hepcidin: Decreased in IDA (allows iron absorption and mobilisation).
+    \item Soluble transferrin receptor (sTfR): Elevated in IDA; not elevated in ACD.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [2$\times$5=10 Marks]}
+Write laboratory diagnosis on: (a) Acute myelogenous leukemia \quad (b) Multiple myeloma
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Acute Myelogenous Leukemia (AML):}
+
+AML is a clonal proliferation of immature myeloid blasts ($\geq$20\% blasts in bone marrow/blood per WHO 2016).
+
+\textbf{Lab Diagnosis:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{CBC:} WBC often $>$50,000/µL (but may be low --- aleukemic); Hb and platelets reduced.
+    \item \textbf{PBS:} Myeloid blasts: large cells, fine nuclear chromatin, 2--5 \textbf{nucleoli}, moderate agranular cytoplasm. \textbf{Auer rods} (fused lysosomal granules forming needle-like inclusions in cytoplasm) --- \textbf{pathognomonic of AML} (especially AML-M3). Blasts $\geq$20\% of nucleated cells.
+    \item \textbf{Bone Marrow Aspiration/Biopsy:} Hypercellular marrow; $\geq$20\% myeloblasts; markedly reduced normal haematopoiesis.
+    \item \textbf{Cytochemistry:}
+    \begin{itemize}
+        \item \textbf{MPO (myeloperoxidase) and Sudan Black B:} Positive in myeloid blasts (AML); negative in ALL --- key differentiator.
+        \item \textbf{NSE (non-specific esterase):} Positive in monocytic AML (M4/M5 FAB subtypes).
+        \item \textbf{PAS:} Strongly positive (block/chunky pattern) in ALL; diffuse in myeloid.
+    \end{itemize}
+    \item \textbf{Immunophenotyping (Flow cytometry):} CD13, CD33, CD117, CD34 (blast marker), MPO positive. HLA-DR positive (except AML-M3 which is HLA-DR\textbf{negative}).
+    \item \textbf{Cytogenetics/Molecular:}
+    \begin{itemize}
+        \item t(15;17) = AML-M3 (APML) → PML-RARA fusion → treatment with ATRA.
+        \item t(8;21), inv(16) → favourable prognosis.
+        \item FLT3-ITD, NPM1 mutations (common; prognostic).
+    \end{itemize}
+    \item \textbf{Coagulation profile:} DIC in AML-M3 (APML) --- prolonged PT, APTT, low fibrinogen.
+\end{enumerate}
+
+\textbf{(b) Multiple Myeloma:}
+
+A plasma cell neoplasm characterised by monoclonal plasma cell proliferation in bone marrow producing a monoclonal immunoglobulin (M-protein).
+
+\textbf{Lab Diagnosis:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{CBC:}
+    \begin{itemize}
+        \item Normocytic normochromic anaemia.
+        \item PBS: \textbf{Rouleaux formation} (stacking of RBCs like coins due to increased serum proteins); background blue/purple on smear (hyperproteinaemia).
+        \item Plasma cells may appear in blood in plasma cell leukaemia.
+    \end{itemize}
+    \item \textbf{ESR:} Markedly elevated (often \textgreater{}100 mm/h) due to hyperproteinaemia.
+    \item \textbf{Serum Protein Electrophoresis (SPEP):} \textbf{M-spike} (monoclonal band) in $\gamma$-region (or $\beta$/$\alpha_2$). Immunofixation identifies M-protein type (most common: IgG $>$ IgA $>$ IgD $>$ IgM).
+    \item \textbf{Urine Protein Electrophoresis (UPEP):} \textbf{Bence Jones protein} (free light chains $\kappa$ or $\lambda$); precipitates at 40--60\textdegree C, dissolves at 100\textdegree C. Causes renal damage.
+    \item \textbf{Serum Free Light Chains (FLC) Ratio:} $\kappa$/$\lambda$ ratio abnormal ($>$100 for $\kappa$, $<$0.01 for $\lambda$).
+    \item \textbf{Bone Marrow:} $\geq$10\% clonal plasma cells (CD138$^+$, CD38$^+$, CD19$^-$, CD45$-$). Abnormal plasma cells: eccentric nucleus with clock-face chromatin (cartwheel), prominent Golgi.
+    \item \textbf{Serum Calcium:} Hypercalcaemia (osteoclast activation by RANKL; lytic bone lesions).
+    \item \textbf{Serum Creatinine \& BUN:} Elevated (myeloma kidney = cast nephropathy due to light chain precipitation, tubular toxicity, hypercalcaemia, amyloidosis).
+    \item \textbf{Skeletal Survey (X-ray):} ``Punched-out'' lytic lesions (no sclerosis); pathological fractures; vertebral crush fractures; generalised osteoporosis.
+    \item \textbf{$\beta_2$-microglobulin \& LDH \& albumin:} Prognostic markers (International Staging System: ISS).
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [3$\times$3=9 Marks]}
+Write short notes on: (a) Morphology of Tuberculous lymphadenitis \quad (b) Morphology of Hodgkin's lymphoma \quad (c) Etiopathogenesis of Disseminated Intravascular Coagulation
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Morphology of Tuberculous Lymphadenitis:}
+
+Tuberculous lymphadenitis (scrofula) is the most common form of extrapulmonary TB; most frequently involves cervical lymph nodes.
+
+\textbf{Gross pathology:}
+\begin{itemize}[leftmargin=*]
+    \item Early: Enlarged, firm, rubbery lymph nodes; normal or slightly pale cut surface.
+    \item Advanced: Caseous necrosis in centre (cream/cheese-like material); multiple nodes matted together by periadenitis; collar-stud abscess (pus tracks through deep fascia; fluctuant swelling).
+\end{itemize}
+
+\textbf{Microscopic pathology (epithelioid granuloma):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Epithelioid cell granuloma:} Central area of \textbf{caseous necrosis} (structureless, eosinophilic, ``ghost outlines'' of cells) surrounded by:
+    \begin{itemize}
+        \item \textbf{Epithelioid cells} (modified macrophages with abundant pale cytoplasm, elongated/kidney-shaped nuclei); form the bulk of the granuloma.
+        \item \textbf{Langhans' giant cells} (peripheral arrangement of nuclei in horseshoe/ring/wreath pattern; up to 100 µm diameter); characteristic but not pathognomonic.
+        \item \textbf{Lymphocyte cuff} (CD4$^+$ T cells predominant) around the granuloma.
+        \item Variable fibrosis at periphery (with progressive healing, dense fibrous capsule).
+    \end{itemize}
+    \item \textbf{ZN stain:} Acid-fast bacilli (AFB) in red within the caseous material or within macrophages (small numbers; often difficult to find).
+\end{itemize}
+
+\textbf{(b) Morphology of Hodgkin's Lymphoma:}
+
+Hodgkin's Lymphoma (HL) is characterised by the presence of \textbf{Reed-Sternberg (RS) cells} on a background of reactive inflammatory cells.
+
+\textbf{Reed-Sternberg Cell:}
+\begin{itemize}[leftmargin=*]
+    \item Large (15--45 µm); binucleate or bilobed (``owl-eye'') nuclei with large prominent eosinophilic nucleoli surrounded by a clear halo; abundant pale cytoplasm.
+    \item Lacunar cells in nodular sclerosis subtype (cytoplasm retract around nucleus during fixation creating ``lacunae'').
+    \item Immunophenotype: CD30$^+$ (Ki-1), CD15$^+$; CD20$^-$, CD45$^-$ (in classical HL).
+    \item Origin: B-lymphocytes (Germinal centre-derived B cells).
+\end{itemize}
+
+\textbf{WHO Classification and Morphology:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Nodular Sclerosis (NS; 65--70\%):} Broad collagen bands; nodular pattern; lacunar RS cells; mediastinal mass common.
+    \item \textbf{Mixed Cellularity (MC; 20--25\%):} Numerous RS cells; mixed infiltrate (eosinophils, plasma cells, histiocytes, lymphocytes); EBV-positive frequently.
+    \item \textbf{Lymphocyte-Rich (LR; 5\%):} Few RS cells; abundant lymphocytes.
+    \item \textbf{Lymphocyte-Depleted (LD; \textless{}1\%):} Many RS cells; few lymphocytes; worst prognosis.
+    \item \textbf{Nodular Lymphocyte Predominant (NLPHL):} Popcorn/lymphocytic and histiocytic (L\&H) cells; CD20$^+$, CD30$^-$, CD15$^-$; low-grade course.
+\end{enumerate}
+
+\textbf{(c) Etiopathogenesis of Disseminated Intravascular Coagulation (DIC):}
+
+DIC is a pathological syndrome of systemic activation of coagulation, resulting in widespread microvascular thrombosis and simultaneously, depletion of coagulation factors and platelets $\rightarrow$ paradoxical bleeding.
+
+\textbf{Causes / Triggers:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Obstetric:} Amniotic fluid embolism, abruptio placentae, retained dead fetus.
+    \item \textbf{Infection:} Gram-negative sepsis (LPS activates monocytes/endothelium to express Tissue Factor [TF]).
+    \item \textbf{Malignancy:} Acute promyelocytic leukaemia (AML-M3; granules contain procoagulant material); mucin-secreting adenocarcinomas.
+    \item \textbf{Trauma/Burns:} Tissue factor release from damaged tissue.
+    \item \textbf{Massive blood transfusion}, snake bite (venom with procoagulant activity).
+\end{itemize}
+
+\textbf{Pathogenesis:}
+\begin{enumerate}[leftmargin=*]
+    \item Release of \textbf{Tissue Factor (TF/Factor III)} from damaged tissue or monocytes/endothelium $\rightarrow$ activates \textbf{extrinsic coagulation pathway}.
+    \item \textbf{Systemic thrombin generation:} Converts fibrinogen $\rightarrow$ fibrin $\rightarrow$ widespread microvascular fibrin thrombi $\rightarrow$ organ ischaemia (kidneys, brain, lungs, adrenals).
+    \item \textbf{Consumption:} Coagulation factors (I, II, V, VIII), platelets, and natural anticoagulants (Protein C, antithrombin) are consumed.
+    \item \textbf{Secondary fibrinolysis:} Plasmin digests fibrin $\rightarrow$ \textbf{FDPs (D-dimers)} --- inhibit platelet aggregation and further clotting $\rightarrow$ paradoxical bleeding.
+    \item \textbf{Microangiopathic haemolytic anaemia (MAHA):} Fibrin strands in vessels shear RBCs $\rightarrow$ schistocytes (fragmented RBCs) on PBS.
+\end{enumerate}
+
+\textbf{Lab findings in DIC:} Prolonged PT \& APTT; low platelets; low fibrinogen; elevated D-dimers (most sensitive test); schistocytes on PBS.
+\end{ansbox}
+
+%========================================
+\subsection{Examination: September 3, 2021}
+
+\begin{qbox}{Question [1+4+1=6 Marks]}
+Define neoplasia. Write the differences between benign and malignant tumours. List the routes of metastasis.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Neoplasia:} Abnormal, uncontrolled, purposeless proliferation of cells with heritable changes, persisting after removal of the stimulus that initiated it (Willis definition).
+
+\textbf{Benign vs. Malignant Tumours:}
+
+\begin{center}
+\begin{tabular}{p{3cm}p{5cm}p{5cm}}
+\toprule
+\textbf{Feature} & \textbf{Benign} & \textbf{Malignant} \\
+\midrule
+Growth rate & Slow & Rapid \\
+Growth pattern & Expansile (pushes) & Infiltrative/invasive \\
+Differentiation & Well-differentiated & Poorly differentiated; anaplastic \\
+Capsule & Often encapsulated & No capsule \\
+Mitoses & Rare, normal & Frequent, atypical \\
+Metastasis & Never & Yes (hallmark of malignancy) \\
+Necrosis & Rare & Common \\
+Local invasion & No & Yes \\
+Recurrence & Rare & Common \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Routes of Metastasis:} (1) Lymphatic, (2) Haematogenous, (3) Direct invasion, (4) Transcoelomic, (5) Perineural, (6) Iatrogenic implantation.
+\end{ansbox}
+
+%========================================
+\section{Frequency Analysis of Examination Topics}
+%========================================
+
+\subsection{Most Frequently Repeated Topics (80\%+ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Iron Deficiency Anaemia --- definition, lab diagnosis (90\%):} CBC, PBS (microcytic/hypochromic), serum iron/TIBC/ferritin, Prussian blue stain, management.
+    \item \textbf{Inflammation --- vascular and cellular events (85\%):} Cardinal signs; histamine, prostaglandins; margination, rolling (selectins), adhesion (integrins, ICAM), transmigration (PECAM-1), chemotaxis, phagocytosis, oxidative burst.
+    \item \textbf{Neoplasia / Benign vs. Malignant tumour differences (85\%):} Definitions; comparison table; modes of metastasis; tumour staging and grading.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Rheumatic Heart Disease (75\%):} \textit{S. pyogenes} pharyngitis, molecular mimicry, Aschoff bodies, Jones criteria, Lab: ASO titre, throat culture, ECG.
+    \item \textbf{Emphysema --- etiopathogenesis and types (70\%):} Protease-antiprotease hypothesis, $\alpha_1$-antitrypsin deficiency, centriacinar, panacinar, paraseptal.
+    \item \textbf{Thrombosis / DIC (65\%):} Virchow's triad, thrombus types, DIC triggers, D-dimers, MAHA, schistocytes.
+    \item \textbf{Lobar Pneumonia --- stages (60\%):} Congestion, Red hepatization, Grey hepatization, Resolution; organisms.
+    \item \textbf{Atherosclerosis --- pathogenesis (60\%):} Endothelial injury hypothesis, foam cells, fatty streak, fibrous plaque, complicated plaque.
+    \item \textbf{Myocardial Infarction (60\%):} STEMI vs. NSTEMI; Coagulative necrosis; troponin/CK-MB; complications (arrhythmia, CHF, rupture, Dressler syndrome).
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Apoptosis mechanism (55\%):} Intrinsic vs. Extrinsic pathways; Bcl-2; cytochrome c; caspases; apoptotic bodies.
+    \item \textbf{Megaloblastic Anaemia (50\%):} Vit B12 and folate metabolism; macro-ovalocytes; hypersegmented neutrophils; Schilling test.
+    \item \textbf{Necrosis types and vs. Apoptosis (50\%):} Coagulative, liquefactive, caseous, fat necrosis, gangrenous; comparison table.
+    \item \textbf{Leukemia classification (45\%):} Acute vs. chronic; myeloid vs. lymphoid; lab diagnosis of AML (PBS, cytochemistry, flow cytometry).
+    \item \textbf{Shock --- pathogenesis, stages, morphology (45\%):} Septic, hypovolemic, cardiogenic; compensated, progressive, irreversible stages.
+    \item \textbf{Wound healing (40\%):} Primary and secondary intention; collagen synthesis; factors affecting healing; proud flesh; keloid.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Multiple Myeloma (35\%):} M-spike, Bence Jones protein, rouleaux, lytic lesions, ISS staging.
+    \item \textbf{Hodgkin's Lymphoma (30\%):} RS cells, NS subtype, classification.
+    \item \textbf{Tuberculous Lymphadenitis morphology (30\%):} Granuloma, caseous necrosis, Langhans' giant cells, collar-stud abscess.
+    \item \textbf{Pathological Calcification (25\%):} Dystrophic vs. metastatic.
+    \item \textbf{Carcinogenesis (25\%):} Initiation, promotion, progression; oncogenes, TSGs.
+    \item \textbf{Paraneoplastic syndromes (20\%):} Ectopic hormone production; Lambert-Eaton; acanthosis nigricans.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Pulmonary embolism --- pathogenesis and consequences.
+    \item Infective endocarditis --- etiopathogenesis and morphology.
+    \item Hypertension --- pathogenesis and organ changes.
+    \item Fallot's tetralogy.
+    \item ITP (Immune Thrombocytopenic Purpura).
+    \item Bronchiectasis --- etiopathogenesis.
+\end{itemize}
+
+\newpage
+\appendix
+\section{Pathology Quick Revision Cheatsheet}
+
+\subsection{Cell Injury \& Death Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Reversible cell injury:} Cellular swelling (most common; Na$^+$/K$^+$ pump failure from ATP depletion); fatty change (lipid accumulation in ER); blebbing; clumping of chromatin. Cells recover if stimulus removed.
+    \item \textbf{Point of no return:} Mitochondrial permeability transition (MPT) pore opening + severe membrane damage + lysosome rupture.
+    \item \textbf{Coagulative necrosis:} Ischaemia to solid organs (except brain); preserved architecture short-term (``ghost cells''); inflammatory infiltrate follows.
+    \item \textbf{Liquefactive necrosis:} Brain infarction (abundant lysosomes, lack of structural proteins); pus (bacterial infections --- leukocyte-mediated digestion).
+    \item \textbf{Caseous necrosis:} TB (granulomatous inflammation); cheese-like gross; amorphous, structureless eosinophilic material histologically.
+    \item \textbf{Fat necrosis:} Pancreatic lipase release in acute pancreatitis; saponification (calcium soaps = chalky-white deposits).
+    \item \textbf{Fibrinoid necrosis:} Malignant hypertension, immunological vasculitis (SLE, PAN); fibrin leakage into vessel walls.
+\end{itemize}
+
+\subsection{Haematology Rapid Review}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{IDA vs. ACD (Anaemia of Chronic Disease):}
+    \begin{itemize}
+        \item IDA: serum Fe $\downarrow$, TIBC $\uparrow$, ferritin $\downarrow$, sTfR $\uparrow$.
+        \item ACD: serum Fe $\downarrow$, TIBC $\downarrow$, ferritin $\uparrow$ (acute phase reactant), sTfR normal; hepcidin $\uparrow$ (blocks ferroportin $\rightarrow$ Fe trapped in macrophages).
+    \end{itemize}
+    \item \textbf{Megaloblastic anaemia PBS:} Macro-ovalocytes + hypersegmented neutrophils ($\geq$5 lobes, $>$5\% of neutrophils).
+    \item \textbf{Sickle Cell Anaemia:} $\beta$-globin mutation: Glu $\rightarrow$ Val at position 6; HbS polymerises in low O$_2$ $\rightarrow$ sickling; Hb S on electrophoresis; Howell-Jolly bodies (functional asplenia); target cells.
+    \item \textbf{AML vs. ALL:} AML: MPO/SBB$^+$, Auer rods, CD13/33/117; ALL: TdT$^+$, MPO$^-$, CD10 (cALLA) in B-ALL.
+    \item \textbf{Virchow's Triad (Thrombosis):} (1) Endothelial injury, (2) Abnormal blood flow (stasis/turbulence), (3) Hypercoagulability.
+\end{itemize}
+
+\subsection{Oncology Key Points}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Grading} (histological differentiation): G1 well, G2 moderately, G3 poorly, G4 undifferentiated.
+    \item \textbf{Staging (TNM):} T = tumour size/invasion; N = regional lymph node involvement; M = distant metastasis.
+    \item \textbf{p53 (Guardian of the genome):} DNA damage $\rightarrow$ p53 accumulates $\rightarrow$ cell cycle arrest (p21 $\rightarrow$ Rb dephosphorylated) or apoptosis (Bax $\uparrow$, Bcl-2 $\downarrow$); most commonly mutated gene in human cancers.
+    \item \textbf{Li-Fraumeni syndrome:} Germline TP53 mutation $\rightarrow$ multiple malignancies (sarcomas, breast, brain, leukaemias).
+    \item \textbf{Retinoblastoma gene (Rb):} Two-hit hypothesis (Knudson); Rb inhibits E2F (pro-proliferative transcription factor); both alleles must be lost for tumour to develop.
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Pathology Solutions ---}
+\end{center}
+
+\end{document}
