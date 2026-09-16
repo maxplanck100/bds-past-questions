@@ -8,12 +8,13 @@ The project focuses on preserving past questions in a clean, study-friendly form
 
 ---
 
-## Repository Structure
+### Repository Structure
 
 ```text
 bds-past-questions/
 │
 ├── README.md
+├── SUBJECTS.md
 ├── WALKTHROUGH.md
 ├── reusable-query.md
 ├── LICENSE
@@ -27,7 +28,9 @@ bds-past-questions/
 │       ├── microbiology.pdf
 │       ├── pathology.pdf
 │       ├── pharmacology.pdf
-│       └── physiology.pdf
+│       ├── physiology.pdf
+│       ├── BDS_1st_year_all_subjects_17-22.pdf
+│       └── BDS_1st_year_all_subjects_images.pdf
 │
 ├── extracted/                        # OCR-cleaned questions only
 │   └── year-1/
@@ -36,7 +39,9 @@ bds-past-questions/
 │       ├── microbiology.md
 │       ├── pathology.md
 │       ├── pharmacology.md
-│       └── physiology.md
+│       ├── physiology.md
+│       ├── BDS_1st_year_all_subjects_17-22.md
+│       └── BDS_1st_year_all_subjects_images_oral_bio.md
 │
 ├── answers/                          # Verified/community-contributed answers
 │   └── year-1/
@@ -45,33 +50,60 @@ bds-past-questions/
 │       ├── microbiology.md
 │       ├── pathology.md
 │       ├── pharmacology.md
-│       └── physiology.md
+│       ├── physiology.md
+│       ├── oral_biology.md
+│       └── BDS_1st_year_all_subjects_17-22.md
 │
-├── analysis/                         # Topic frequency and exam analysis
+├── analysis/                         # Topic frequency and exam prediction analysis
 │   └── year-1/
 │       ├── anatomy_top_topics.md
 │       ├── biochemistry_top_topics.md
-│       └── ...
+│       ├── microbiology_top_topics.md
+│       ├── pathology_top_topics.md
+│       ├── pharmacology_top_topics.md
+│       ├── physiology_top_topics.md
+│       ├── oral_biology_top_topics.md
+│       └── BDS_1st_year_all_subjects_17-22.md
 │
-├── appendix/                         # Revision resources and cheatsheets
+├── appendix/                         # Rapid revision cheatsheets
 │   └── year-1/
 │       ├── anatomy_cheatsheet.md
-│       └── ...
+│       ├── biochemistry_cheatsheet.md
+│       ├── microbiology_cheatsheet.md
+│       ├── pathology_cheatsheet.md
+│       ├── pharmacology_cheatsheet.md
+│       ├── physiology_cheatsheet.md
+│       ├── oral_biology_cheatsheet.md
+│       └── BDS_1st_year_all_subjects_17-22.md
 │
 └── scripts/                          # Utility and automation scripts
     └── split_pdf.py
-````
+```
 
 ---
 
 ## Project Status
 
-| Year   | Subjects | Extracted | Answered | Analyzed |
-| ------ | -------- | --------- | -------- | -------- |
-| Year 1 | 6        | 6/6       | 6/6      | 6/6      |
-| Year 2 | —        | —         | —        | —        |
-| Year 3 | —        | —         | —        | —        |
-| Year 4 | —        | —         | —        | —        |
+| Year   | Subjects & Sets | Extracted | Answered | Analyzed | Cheatsheets |
+| ------ | --------------- | --------- | -------- | -------- | ----------- |
+| Year 1 | 7 + Multi-Set   | 8/8 (100%)| 8/8 (100%)| 8/8 (100%)| 8/8 (100%) |
+| Year 2 | —               | —         | —        | —        | —           |
+| Year 3 | —               | —         | —        | —        | —           |
+| Year 4 | —               | —         | —        | —        | —           |
+| Year 5 | —               | —         | —        | —        | —           |
+
+### Year 1 Curriculum Status
+
+All Kathmandu University BDS 1st Year core subjects and multi-subject consolidated sets have been fully processed across the entire pipeline:
+
+* [x] **Anatomy** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Biochemistry** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Microbiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Pathology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Pharmacology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Physiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **Oral Biology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
+* [x] **All Subjects 2017–2022 Multi-Paper Collection** (Extraction, Answers, Cross-Subject Analysis, Integrated Cheatsheet)       | —        | —        |
 | Year 5 | —        | —         | —        | —        |
 
 ### Current Focus
@@ -237,6 +269,7 @@ The following textbooks are recommended as standard references for the six Year 
 | **Pathology** | *Robbins & Cotran Pathologic Basis of Disease* | Vinay Kumar, Abul K. Abbas & Jon C. Aster |
 | **Pharmacology** | *Katzung's Basic & Clinical Pharmacology* | Bertram G. Katzung, Susan B. Vanderah |
 | **Physiology** | *Guyton and Hall Textbook of Medical Physiology* | John E. Hall & Michael E. Hall |
+| **Oral Biology** | *Orban's Oral Histology and Embryology* / *Wheeler's Dental Anatomy, Physiology and Occlusion* | G.S. Kumar / Stanley J. Nelson |
 
 ### Suggested Use
 
