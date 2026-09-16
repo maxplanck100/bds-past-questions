@@ -1,0 +1,597 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Microbiology Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries}{{\thesection}}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=gray!5!white,
+  colframe=gray!60!black,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{MICROBIOLOGY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+%========================================
+\section{Past Examination Questions and Solutions (2015--2022)}
+%========================================
+
+%----------------------------------------
+\subsection{Examination: May 15, 2022 (End Semester Exam)}
+\textbf{Subject:} Microbiology \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [3+3=6 Marks]}
+Define sterilization and disinfection. Write down the principle and uses of autoclave.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Sterilization:} The complete destruction or removal of all living microorganisms, including bacterial spores, from an object or material.
+
+\textbf{Disinfection:} The destruction or inhibition of pathogenic microorganisms (but not necessarily spores) on inanimate objects or surfaces. A disinfectant is called an antiseptic when applied to living tissue.
+
+\textbf{Autoclave (Steam under pressure):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Principle:} Uses \textbf{saturated steam under pressure} to achieve temperatures above 100\textdegree C. At 15 psi (103.4 kPa) above atmospheric pressure, temperature reaches \textbf{121\textdegree C} for \textbf{15--20 minutes}, which denatures proteins and nucleic acids, killing all microorganisms including endospores.
+    \item \textbf{Mechanism of action:} Moist heat causes denaturation and coagulation of cellular proteins. It is more effective than dry heat because steam has higher latent heat, penetrates material, and condenses, releasing heat and wetting the material.
+    \item \textbf{Uses:}
+    \begin{itemize}
+        \item Sterilization of surgical instruments, dressings, gowns, and gloves.
+        \item Sterilization of culture media, broth, and laboratory equipment.
+        \item Sterilization of heat-stable pharmaceutical preparations.
+        \item Hospital linen and bedding.
+        \item Dental instruments (not optics or heat-sensitive plastics).
+    \end{itemize}
+    \item \textbf{Monitoring:} Biological indicator (\textit{Geobacillus stearothermophilus} spores), chemical indicator (Bowie-Dick tape), and physical monitoring (temperature/pressure gauges).
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [5 Marks]}
+Classify different types of culture media with examples.
+\end{qbox}
+
+\begin{ansbox}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Based on Physical State:}
+    \begin{itemize}
+        \item Liquid (broth): Nutrient broth, Thioglycolate broth (anaerobes), Blood culture broth.
+        \item Semi-solid: 0.2--0.5\% agar; used for motility testing (SIM medium).
+        \item Solid: 1.5--2\% agar; petri dishes/slopes.
+    \end{itemize}
+    \item \textbf{Based on Composition:}
+    \begin{itemize}
+        \item Simple/Basal media: Nutrient agar/broth (peptone + beef extract); supports most non-fastidious organisms.
+        \item Enriched media: Blood agar, Chocolate agar; contains blood/serum; supports fastidious organisms (\textit{Streptococcus pneumoniae}, \textit{Haemophilus influenzae}).
+        \item Enrichment media: Liquid media that selectively encourages growth of a specific organism; e.g., Selenite F broth for \textit{Salmonella}, Alkaline peptone water for \textit{Vibrio cholerae}.
+        \item Selective media: Contain inhibitory agents to suppress commensal flora; e.g., MacConkey agar (for Gram-negative coliforms; bile salts inhibit Gram-positives), TCBS for \textit{Vibrio}, XLD agar for \textit{Salmonella/Shigella}, Mannitol Salt Agar (MSA) for \textit{Staphylococcus}.
+        \item Differential media: Distinguish different organisms by biochemical reactions (e.g., MacConkey agar differentiates lactose-fermenting from non-fermenting coliforms by pink vs. colourless colonies).
+        \item Indicator media: Contain pH indicators (e.g., MacConkey uses neutral red; CLED agar uses bromothymol blue).
+    \end{itemize}
+    \item \textbf{Based on Purpose:}
+    \begin{itemize}
+        \item Transport media: Cary-Blair (stool), Stuart's medium (swabs), VR medium.
+        \item Anaerobic media: Thioglycolate broth, Robertson's cooked meat medium.
+        \item Assay media: For antibiotic/vitamin assay.
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [5 Marks]}
+Discuss different method of antibiotic susceptibility testing. How do you interpret Kirby-Bauer disk diffusion method of antibiotic susceptibility testing?
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Methods of Antibiotic Susceptibility Testing:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Disk Diffusion (Kirby-Bauer method):} Filter paper disks impregnated with a known concentration of antibiotic are placed on agar seeded with the test organism. Zone of inhibition (ZOI) is measured and compared to CLSI/EUCAST breakpoints.
+    \item \textbf{Broth Dilution (MIC):}
+    \begin{itemize}
+        \item Macro-broth dilution: Serial 2-fold dilutions of antibiotic in broth tubes; minimum inhibitory concentration (MIC) = lowest concentration showing no visible growth.
+        \item Micro-broth dilution: Same principle in microtitre plates; automated systems (VITEK).
+    \end{itemize}
+    \item \textbf{E-test (Epsilon test):} Plastic strip with a continuous concentration gradient of antibiotic placed on agar. Elliptical zone of inhibition intersects the strip at the MIC value. Combines advantages of disk diffusion and dilution methods.
+    \item \textbf{Agar Dilution:} Antibiotic incorporated into agar; plates inoculated; MIC = lowest concentration with no visible growth.
+    \item \textbf{Automated Systems:} VITEK-2, Phoenix --- automated MIC determination.
+\end{enumerate}
+
+\textbf{Interpretation of Kirby-Bauer:}
+\begin{itemize}[leftmargin=*]
+    \item Organism inoculated on Mueller-Hinton agar (standard); antibiotic disks applied. Incubated at 37\textdegree C for 16--18 hours.
+    \item ZOI (mm) measured (inner diameter including disk).
+    \item Compare with CLSI interpretive criteria:
+    \begin{itemize}
+        \item \textbf{Susceptible (S):} ZOI \textgreater{} breakpoint mm $\rightarrow$ likely to respond to therapy.
+        \item \textbf{Intermediate (I):} ZOI = intermediate range $\rightarrow$ drug may work at higher doses/concentration sites.
+        \item \textbf{Resistant (R):} ZOI \textless{} breakpoint mm $\rightarrow$ drug unlikely to work.
+    \end{itemize}
+    \item Quality control: \textit{S. aureus} ATCC 25923 and \textit{E. coli} ATCC 25922 used as control strains.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3\texttimes3=9 Marks]}
+Write short notes on: (a) Louis Pasteur \quad (b) Bacterial Growth Curve \quad (c) Normal flora
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Louis Pasteur (1822--1895):}
+\begin{itemize}[leftmargin=*]
+    \item French chemist and microbiologist; father of modern microbiology.
+    \item \textbf{Disproved spontaneous generation:} Swan-neck flask experiment (1859/1861) showed airborne microbes, not air itself, caused fermentation.
+    \item \textbf{Germ Theory of Disease:} Proved microorganisms cause disease.
+    \item \textbf{Pasteurization:} Gentle heating (63\textdegree C for 30 min / 72\textdegree C for 15 sec) kills pathogens without altering taste (applied to milk, wine, beer).
+    \item \textbf{Vaccines:} Developed attenuated vaccines for chicken cholera (1880), anthrax (1881), and \textbf{rabies} (1885) -- first human vaccine against rabies.
+    \item \textbf{Sterile technique:} Introduced sterilization protocols in medicine.
+\end{itemize}
+
+\textbf{(b) Bacterial Growth Curve:}
+
+In a closed culture (batch culture), bacteria undergo four distinct phases:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Lag phase:} No increase in cell numbers; metabolic activity at maximum; synthesis of RNA, enzymes, and other molecules in preparation for growth; adaptation to new environment. Duration depends on age of inoculum and richness of medium.
+    \item \textbf{Log (Exponential) phase:} Cells divide at maximum, constant rate; generation time is shortest (e.g., \textit{E. coli}: 20 min). Most susceptible to antibiotics (especially cell-wall active agents). Ideal for antibiotic susceptibility testing.
+    \item \textbf{Stationary phase:} Growth rate = Death rate; nutrients depleted, toxic metabolites accumulate, pH falls. Population constant. Spore formation, secondary metabolite production (toxins, antibiotics) occur here.
+    \item \textbf{Decline (Death) phase:} Death rate exceeds growth rate; cells lyse; autolysis by endogenous enzymes.
+\end{enumerate}
+
+\textbf{(c) Normal Flora (Normal Microbiota):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Definition:} Microorganisms that habitually colonize the body surfaces (skin, mucous membranes) of healthy individuals without causing disease under normal circumstances.
+    \item \textbf{Benefits:}
+    \begin{itemize}
+        \item Competitive exclusion of pathogens (colonization resistance).
+        \item Stimulate immune system maturation.
+        \item Synthesize vitamins (Vit K, Vit B12 by gut flora).
+        \item Nutrient absorption (short-chain fatty acids from colon).
+    \end{itemize}
+    \item \textbf{Examples:}
+    \begin{itemize}
+        \item \textit{Skin:} \textit{Staphylococcus epidermidis}, \textit{Corynebacterium} spp., \textit{Propionibacterium acnes}.
+        \item \textit{Oral cavity:} \textit{Streptococcus viridans} (most common), \textit{Actinomyces}, \textit{Bacteroides}.
+        \item \textit{GIT:} \textit{E. coli}, \textit{Bacteroides fragilis}, \textit{Lactobacillus} spp. (dominant).
+        \item \textit{Vagina:} \textit{Lactobacillus} spp. (maintain low pH via lactic acid production).
+    \end{itemize}
+    \item \textbf{Opportunistic infection:} Normal flora can cause disease when: (i) immune compromise (AIDS, steroids), (ii) breach of host defenses (surgery, IV lines), (iii) displacement to unusual site (\textit{E. coli} in urinary tract).
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [6 Marks]}
+Describe the lab diagnosis of malaria.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Laboratory Diagnosis of Malaria:}
+
+\textbf{1. Peripheral Blood Smear (Gold Standard):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Thick film:} Dehemoglobinized; 20--40x more sensitive; used for detection (species identification is difficult).
+    \item \textbf{Thin film:} Red cells intact; allows accurate species identification by morphology.
+    \item \textbf{Stain:} Giemsa stain (pH 7.2). Field's stain for rapid results.
+    \item \textbf{Timing:} Blood taken at time of rigor or periodically every 12 hours if negative (fever correlates with merozoite release).
+    \item \textbf{\textit{P. falciparum}:} Ring forms only (no mature trophozoites/schizonts in peripheral blood); multiple rings per cell; banana-shaped gametocytes; maurer's clefts; accolé (appliqué) forms.
+    \item \textbf{\textit{P. vivax}:} Enlarged RBCs; Schüffner's dots (stippling); all stages seen; amoeboid trophozoites.
+    \item \textbf{\textit{P. malariae}:} Normal-sized RBCs; band-form (basket-form) trophozoites; Ziemann's stippling; rosette schizonts (8 merozoites).
+\end{itemize}
+
+\textbf{2. Rapid Diagnostic Tests (RDTs):}
+\begin{itemize}[leftmargin=*]
+    \item Immunochromatographic strip tests detecting malaria antigens.
+    \item \textbf{HRP2 (Histidine-Rich Protein 2):} Specific for \textit{P. falciparum}; most widely used; remains positive for weeks even after treatment.
+    \item \textbf{pLDH (parasite Lactate Dehydrogenase):} Detects all species; becomes negative within days of treatment (good for treatment monitoring).
+    \item \textbf{Aldolase:} Pan-malarial antigen.
+\end{itemize}
+
+\textbf{3. Molecular Methods (PCR):}
+\begin{itemize}[leftmargin=*]
+    \item Most sensitive and specific; differentiates all 5 species; detects mixed infections.
+    \item Used in reference labs, research, and artemisinin resistance detection.
+\end{itemize}
+
+\textbf{4. Serology:} ELISA, IFA---for epidemiological purposes; not useful in acute diagnosis (antibodies persist after infection).
+
+\textbf{5. QBC (Quantitative Buffy Coat):} Fluorescent acridine orange stain; centrifuged capillary tube; parasites concentrate and fluoresce at buffy coat level. Fast but requires fluorescence microscope.
+\end{ansbox}
+
+\begin{qbox}{Question 6 [2+3=5 Marks]}
+Describe briefly the life cycle of \textit{Wucheria bancrofti}. Add a note on its diagnosis.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Life Cycle of \textit{Wuchereria bancrofti} (Causative agent of Lymphatic Filariasis):}
+
+\textbf{Definitive Host:} Human. \textbf{Intermediate Host/Vector:} \textit{Culex quinquefasciatus} (urban); \textit{Anopheles, Aedes} spp. (rural).
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{In Mosquito (intermediate host):}
+    \begin{itemize}
+        \item Mosquito ingests microfilariae (Mf) while feeding on infected blood.
+        \item Mf lose their sheath in midgut, penetrate stomach wall, migrate to flight muscles (thorax).
+        \item Develop through L1 $\rightarrow$ L2 (sausage larva) $\rightarrow$ L3 (infective filariform larva) in 10--14 days.
+        \item L3 larvae migrate to proboscis; transmitted when mosquito bites next host.
+    \end{itemize}
+    \item \textbf{In Human (definitive host):}
+    \begin{itemize}
+        \item L3 larvae enter skin via mosquito bite wound.
+        \item Migrate to lymphatics; develop into adult worms (L4, then adults) over 6--12 months.
+        \item Adult worms live in lymphatic vessels and nodes (esp. inguinal and pelvic); lifespan: 5--15 years.
+        \item \textbf{Females:} Ovoviviparous; produce sheathed microfilariae which enter blood.
+        \item Microfilariae exhibit \textbf{nocturnal periodicity} (peak in peripheral blood between 10 pm--4 am) correlating with host's sleeping habit and vector's biting time.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Diagnosis:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Blood smear:} Thick blood film (Giemsa stained); blood taken at night (10 pm--2 am) due to nocturnal periodicity. Microfilariae are sheathed; nuclei do not reach tip of tail (distinguishes from \textit{Brugia malayi}).
+    \item \textbf{Concentration methods:} Knott's concentration test, membrane filtration.
+    \item \textbf{Antigen detection (ICT Filariasis card test):} Detects adult worm antigen in blood; blood can be taken at any time of day; most practical field test.
+    \item \textbf{DEC provocation test:} Diethylcarbamazine (DEC) 50 mg given; provokes daytime microfilaraemia; used when nocturnal periodicity is problematic.
+    \item \textbf{Serology:} IgG4 ELISA; high sensitivity but cross-reacts.
+    \item \textbf{Ultrasound (scrotal):} ``Filaria dance sign'' --- real-time movement of live adult worms in dilated lymphatic vessels.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Describe the diagnosis of \textit{Histoplasma capsulatum}.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{\textit{Histoplasma capsulatum} --- Diagnosis:}
+
+A dimorphic fungus causing histoplasmosis (primary pulmonary disease; dissemination in immunocompromised). Acquired by inhalation of conidia from soil contaminated with bird/bat droppings. Endemic in Ohio and Mississippi river valleys (USA); also Central/South America and parts of Asia.
+
+\textbf{Specimen Collection:}
+\begin{itemize}[leftmargin=*]
+    \item Respiratory (sputum, BAL, bronchial wash) for pulmonary disease.
+    \item Blood, bone marrow, lymph node biopsy, liver biopsy for disseminated disease.
+    \item Urine (for antigen testing).
+\end{itemize}
+
+\textbf{1. Direct Microscopy:}
+\begin{itemize}[leftmargin=*]
+    \item KOH preparation; Giemsa-stained peripheral blood smear or bone marrow.
+    \item Appearance: Small (2--4 µm), oval \textbf{yeast cells} within macrophages (intracellular); appear as a clear halo (actually the cell wall, not a true capsule) --- ``pseudocapsule.'' Budding yeast with narrow-based buds.
+    \item \textbf{PAS, GMS (Grocott-Gomori methenamine silver) stain} on tissue sections --- black-stained yeasts.
+\end{itemize}
+
+\textbf{2. Culture (most sensitive for chronic/disseminated):}
+\begin{itemize}[leftmargin=*]
+    \item Sabouraud Dextrose Agar (SDA) at 25--30\textdegree C: \textbf{Mould phase} --- slow-growing white/buff colony. Microscopically: large tuberculate macroconidia (8--16 µm; finger-like projections = diagnostic) and microconidia.
+    \item Blood agar / BHI agar at 37\textdegree C: \textbf{Yeast phase} --- small, creamy colonies; oval budding yeasts.
+    \item \textbf{Biohazard:} Culture must be performed in BSL-3 facility (highly infectious conidia).
+\end{itemize}
+
+\textbf{3. Antigen Detection (Urine/Serum):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{MVista\textsuperscript{\textregistered} Histoplasma antigen EIA}: Most useful in disseminated/AIDS-related histoplasmosis; sensitivity 90--95\% (urine \textgreater{} serum). Cross-reacts with Blastomyces, Aspergillus, Paracoccidioides.
+\end{itemize}
+
+\textbf{4. Serology (CF, ID):}
+\begin{itemize}[leftmargin=*]
+    \item Complement fixation (CF) and immunodiffusion (ID): Detection of H and M bands.
+    \item Less sensitive in immunocompromised patients.
+\end{itemize}
+
+\textbf{5. Histopathology:} Granulomas with central necrosis and intracellular yeasts in macrophages (PAS/GMS stained).
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3\texttimes3=9 Marks]}
+Write short notes on: (a) Hypersensitivity reaction \quad (b) Oncogenic viruses \quad (c) Leishmaniasis
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Hypersensitivity Reactions (Gell and Coombs Classification):}
+
+\begin{center}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Type} & \textbf{Mechanism} & \textbf{Mediator} & \textbf{Onset} & \textbf{Example} \\
+\midrule
+I (Immediate/Anaphylactic) & IgE, mast cell degranulation & Histamine, LTs & Minutes & Anaphylaxis, asthma, urticaria \\
+II (Cytotoxic) & IgG/IgM + complement / ADCC & Complement & Hours & ABO incompatibility, ITP \\
+III (Immune complex) & Antigen-antibody complexes & Complement, neutrophils & 6--12 h & SLE, post-streptococcal GN, serum sickness \\
+IV (Delayed-cell mediated) & T lymphocytes (CD4+, CD8+) & Cytokines (IFN-$\gamma$, TNF) & 48--72 h & TB (Mantoux test), contact dermatitis, graft rejection \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{(b) Oncogenic Viruses:}
+
+Viruses that can transform normal cells into malignant cells (``oncoviruses''):
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{EBV (HHV-4):} Burkitt's lymphoma (c-myc translocation), Hodgkin's lymphoma, nasopharyngeal carcinoma.
+    \item \textbf{HBV/HCV:} Hepatocellular carcinoma (HCC). HBV integrates into genome; HCV via chronic inflammation.
+    \item \textbf{HPV (Human Papillomavirus):} High-risk types 16 and 18 cause \textbf{cervical carcinoma}, oropharyngeal cancer, anal cancer. E6 degrades p53; E7 inactivates Rb.
+    \item \textbf{HTLV-1 (Human T-cell Lymphotropic Virus type 1):} Adult T-cell Leukemia/Lymphoma (ATLL).
+    \item \textbf{HHV-8 (Kaposi's Sarcoma Herpesvirus):} Kaposi's sarcoma (AIDS-defining illness).
+    \item \textbf{MCPyV (Merkel Cell Polyomavirus):} Merkel cell carcinoma.
+\end{enumerate}
+
+\textbf{(c) Leishmaniasis:}
+
+Caused by intracellular protozoan \textit{Leishmania} spp.; transmitted by the bite of the sandfly (\textit{Phlebotomus} spp. in Old World, \textit{Lutzomyia} in New World).
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Visceral Leishmaniasis (Kala-azar):} \textit{L. donovani}. Affects RES (liver, spleen, bone marrow). Features: fever, massive splenomegaly, hepatomegaly, lymphadenopathy, pancytopenia, hypergammaglobulinaemia, darkening of skin (``kala-azar'' = black fever). Diagnosis: Aldehyde test (Chopra's formol gel test), rK39 rapid antigen strip test, bone marrow/spleen smear (Leishman-Donovan bodies = amastigotes in macrophages). Treatment: Liposomal amphotericin B, miltefosine.
+    \item \textbf{Cutaneous Leishmaniasis (Oriental sore):} \textit{L. tropica, L. major}. Self-limiting painless ulcer with raised indurated margins (volcano crater appearance).
+    \item \textbf{Mucocutaneous Leishmaniasis (Espundia):} \textit{L. braziliensis}. Destruction of nasopharyngeal mucosa; ``tapir nose'' deformity.
+\end{itemize}
+\end{ansbox}
+
+%----------------------------------------
+\subsection{Examination: March 10, 2022 (University Exam)}
+\textbf{Subject:} Microbiology \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [1+2+3=6 Marks]}
+List four immunoglobulins. Describe the structure and functions of IgG.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Four Immunoglobulins:} IgG, IgA, IgM, IgE (IgD is the 5th class).
+
+\textbf{Structure of IgG:}
+\begin{itemize}[leftmargin=*]
+    \item Basic Y-shaped monomer: 2 \textbf{heavy chains ($\gamma$)} + 2 \textbf{light chains ($\kappa$ or $\lambda$)}, held by disulfide bonds.
+    \item \textbf{Fab region} (2 arms): Variable domains (VH + VL) → antigen-binding site; bivalent (2 binding sites).
+    \item \textbf{Fc region} (tail): Constant domain of heavy chains; binds Fc receptors on phagocytes; activates complement (classical pathway).
+    \item \textbf{Hinge region:} Between Fab and Fc; flexible; cleaved by papain (→ 2 Fab + 1 Fc) or pepsin (→ 1 F(ab')$_2$).
+\end{itemize}
+
+\textbf{Functions of IgG:}
+\begin{itemize}[leftmargin=*]
+    \item Most abundant Ig ($\sim$75\% of serum); longest half-life ($\sim$23 days).
+    \item \textbf{Opsonisation:} coats bacteria for phagocytosis.
+    \item \textbf{Neutralisation:} blocks toxins and viral surface proteins.
+    \item \textbf{Complement activation} via classical pathway.
+    \item \textbf{ADCC} (antibody-dependent cellular cytotoxicity).
+    \item \textbf{Placental transfer:} Only Ig to cross the placenta via FcRn receptor → passive neonatal immunity.
+    \item Predominant antibody in secondary immune response.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [5 Marks]}
+Enumerate the differences between Gram positive and Gram negative bacteria with examples.
+\end{qbox}
+
+\begin{ansbox}
+\begin{center}
+\begin{tabular}{p{3.5cm}p{5cm}p{5cm}}
+\toprule
+\textbf{Feature} & \textbf{Gram-Positive} & \textbf{Gram-Negative} \\
+\midrule
+Cell wall (PG) thickness & 20--80 nm (thick) & 2--7 nm (thin) \\
+Outer membrane & Absent & Present (with LPS / endotoxin) \\
+Teichoic acids & Present & Absent \\
+Periplasmic space & Narrow & Wide \\
+Gram stain result & Retains crystal violet → \textbf{purple} & Decolorised; safranin → \textbf{pink/red} \\
+Toxin & Mainly exotoxins & Endotoxin (LPS, Lipid A) \\
+Antibiotic sensitivity & More sensitive to penicillin & Outer membrane barrier; generally more resistant \\
+Examples & \textit{Staphylococcus, Streptococcus, Bacillus, Clostridium} & \textit{E. coli, Pseudomonas, Salmonella, Klebsiella} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{ansbox}
+
+%----------------------------------------
+\subsection{Examination: September 1, 2021}
+\textbf{Subject:} Microbiology \quad \textbf{Marks:} 50
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [6 Marks]}
+Draw well labelled diagram of generalized bacterial cell.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Components of a Generalized Bacterial Cell:}
+
+\textbf{Obligate structures (present in all bacteria):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Cell membrane (cytoplasmic membrane):} Phospholipid bilayer; site of electron transport chain; contains enzymes for cell wall synthesis; no sterols (except \textit{Mycoplasma} which has cholesterol).
+    \item \textbf{Cell wall:} Rigid structure outside membrane; peptidoglycan (murein); provides shape and osmotic protection. Gram(+): thick PG; Gram(-): thin PG + outer membrane with LPS.
+    \item \textbf{Cytoplasm:} Aqueous matrix; site of metabolic reactions.
+    \item \textbf{Chromosome (Nucleoid):} Single circular dsDNA; haploid; not enclosed in membrane (prokaryote).
+    \item \textbf{Ribosomes:} 70S (50S + 30S subunits); site of protein synthesis; target of several antibiotics (aminoglycosides, macrolides, tetracyclines, chloramphenicol).
+\end{itemize}
+
+\textbf{Facultative structures (present in some bacteria):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Capsule/Slime layer:} Outermost layer; polysaccharide (or polypeptide in anthrax); antiphagocytic; virulence factor; enables biofilm formation; Examples: \textit{K. pneumoniae, S. pneumoniae, N. meningitidis}.
+    \item \textbf{Flagella:} Locomotion; composed of flagellin protein; monotrichous / lophotrichous / amphitrichous / peritrichous arrangements.
+    \item \textbf{Pili (Fimbriae):} Thin protein appendages; adhesion to host cells (common pili); sex pili (F pilus) for conjugation.
+    \item \textbf{Spores (Endospores):} \textit{Bacillus} and \textit{Clostridium} only; resist heat, desiccation, chemicals; contain dipicolinic acid and Ca$^{2+}$; germinate under favourable conditions.
+    \item \textbf{Plasmids:} Extrachromosomal circular dsDNA; carry resistance genes (R-plasmids) and virulence factors.
+    \item \textbf{Mesosomes:} Infoldings of cell membrane; involved in cell wall synthesis and DNA segregation (may be artefact).
+    \item \textbf{Inclusion bodies:} Storage granules (polyphosphate = volutin/metachromatic granules in \textit{C. diphtheriae}; lipid inclusions; glycogen granules).
+\end{itemize}
+\end{ansbox}
+
+%----------------------------------------
+\subsection{Examination: January 9, 2019}
+
+\begin{qbox}{Question [1+5=6 Marks]}
+Define antibiotics. Explain mechanism of action of antimicrobial agents.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Antibiotic:} A chemical substance produced by a microorganism that, in dilute solutions, can inhibit the growth of or destroy other microorganisms. The term is now broadly applied to include semi-synthetic and synthetic drugs with similar antimicrobial activity.
+
+\textbf{Mechanisms of Action of Antimicrobial Agents:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Inhibition of cell wall synthesis:} $\beta$-lactams (penicillins, cephalosporins, carbapenems) inhibit penicillin-binding proteins (transpeptidases) $\rightarrow$ block cross-linking of peptidoglycan $\rightarrow$ osmotic lysis. Vancomycin binds D-Ala-D-Ala terminus of peptidoglycan precursors.
+    \item \textbf{Damage to cell membrane:} Polymyxins (colistin) — detergent-like action; disrupt outer membrane of Gram-negatives $\rightarrow$ cell lysis. Antifungals: Amphotericin B binds ergosterol; azoles inhibit ergosterol synthesis.
+    \item \textbf{Inhibition of protein synthesis:}
+    \begin{itemize}
+        \item \textit{30S subunit:} Aminoglycosides (misreading of mRNA); Tetracyclines (block aminoacyl-tRNA binding).
+        \item \textit{50S subunit:} Macrolides (block translocation); Chloramphenicol (inhibit peptidyl transferase); Linezolid, Clindamycin.
+    \end{itemize}
+    \item \textbf{Inhibition of nucleic acid synthesis:}
+    \begin{itemize}
+        \item Fluoroquinolones: Inhibit DNA gyrase (Gram-neg) and topoisomerase IV (Gram-pos) $\rightarrow$ prevent DNA replication.
+        \item Rifampicin: Inhibits bacterial RNA polymerase $\beta$-subunit $\rightarrow$ blocks mRNA synthesis.
+        \item Metronidazole: Reduced to toxic nitroso radicals within anaerobes $\rightarrow$ DNA strand breaks.
+    \end{itemize}
+    \item \textbf{Antimetabolic activity (inhibition of metabolic pathways):} Sulfonamides + Trimethoprim: Sequential blockade of folic acid synthesis (sulfonamides inhibit dihydropteroate synthase; TMP inhibits dihydrofolate reductase) $\rightarrow$ inhibit DNA synthesis. Human cells unaffected (obtain folate from diet).
+\end{enumerate}
+\end{ansbox}
+
+%========================================
+\section{Frequency Analysis of Examination Topics}
+%========================================
+
+\subsection{Most Frequently Repeated Topics (80\%+ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Rheumatic Heart Disease -- pathogenesis \& lab diagnosis (90\%):} \textit{Streptococcus pyogenes}, molecular mimicry, Jones criteria, ASO titre, throat culture.
+    \item \textbf{Pulmonary Tuberculosis -- pathogenesis \& diagnosis (85\%):} \textit{M. tuberculosis}, ZN stain (acid-fast bacilli), Löwenstein-Jensen culture, Mantoux/tuberculin test, Ghon complex, IGRA.
+    \item \textbf{Infective Endocarditis -- diagnosis (80\%):} \textit{Viridans Streptococci, S. aureus, HACEK organisms}; Duke criteria; blood cultures (3 sets); echocardiography.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Malaria -- lab diagnosis (75\%):} Thick/thin smear, Giemsa stain, RDTs (HRP2), morphological differences between species.
+    \item \textbf{Sterilization \& Disinfection (70\%):} Autoclave principle, moist vs. dry heat, hot air oven, UV radiation.
+    \item \textbf{Immunoglobulins/Antibodies (65\%):} IgG structure and functions, classes of Ig, placental transfer, opsonisation.
+    \item \textbf{Leishmaniasis / \textit{L. donovani} life cycle (60\%):} Kala-azar; promastigote/amastigote; rK39 antigen test; treatment.
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Streptococcal sore throat / \textit{S. pyogenes} (55\%):} Pathogenesis, lab diagnosis, Lancefield group A, $\beta$-haemolysis.
+    \item \textbf{Diphtheria / \textit{C. diphtheriae} (50\%):} Exotoxin (ADP-ribosylation of EF-2), Albert's stain (metachromatic granules), Tellurite agar, Elek's test.
+    \item \textbf{Bacterial Growth Curve (50\%):} Lag, log, stationary, and death phases; significance.
+    \item \textbf{\textit{Wuchereria bancrofti} / Filariasis (45\%):} Nocturnal periodicity, microfilariae, ICT card test, DEC provocation.
+    \item \textbf{Culture Media Classification (45\%):} Selective, differential, enrichment, enriched media.
+    \item \textbf{Antimicrobial mechanisms / antibiotic susceptibility testing (40\%):} Kirby-Bauer disk diffusion; MIC; zone of inhibition interpretation.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{EBV / Oncogenic Viruses (35\%):} Burkitt's lymphoma, nasopharyngeal carcinoma; HPV-16/18; HTLV-1; HHV-8.
+    \item \textbf{Hypersensitivity reactions (30\%):} Gell and Coombs Types I--IV; mast cells; immune complex disease; DTH.
+    \item \textbf{Normal flora (30\%):} Colonization resistance; opportunistic infections.
+    \item \textbf{\textit{Histoplasma capsulatum} (25\%):} Dimorphic fungus; tuberculate macroconidia; urine antigen test.
+    \item \textbf{Louis Pasteur (25\%):} Swan-neck flask, germ theory, pasteurization, rabies vaccine.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Gram-positive vs. Gram-negative cell wall differences (diagram).
+    \item Structure of generalized bacterial cell (diagram question).
+    \item Robert Koch postulates and contributions.
+    \item Antigen structure and conditions of antigenicity.
+    \item ELISA principle and uses.
+    \item Types of vaccines and immune response.
+    \item \textit{Cryptococcus neoformans} (India ink preparation, meningitis).
+    \item \textit{Bordetella pertussis} virulence factors; whooping cough diagnosis.
+\end{itemize}
+
+\newpage
+\appendix
+\section{Microbiology Quick Revision Cheatsheet}
+
+\subsection{Sterilization \& Disinfection Key Facts}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Autoclave:} 121\textdegree C, 15 psi, 15--20 min; kills \textit{everything} including spores. Monitor with \textit{Geobacillus stearothermophilus} spores.
+    \item \textbf{Hot Air Oven (dry heat):} 160\textdegree C/1h or 170\textdegree C/30 min; for glass, oils, powders. Monitor with \textit{Bacillus atrophaeus} spores.
+    \item \textbf{Pasteurization:} HTST 72\textdegree C/15 sec; kills pathogens but not spores.
+    \item \textbf{UV radiation:} 254 nm; air/surface disinfection only; not penetrating.
+    \item \textbf{Tyndallisation:} Fractional sterilization; 100\textdegree C \texttimes 3 days with rest periods at 37\textdegree C (allows spore germination and subsequent heat killing).
+    \item \textbf{Filtration:} Seitz / membrane filter (0.22 µm); sterilize heat-labile liquids (sera, antibiotics).
+    \item \textbf{Glutaraldehyde (2\%):} High-level disinfectant for endoscopes; kills spores in 3--10 h (sterilant).
+\end{itemize}
+
+\subsection{Blood-Borne Parasites Summary}
+
+\begin{center}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Feature} & \textbf{\textit{P. falciparum}} & \textbf{\textit{P. vivax}} & \textbf{\textit{P. malariae}} & \textbf{\textit{W. bancrofti}} \\
+\midrule
+RBC size & Normal & Enlarged & Normal & -- \\
+Stippling & Maurer's clefts & Schüffner's dots & Ziemann's stippling & -- \\
+Pathognomonic stage & Ring forms + banana gametocyte & All stages & Band-form trophozoite & Sheathed Mf \\
+Periodicity & 48 h (tertian) & 48 h (tertian) & 72 h (quartan) & Nocturnal \\
+Key antigen/test & HRP2 (RDT) & pLDH & pLDH & rK39 (wrong -- Leishmania); ICT Filariasis \\
+Unique danger & Cerebral malaria, blackwater fever & Relapse (hypnozoites) & Nephrotic syndrome & Lymphoedema, elephantiasis \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Immunology Key Points}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{IgG:} Most abundant (75\%); half-life 23 days; crosses placenta (FcRn); opsonises; neutralises; activates complement (classical pathway).
+    \item \textbf{IgA:} Secretory dimeric form (SIgA) in mucous membranes; first line mucosal defence; contains J chain and secretory piece. Predominant in breast milk.
+    \item \textbf{IgM:} Pentameric; first produced in primary response; most efficient complement activator (classical); agglutination. ABO blood group antibodies.
+    \item \textbf{IgE:} Lowest serum level; highest turnover; mast cell/basophil sensitisation; mediates Type I hypersensitivity; anti-parasite immunity (with eosinophils).
+    \item \textbf{Complement Classical Pathway:} C1q binds IgG/IgM-antigen complex → C1r, C1s → C4 + C2 → C3 convertase (C4b2a) → C3b (opsonin) + C3a (anaphylatoxin) → C5--C9 (MAC). Alternative pathway: spontaneous C3 hydrolysis + Factor B, D, Properdin.
+    \item \textbf{Type IV HSR (DTH):} CD4$^+$ Th1 cells release IFN-$\gamma$ → activates macrophages. 48--72 h delay. Mantoux test (PPD-tuberculin). Contact dermatitis (poison ivy, Ni).
+\end{itemize}
+
+\subsection{Important Organisms \& Their Hallmarks}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\textit{C. diphtheriae}:} Club-shaped Gram(+) rods; metachromatic granules (Albert's stain); Elek's test (toxin detection); tellurite agar (grey-black colonies); toxin: ADP-ribosylates EF-2 → protein synthesis arrest → pseudomembrane.
+    \item \textbf{\textit{M. tuberculosis}:} Acid-fast; Ghon focus (lower lobe upper zone, upper lobe lower zone); ZN stain (red bacilli on blue background); LJ medium (eugonic growth, 3--6 weeks); IGRA (more specific than Mantoux); treatment: HRZE × 2 months, then HR × 4 months.
+    \item \textbf{\textit{S. pneumoniae}:} Lancet-shaped diplococci; \textit{optochin sensitive}; $\alpha$-haemolysis; bile solubility test positive; virulence: polysaccharide capsule; causes lobar pneumonia, otitis media, meningitis.
+    \item \textbf{\textit{S. pyogenes} (Group A Strep):} $\beta$-haemolysis; bacitracin sensitive; M protein (antiphagocytic); pathogenesis of RHD via molecular mimicry (anti-cardiac antibodies cross-react with streptococcal M protein); ASO titre $>$200 IU/mL.
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Microbiology Solutions ---}
+\end{center}
+
+\end{document}
