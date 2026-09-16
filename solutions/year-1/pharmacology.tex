@@ -1,0 +1,545 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Pharmacology Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries}{{\thesection}}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=gray!5!white,
+  colframe=black!45,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{PHARMACOLOGY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+%========================================
+\section{Past Examination Questions and Solutions (2015--2022)}
+%========================================
+
+%----------------------------------------
+\subsection{Examination: May 20, 2022 (End Semester Exam)}
+\textbf{Subject:} Pharmacology \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [2+4=6 Marks]}
+What is first pass metabolism? Write in short about factors affecting the absorption of drugs.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{First-Pass Metabolism (Presystemic Metabolism):}
+The phenomenon whereby a drug absorbed from the GIT undergoes significant metabolism in the gut wall and/or liver before reaching the systemic circulation, thereby reducing its bioavailability. Drugs with high first-pass effect (\textgreater{}70\%): morphine, propranolol, nitrates (GTN), lidocaine, verapamil, aspirin. These drugs require higher oral doses or alternative routes (sublingual GTN bypasses hepatic first-pass).
+
+\textbf{Factors Affecting Drug Absorption:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Physicochemical properties of drug:}
+    \begin{itemize}
+        \item \textit{Lipid solubility:} Highly lipophilic drugs diffuse readily across cell membranes.
+        \item \textit{Ionisation (pKa and pH):} Unionised form is lipid-soluble and absorbable. Henderson-Hasselbalch equation governs ionisation. Weak acids absorbed well from the stomach (low pH); weak bases absorbed better in intestine (high pH).
+        \item \textit{Molecular size:} Smaller molecules ($<$500 Da) absorbed better.
+        \item \textit{Formulation:} Tablet dissolution rate; coated formulations; modified-release preparations.
+    \end{itemize}
+    \item \textbf{Route of administration:} IV bypasses absorption; sublingual avoids first-pass.
+    \item \textbf{Gastric emptying and intestinal motility:} ↑ motility → faster transit → ↓ absorption time. Food delays gastric emptying → delays absorption of most drugs.
+    \item \textbf{Intestinal surface area:} Villi and microvilli; large surface area (200 m²) favours absorption.
+    \item \textbf{Splanchnic blood flow:} ↑ blood flow → maintains concentration gradient → ↑ absorption.
+    \item \textbf{Drug interactions:} Chelation (e.g., tetracycline + antacids/milk → ↓ absorption); adsorption (charcoal binds drugs).
+    \item \textbf{First-pass metabolism:} ↑ hepatic extraction → ↓ bioavailability.
+    \item \textbf{P-glycoprotein (MDR-1):} Efflux transporter on intestinal epithelium; pumps drugs back into gut lumen; reduces absorption.
+    \item \textbf{Disease states:} Malabsorption, Crohn's disease, gastrectomy → ↓ absorption.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [5$\times$2=10 Marks]}
+Write briefly on: (a) Prodrug \quad (b) Plasma half life \quad (c) Disadvantages of oral route \quad (d) Essential drug concept \quad (e) Rational drug therapy
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Prodrug:}
+An inactive or poorly active compound that is converted in the body (by enzymatic or chemical reaction) into a pharmacologically active metabolite. Rationale: (i) Improve bioavailability by bypassing first-pass. (ii) Improve stability/solubility/palatability. (iii) Target-specific drug delivery. (iv) Reduce toxicity (NSAID prodrugs). Examples: Enalapril → Enalaprilat (ACE inhibitor, active); Codeine → Morphine (CYP2D6, poor metabolisers don't feel effect); Levodopa → Dopamine (DOPA decarboxylase in brain; dopamine cannot cross BBB); Aspirin → Salicylic acid; Cyclophosphamide → Acrolein.
+
+\textbf{(b) Plasma Half-Life (t$_{1/2}$):}
+Time taken for plasma drug concentration to fall by 50\%. Formula: \textbf{t$_{1/2}$ = 0.693 $\times$ Vd / CL} (Vd = volume of distribution; CL = clearance). Clinical importance:
+\begin{itemize}[leftmargin=*]
+    \item Determines dosing interval (given every 1 t$_{1/2}$ as a rule of thumb).
+    \item Steady-state concentration achieved after \textbf{4--5 half-lives}.
+    \item Time for drug to be eliminated = 4--5 half-lives.
+    \item Short t$_{1/2}$ (e.g., penicillin G: 0.5h) → frequent dosing. Long t$_{1/2}$ (amiodarone: 40--55 days; warfarin: 40h) → accumulation risk.
+\end{itemize}
+
+\textbf{(c) Disadvantages of Oral Route:}
+\begin{enumerate}[leftmargin=*]
+    \item Significant first-pass metabolism reduces bioavailability.
+    \item Irregular and incomplete absorption (food, pH, motility affects absorption).
+    \item Slow onset of action → unsuitable for emergencies.
+    \item Cannot be used in unconscious, uncooperative, or vomiting patients.
+    \item GI irritation and ulceration (NSAIDs, iron, potassium chloride).
+    \item Some drugs destroyed by gastric acid (insulin, penicillin G benzathine) or digestive enzymes.
+\end{enumerate}
+
+\textbf{(d) Essential Drug Concept:}
+Essential medicines (WHO, 1977) are those that satisfy the priority healthcare needs of the population. Selected based on: disease prevalence, clinical efficacy, safety, cost-effectiveness, and pharmacokinetic properties. The WHO Essential Medicines List (EML, updated every 2 years) is the global model; countries adapt national formularies. Benefits: improves access, reduces irrational prescribing, lowers healthcare costs.
+
+\textbf{(e) Rational Drug Therapy:}
+Prescribing the right drug to the right patient in the right dose by the right route at the right time for the right duration at the lowest cost (WHO/WHO-INRUD definition). Steps: (1) Define diagnosis; (2) Specify therapeutic objective; (3) Select appropriate treatment; (4) Initiate treatment with correct prescription; (5) Inform patient; (6) Monitor treatment and stop/adjust as required. Reduces adverse drug reactions, drug interactions, and healthcare costs.
+\end{ansbox}
+
+\begin{qbox}{Question 3 [3$\times$3=9 Marks]}
+Write short notes on: (a) Potency and efficacy with illustration \quad (b) Phase I and Phase II metabolic reactions \quad (c) Streptokinase
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Potency and Efficacy:}
+
+\textbf{Potency:} Concentration (EC$_{50}$) or dose (ED$_{50}$) required to produce 50\% of the maximum response. A drug with \textit{lower} EC$_{50}$ is \textit{more potent} (i.e., needs less drug to produce the same effect).
+
+\textbf{Efficacy (Intrinsic efficacy / E$_{max}$):} The maximum response a drug can produce regardless of dose. A drug with high E$_{max}$ is more efficacious.
+
+Key distinction: A more potent drug is NOT necessarily more efficacious. Example: Morphine has greater efficacy (can relieve severe pain) than aspirin, even though aspirin may be more potent (mg for mg) for mild pain in some contexts. In dose-response curves: two drugs can have the same E$_{max}$ (equal efficacy) but different EC$_{50}$ (different potency); or same EC$_{50}$ but different E$_{max}$ (different efficacy).
+
+Partial agonist: Has lower E$_{max}$ than full agonist even at maximal receptor occupancy; can act as functional antagonist in presence of full agonist.
+
+\textbf{(b) Phase I and Phase II Metabolic Reactions:}
+
+\textbf{Phase I (``Functionalisation''):}
+Introduce or reveal a functional group (-OH, -NH$_2$, -COOH, -SH). Make drug more polar. Mediated mainly by \textbf{cytochrome P450 (CYP)} enzymes in the liver (and gut, lung). Most important isoforms: CYP3A4 (60\% of drugs), CYP2D6, CYP2C9, CYP2C19. Types: Oxidation (hydroxylation, N-/O-dealkylation, S-oxidation), Reduction (nitro-reduction), Hydrolysis (ester, amide hydrolysis). Phase I product may still be pharmacologically active.
+
+\textbf{Phase II (``Conjugation / Biosynthetic''):}
+Attach an endogenous polar molecule to Phase I product (or occasionally to parent drug directly) → makes drug water-soluble and pharmacologically inactive → urinary or biliary excretion.
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Glucuronidation} (most common; UDP-glucuronyltransferases; liver, kidney, gut).
+    \item \textbf{Sulfation} (phenols, steroids; saturable).
+    \item \textbf{Acetylation} (N-acetyltransferases; ``fast'' vs. ``slow'' acetylators; isoniazid — slow acetylators more prone to neuropathy).
+    \item \textbf{Methylation} (COMT for catecholamines; TPMT for 6-mercaptopurine).
+    \item \textbf{Glutathione conjugation} (hepatoprotective; N-acetylcysteine replenishes glutathione in paracetamol overdose).
+    \item \textbf{Glycine conjugation} (bile acids, salicylates).
+\end{itemize}
+
+\textbf{(c) Streptokinase:}
+Thrombolytic (fibrinolytic) agent derived from Group C $\beta$-haemolytic streptococci. Mechanism of action: Streptokinase binds to plasminogen → forms streptokinase-plasminogen complex → acts as a plasminogen activator → converts free plasminogen → \textbf{plasmin} → plasmin degrades fibrin clot (and fibrinogen, factors V, VIII). Not fibrin-selective (``lytic state'' = systemic fibrinogenolysis). Uses: Acute STEMI (within 12h, no PCI facility), acute massive PE, acute DVT, peripheral arterial thrombosis. Adverse effects: Haemorrhage (major; ICH), \textbf{anaphylaxis/allergic reactions} (streptococcal antigen, antibodies in re-use), fever, hypotension. Contraindicated in: recent surgery (\textless{}2 weeks), prior stroke, active GI bleeding, severe uncontrolled hypertension.
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 4 [3+2+1=6 Marks]}
+Classify anticoagulant drugs. Write down the mechanism of action of warfarin. Mention its important therapeutic uses.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Classification of Anticoagulant Drugs:}
+
+\textbf{A. Parenteral Anticoagulants:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Unfractionated Heparin (UFH):} Indirect thrombin inhibitor; potentiates antithrombin III (AT-III) → inhibits thrombin (IIa) and Xa (equally). IV/SC. Monitoring: APTT. Antidote: Protamine sulfate.
+    \item \textbf{Low Molecular Weight Heparins (LMWH):} Enoxaparin, Dalteparin. Mainly anti-Xa activity; more predictable pharmacokinetics; SC; no APTT monitoring required.
+    \item \textbf{Fondaparinux:} Synthetic pentasaccharide; selective factor Xa inhibitor; no anti-IIa activity. SC.
+    \item \textbf{Direct Thrombin Inhibitors (parenteral):} Bivalirudin, Argatroban, Lepirudin.
+\end{enumerate}
+
+\textbf{B. Oral Anticoagulants:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Vitamin K antagonists:} Warfarin, Acenocoumarol, Phenindione.
+    \item \textbf{Direct Oral Anticoagulants (DOACs):}
+    \begin{itemize}
+        \item Direct Xa inhibitors: Rivaroxaban, Apixaban, Edoxaban.
+        \item Direct IIa (thrombin) inhibitor: Dabigatran.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Mechanism of Action of Warfarin:}
+\begin{itemize}[leftmargin=*]
+    \item Warfarin is a coumarin derivative; orally active.
+    \item Inhibits \textbf{Vitamin K Epoxide Reductase (VKOR)} → prevents regeneration of active reduced Vitamin K (Vit K$_1$ hydroquinone).
+    \item Active Vit K is essential cofactor for $\gamma$-glutamyl carboxylase enzyme → adds $\gamma$-carboxyl groups to glutamate residues of \textbf{coagulation factors II, VII, IX, X} (``1972'' mnemonic) and anticoagulant proteins \textbf{C and S}.
+    \item Without carboxylation, these factors cannot bind $\text{Ca}^{2+}$ via phospholipid membrane (PIVKA = Proteins Induced by Vitamin K Absence) → cannot participate in coagulation cascade.
+    \item \textbf{Delayed onset:} 8--12 hours (existing factors must clear); full effect after 3--5 days. Factor VII has shortest half-life → PT prolongs first.
+    \item Monitoring: \textbf{INR (International Normalised Ratio)} = target 2--3 for most indications (2.5--3.5 for mechanical heart valves).
+\end{itemize}
+
+\textbf{Important Therapeutic Uses of Warfarin:}
+\begin{itemize}[leftmargin=*]
+    \item Deep Vein Thrombosis (DVT) and Pulmonary Embolism treatment and prophylaxis.
+    \item Atrial Fibrillation (AF) -- prevention of cardioembolic stroke.
+    \item Mechanical prosthetic heart valves (anticoagulation of choice).
+    \item Prevention of recurrent MI and stroke.
+    \item Antiphospholipid antibody syndrome.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 5 [3+2=5 Marks]}
+Write the classification of adrenergic drugs on the basis of their therapeutic effects with at least one example of each. Write down the therapeutic uses of Prazosin.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Classification of Adrenergic Drugs (by Therapeutic Effect):}
+
+\textbf{A. Adrenergic Agonists (Sympathomimetics):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Vasopressors/Cardiotonic:}
+    \begin{itemize}
+        \item $\alpha_1 + \beta_1$ agonist: Noradrenaline (Norepinephrine) -- vasopressor in septic shock.
+        \item $\beta_1$ agonist: Dobutamine -- acute heart failure.
+    \end{itemize}
+    \item \textbf{Bronchodilators ($\beta_2$ agonists):}
+    \begin{itemize}
+        \item Short-acting (SABA): Salbutamol (albuterol) -- acute bronchospasm.
+        \item Long-acting (LABA): Salmeterol, Formoterol -- COPD/asthma maintenance.
+    \end{itemize}
+    \item \textbf{Nasal Decongestants ($\alpha_1$ agonists):} Xylometazoline, Oxymetazoline.
+    \item \textbf{Anaphylaxis Management:} Adrenaline (Epinephrine) -- $\alpha_1+\beta_1+\beta_2$ -- drug of choice in anaphylaxis; also causes bronchodilation and vasoconstriction.
+    \item \textbf{Uterine relaxants (tocolytics, $\beta_2$):} Ritodrine, Terbutaline.
+    \item \textbf{CNS stimulants:} Amphetamines (indirect-acting; release NA and DA).
+\end{enumerate}
+
+\textbf{B. Adrenergic Antagonists (Sympatholytics):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{$\alpha_1$ blockers (antihypertensives/BPH):} Prazosin, Tamsulosin ($\alpha_{1A}$ selective for BPH), Doxazosin, Terazosin.
+    \item \textbf{$\alpha_2$ blockers:} Yohimbine (experimental).
+    \item \textbf{Non-selective $\alpha$ blockers (phaeochromocytoma):} Phenoxybenzamine (irreversible), Phentolamine.
+    \item \textbf{$\beta$ blockers:}
+    \begin{itemize}
+        \item Non-selective: Propranolol ($\beta_1 + \beta_2$) -- hypertension, angina, arrhythmia.
+        \item Selective ($\beta_1$): Atenolol, Metoprolol, Bisoprolol -- hypertension, HF, post-MI.
+        \item With $\alpha$-blocking: Labetalol, Carvedilol -- hypertensive crisis, HF.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Therapeutic Uses of Prazosin ($\alpha_1$-adrenergic blocker):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Hypertension:} First-dose hypotension effect (``prazosin syncope'') -- give at bedtime; overcomes by starting with low dose. Dilates arterioles and veins.
+    \item \textbf{Benign Prostatic Hyperplasia (BPH):} $\alpha_{1A}$ receptors on prostatic smooth muscle → relaxation → improved urinary flow.
+    \item \textbf{Raynaud's phenomenon:} Vasodilation in peripheral arteries.
+    \item \textbf{Congestive Heart Failure (adjunct):} Reduces preload and afterload.
+    \item \textbf{Phaeochromocytoma (preoperative):} Controls hypertensive crises before surgery.
+    \item \textbf{PTSD-related nightmares:} Prazosin shown to reduce nightmares in PTSD.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [3+1+1=5 Marks]}
+Explain the mechanism of action of Chloroquine. Write down its important therapeutic uses and adverse effects.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Mechanism of Action of Chloroquine:}
+
+Chloroquine is a 4-aminoquinoline antimalarial.
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Primary mechanism (blood schizontocide):}
+    \begin{itemize}
+        \item Parasitised RBCs digest haemoglobin in the food vacuole → release haem (ferriprotoporphyrin IX = FPIX).
+        \item Free FPIX is toxic to the parasite (inhibits enzymes, damages membranes).
+        \item Normally the parasite \textbf{polymerises FPIX into inert haemozoin (malaria pigment)}.
+        \item Chloroquine (weak base) concentrates in the acidic food vacuole (pH 5.5) by ``ion trapping''; \textbf{inhibits haem polymerisation} → free haem accumulates → toxic to parasite.
+    \end{itemize}
+    \item \textbf{Additional mechanism (for SLE/RA):} Chloroquine inhibits lysosomal enzymes, reduces antigen processing (AP via MHC class II), reduces cytokine production (IL-1, IL-6, TNF-$\alpha$), and raises lysosomal pH → immunomodulatory.
+\end{enumerate}
+
+\textbf{Chloroquine is active only against:} Asexual blood stages (ring, trophozoite, schizont) of \textit{P. vivax}, \textit{P. malariae}, \textit{P. ovale} and sensitive \textit{P. falciparum} (widespread resistance now). Does not affect liver stages.
+
+\textbf{Important Therapeutic Uses:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Malaria treatment:} Drug of choice for sensitive \textit{P. vivax}, \textit{P. malariae}, \textit{P. ovale}, and chloroquine-sensitive \textit{P. falciparum}.
+    \item \textbf{Malaria prophylaxis:} In areas without chloroquine resistance.
+    \item \textbf{Rheumatoid arthritis (RA) -- DMARD:} Hydroxychloroquine more commonly used.
+    \item \textbf{Systemic Lupus Erythematosus (SLE):} Reduces disease flares.
+    \item \textbf{Amoebic hepatic abscess} (extra-intestinal amoebiasis): Chloroquine concentrates in liver.
+\end{itemize}
+
+\textbf{Adverse Effects:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{GI:} Nausea, vomiting, abdominal cramps, diarrhoea (most common).
+    \item \textbf{Ocular (most important -- dose-related):} Retinopathy (deposits in retinal pigment epithelium → ``Bull's eye'' maculopathy, visual field defects, colour vision disturbances). Corneal deposits (reversible). Annual ophthalmologic screening required for prolonged use.
+    \item \textbf{Dermatological:} Pruritus (especially in dark-skinned patients), photosensitivity, pigmentation changes.
+    \item \textbf{CNS:} Headache, dizziness, psychosis (rare).
+    \item \textbf{Cardiac:} QT prolongation, cardiomyopathy (rare but serious with high doses).
+    \item \textbf{Haematological:} Haemolysis in G6PD-deficient patients (less common than primaquine).
+    \item \textbf{Acute overdose:} Life-threatening: hypotension, cardiac arrhythmias, respiratory arrest; fatal if $>$5g in adults.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [3$\times$3=9 Marks]}
+Write short notes on: (a) Organophosphorous poisoning and its management \quad (b) Therapeutic uses of Atropine \quad (c) Therapeutic uses of Propranolol
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Organophosphorus (OP) Poisoning and Management:}
+
+OP compounds (e.g., Malathion, Parathion, Diazinon; also nerve agents Sarin, Tabun) are irreversible inhibitors of acetylcholinesterase (AChE).
+
+\textbf{Mechanism:} OP binds covalently and irreversibly to the serine hydroxyl at the active site of AChE → \textbf{acetylcholine (ACh) accumulates} → overstimulation of both muscarinic and nicotinic receptors.
+
+\textbf{Clinical Features (SLUD mnemonic for muscarinic):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Muscarinic (DUMBELS):} Diarrhoea/Defecation, Urination, Miosis (pin-point pupils), Bradycardia, Excessive secretions (lacrimation, salivation, bronchorrhoea, sweating), Lacrimation, Vomiting.
+    \item \textbf{Nicotinic:} Muscle fasciculations, weakness, paralysis (respiratory muscles → respiratory failure).
+    \item \textbf{CNS:} Anxiety, convulsions, coma.
+\end{itemize}
+
+\textbf{Management:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Decontamination:} Remove from exposure; remove clothing; wash skin with soap and water.
+    \item \textbf{Supportive care:} Airway management (intubation), oxygen, IV fluids, control seizures (diazepam).
+    \item \textbf{Specific antidotes:}
+    \begin{itemize}
+        \item \textbf{Atropine:} Competitive muscarinic antagonist; given IV in large, repeated doses (2--4 mg every 10--15 min) until secretions dry up (atropinisation). Reverses muscarinic effects only; not nicotinic.
+        \item \textbf{Pralidoxime (2-PAM, oximes):} Reactivates AChE if given \textbf{before ``ageing''} (irreversible covalent bonding becomes complete; within 24--48h for most OP). Reverses both muscarinic AND nicotinic effects; particularly helpful for muscle paralysis.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{(b) Therapeutic Uses of Atropine:}
+
+Atropine is a competitive non-selective muscarinic receptor antagonist (anticholinergic).
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Preanaesthetic medication:} Reduces airway and salivary secretions (antisialogogue), prevents vagal bradycardia during anaesthesia.
+    \item \textbf{Bradyarrhythmias:} Drug of choice for acute sinus bradycardia with haemodynamic compromise, symptomatic bradycardia, and AV block (particularly during inferior MI).
+    \item \textbf{Antidote for organophosphorus (OP) poisoning} and muscarinic excess (as above).
+    \item \textbf{Ophthalmology:} Mydriasis and cycloplegia for fundal examination; refraction in children; uveitis (prevents synechiae).
+    \item \textbf{Antispasmodic:} Peptic ulcer (↓ gastric acid secretion), irritable bowel syndrome, renal/biliary colic (smooth muscle relaxation).
+    \item \textbf{Bronchospasm:} Ipratropium bromide (quaternary derivative, inhaled) for COPD and asthma.
+    \item \textbf{Motion sickness and vertigo} (scopolamine/hyoscine transdermal patch).
+    \item \textbf{Antidote for poisoning by muscarinic agonists:} Pilocarpine, muscarine, physostigmine.
+\end{enumerate}
+
+\textbf{(c) Therapeutic Uses of Propranolol:}
+
+Propranolol is a non-selective $\beta$-adrenergic receptor antagonist ($\beta_1 + \beta_2$ blockade).
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Hypertension:} First-line in young patients; reduces CO and renin release.
+    \item \textbf{Angina pectoris:} Reduces myocardial oxygen demand (↓ HR, ↓ contractility, ↓ BP).
+    \item \textbf{Cardiac arrhythmias:} Supraventricular tachycardia, atrial fibrillation rate control; Wolff-Parkinson-White syndrome.
+    \item \textbf{Post-Myocardial Infarction:} Reduces mortality (reduces infarct size, prevents reinfarction, antiarrhythmic).
+    \item \textbf{Heart Failure (with caution):} Carvedilol/metoprolol preferred; propranolol reduces mortality in stable HF.
+    \item \textbf{Thyrotoxicosis / Thyroid storm:} Blocks adrenergic manifestations (tachycardia, tremor, sweating, anxiety); also inhibits peripheral conversion of T4 → T3.
+    \item \textbf{Phaeochromocytoma (after $\alpha$-blockade):} Controls tachycardia; \textbf{must not give $\beta$-blocker before $\alpha$-blocker} (causes paradoxical hypertension).
+    \item \textbf{Migraine prophylaxis:} Reduces frequency and severity of attacks.
+    \item \textbf{Essential tremor:} $\beta_2$ receptor blockade in peripheral muscles.
+    \item \textbf{Portal hypertension:} Reduces splanchnic blood flow; prophylaxis of variceal bleeding.
+    \item \textbf{Anxiety (situational):} Peripheral $\beta$ blockade reduces somatic symptoms (palpitations, tremor).
+    \item \textbf{Hypertrophic obstructive cardiomyopathy (HOCM):} Reduces outflow obstruction.
+\end{enumerate}
+
+\textbf{Important Contraindications of Propranolol:} Bronchial asthma / COPD ($\beta_2$ blockade causes bronchospasm); acute decompensated heart failure; AV heart block ($>$1st degree); Prinzmetal's angina.
+\end{ansbox}
+
+%----------------------------------------
+\subsection{Examination: March 15, 2022}
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question [2+1+2+1=6 Marks]}
+Classify anticholinergic drugs. Write briefly mechanism of action, indications and adverse effects of the prototype anticholinergic drug.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Classification of Anticholinergic (Antimuscarinic) Drugs:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Tertiary amines (lipid-soluble, cross BBB):}
+    \begin{itemize}
+        \item Natural alkaloids: Atropine, Scopolamine (Hyoscine).
+        \item Synthetic: Benzhexol (Trihexyphenidyl, Parkinson's); Dicyclomine (IBS); Oxybutynin (OAB); Pirenzepine (selective M$_1$, peptic ulcer).
+    \end{itemize}
+    \item \textbf{Quaternary ammonium compounds (poorly absorbed, limited CNS entry):}
+    \begin{itemize}
+        \item Ipratropium bromide (COPD/asthma inhalation), Tiotropium (COPD), Glycopyrrolate (anaesthesia).
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Prototype: Atropine -- Mechanism, Indications, Adverse Effects:}
+
+\textbf{Mechanism:} Competitive antagonist at muscarinic receptors (M$_1$--M$_5$); non-selective; blocks all actions of ACh/cholinergic drugs at muscarinic sites. No effect on nicotinic receptors. Effect is dose-dependent.
+
+\textbf{Indications:} (Listed in Answer 7b above -- preanaesthetic, bradycardia, OP poisoning, ophthalmology, antispasmodic, bronchospasm, motion sickness.)
+
+\textbf{Adverse Effects:} (Anticholinergic syndrome, mnemonic: ``Dry as a bone, Blind as a bat, Red as a beet, Hot as a hare, Mad as a hatter, Full as a flask'')
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Dry mouth} (xerostomia -- reduced salivation); Blurred vision (cycloplegia, mydriasis); Photophobia.
+    \item \textbf{Urinary retention} (especially in elderly men with BPH).
+    \item \textbf{Constipation} (↓ gut motility).
+    \item \textbf{Tachycardia} (vagal blockade at heart).
+    \item \textbf{Flushing and dry skin} (sweat gland inhibition → hyperthermia).
+    \item \textbf{CNS effects:} Confusion, restlessness, hallucinations (esp. scopolamine and central-acting antimuscarinics).
+    \item \textbf{Acute angle-closure glaucoma} (pupillary dilation blocks angle drainage → raised IOP). Contraindicated in narrow-angle glaucoma.
+\end{itemize}
+\end{ansbox}
+
+%========================================
+\subsection{Examination: October 31, 2021}
+
+\begin{qbox}{Question [4+2=6 Marks]}
+List different routes of drug administration with an example of each. Write two advantages and two disadvantages of sublingual route.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Routes of Drug Administration:}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Route} & \textbf{Sub-types} & \textbf{Example} \\
+\midrule
+Enteral & Oral & Paracetamol tablet \\
+ & Sublingual (SL) & GTN (glyceryl trinitrate) \\
+ & Buccal & Fentanyl buccal film \\
+ & Rectal & Diazepam suppository \\
+Parenteral & Intravenous (IV) & Morphine injection \\
+ & Intramuscular (IM) & Vaccines, diclofenac \\
+ & Subcutaneous (SC) & Insulin, LMWH \\
+ & Intradermal (ID) & Mantoux test \\
+ & Intrathecal & Spinal anaesthesia \\
+Inhalation & -- & Salbutamol MDI \\
+Topical/Transdermal & Skin, eye, ear, nose & Clotrimazole cream; GTN patch \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Advantages of Sublingual (SL) Route:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Rapid onset:} Drug is absorbed directly from sublingual mucosa into systemic circulation via sublingual veins → superior vena cava → heart; bypass of hepatic first-pass metabolism → faster onset than oral route. GTN relieves angina within 1--2 minutes.
+    \item \textbf{Avoids first-pass effect:} Higher bioavailability for drugs with high hepatic extraction ratio (e.g., GTN, buprenorphine, testosterone, fentanyl).
+\end{enumerate}
+
+\textbf{Disadvantages of Sublingual Route:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Limited drug absorption:} Only suitable for lipid-soluble, non-irritating drugs that can be absorbed through the thin mucosa. Drugs with high molecular weight, poor lipid solubility, or ionised form cannot be administered SL.
+    \item \textbf{Patient cooperation required:} Patient must hold tablet under the tongue without swallowing or speaking; difficult in uncooperative, unconscious, or vomiting patients.
+\end{enumerate}
+\end{ansbox}
+
+%========================================
+\section{Frequency Analysis of Examination Topics}
+%========================================
+
+\subsection{Most Frequently Repeated Topics (80\%+ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Drug Absorption / Bioavailability / Pharmacokinetics (90\%):} Factors affecting absorption (lipid solubility, pKa, first-pass, P-gp), bioavailability, first-pass metabolism, routes of administration.
+    \item \textbf{Beta Blockers (85\%):} Classification (selective vs. non-selective); propranolol mechanism and therapeutic uses; atenolol advantages; carvedilol.
+    \item \textbf{Anticoagulants --- classification and warfarin mechanism (85\%):} Heparin (UFH, LMWH, mechanism, antidote: protamine), warfarin (VKOR inhibitor, INR monitoring, drug interactions), DOACs.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Digoxin --- mechanism of action (75\%):} Na/K ATPase inhibition → ↑ intracellular Na → ↑ intracellular Ca → positive inotropy; also vagomimetic (↓ HR, ↓ AV conduction). Uses: HF, AF.
+    \item \textbf{Anticholinergic drugs / Atropine (70\%):} Classification, mechanism, therapeutic uses, adverse effects, contraindications.
+    \item \textbf{Antimalarial drugs --- Chloroquine (65\%):} Mechanism (haem polymerisation inhibition), uses, adverse effects (retinopathy); primaquine (radical cure for vivax), mefloquine.
+    \item \textbf{Antitubercular drugs (65\%):} First-line HRZE, mechanisms, adverse effects, DOT, short-course chemotherapy.
+    \item \textbf{Antifungal drugs (60\%):} Amphotericin B (binds ergosterol); azoles (lanosterol → ergosterol synthesis inhibition); clotrimazole (oral thrush); fluconazole.
+    \item \textbf{Routes of Administration (60\%):} Routes, examples, advantages/disadvantages of oral, IV, sublingual, IM, SC, inhalation.
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Antianginal drugs (55\%):} Nitrates (cGMP → MLCK phosphorylation → smooth muscle relaxation → venodilation → ↓ preload; also coronary dilation); $\beta$-blockers; CCBs.
+    \item \textbf{Cephalosporins (50\%):} Generations 1--4, mechanism (inhibit transpeptidase/PBP), adverse effects (cross-sensitivity with penicillin, nephrotoxicity).
+    \item \textbf{Fluoroquinolones (50\%):} Mechanism (DNA gyrase/topoisomerase IV inhibition); ciprofloxacin uses; adverse effects (tendinopathy, QT prolongation, avoid in children/pregnancy).
+    \item \textbf{Penicillins (50\%):} Classification, mechanism, amoxicillin + clavulanic acid rationale.
+    \item \textbf{Bronchodilators / Asthma drugs (45\%):} Salbutamol ($\beta_2$ agonist), ipratropium, aminophylline (methylxanthine; PDE inhibitor → cAMP $\uparrow$; narrow TI).
+    \item \textbf{Organophosphorus poisoning (40\%):} Mechanism, features, atropine + pralidoxime management.
+    \item \textbf{Heparin mechanism and uses (40\%):} AT-III activation, monitoring (APTT), protamine antidote, LMWHs.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Streptokinase (35\%):} Mechanism, uses (STEMI, PE), adverse effects (anaphylaxis, bleeding).
+    \item \textbf{Calcium Channel Blockers (30\%):} Amlodipine (dihydropyridine, vascular smooth muscle); Verapamil/Diltiazem (cardiac; AV block risk).
+    \item \textbf{Drug metabolism Phases I and II (30\%):} CYP450, glucuronidation, acetylation (fast/slow).
+    \item \textbf{Adrenergic drugs classification (25\%):} Prazosin therapeutic uses.
+    \item \textbf{Anticancer / Antiretroviral drugs (20\%):} Principles of chemotherapy; NRTIs, NNRTIs, PIs in HIV.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Hypolipidaemic drugs (statins -- HMG-CoA reductase inhibitors).
+    \item Aminoglycosides mechanism, uses, adverse effects (nephrotoxicity, ototoxicity).
+    \item Antihistamines (H$_1$-receptor antagonists) -- uses, generations, adverse effects.
+    \item Acyclovir mechanism (DNA polymerase inhibition) for herpes infections.
+    \item Erythropoietin in anaemia management.
+    \item Drug therapy of megaloblastic anaemia (cyanocobalamin, folic acid).
+\end{itemize}
+
+\newpage
+\appendix
+\section{Pharmacology Quick Revision Cheatsheet}
+
+\subsection{Autonomic Pharmacology Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Cholinergic drugs:} Direct agonists: Pilocarpine (M), Bethanechol (M, urinary retention), Carbachol; Indirect (anticholinesterases): Neostigmine (quaternary, MG, reversal of NMB), Physostigmine (tertiary, glaucoma, antidote), Organophosphates (irreversible).
+    \item \textbf{Anticholinergic syndrome (``dry as a bone''):} Tachycardia, dry mouth/skin, urinary retention, constipation, mydriasis, hyperthermia, confusion. Antidote: Physostigmine (crosses BBB).
+    \item \textbf{Sympathomimetics:} Adrenaline = $\alpha_1 + \beta_1 + \beta_2$ (anaphylaxis, cardiac arrest); Noradrenaline = $\alpha_1 + \beta_1$ (vasopressor); Dobutamine = $\beta_1$ (acute HF); Salbutamol = $\beta_2$ (asthma); Phenylephrine = $\alpha_1$ (nasal decongestant, pupil dilation).
+    \item \textbf{Propranolol:} Non-selective $\beta$-blocker; CI in asthma; uses: HTN, angina, MI, arrhythmia, thyroid storm, migraine prophylaxis, essential tremor, portal hypertension.
+    \item \textbf{Prazosin:} $\alpha_1$-blocker; first-dose hypotension; uses: HTN, BPH.
+\end{itemize}
+
+\subsection{Cardiovascular Pharmacology Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Digoxin MOA:} Inhibits Na$^+$/K$^+$-ATPase $\rightarrow$ ↑ intracellular Na$^+$ $\rightarrow$ ↑ intracellular Ca$^{2+}$ (via Na-Ca exchanger reversal) $\rightarrow$ ↑ contractility. Also vagotonic (AV node: ↓ conduction/HR -- useful in AF). Narrow therapeutic index; toxicity: nausea, xanthopsia (yellow vision), arrhythmias. Antidote: digoxin-specific Fab fragments.
+    \item \textbf{Nitrates MOA:} Organic nitrates metabolised to NO → activates guanylate cyclase → ↑ cGMP → activates PKG → dephosphorylates myosin light chain → smooth muscle relaxation → venodilation (mainly) → ↓ preload → ↓ cardiac work. Also dilates coronary arteries. Tolerance: take nitrate-free interval.
+    \item \textbf{Warfarin:} Inhibits VKOR → blocks carboxylation of factors II, VII, IX, X; protein C, S. Monitoring: INR. Antidote: Vitamin K$_1$ (phytomenadione) for minor bleeding; Fresh Frozen Plasma (FFP) + Vit K for major bleeding. CYP2C9 metabolism → many drug interactions.
+    \item \textbf{Heparin vs. Warfarin:} Heparin -- immediate, parenteral, APTT monitoring, protamine antidote, safe in pregnancy (doesn't cross placenta). Warfarin -- delayed onset, oral, INR monitoring, Vit K antidote, teratogenic (crosses placenta).
+\end{itemize}
+
+\subsection{Antimicrobial Pharmacology Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{$\beta$-lactam ring:} Nucleus of penicillins, cephalosporins, carbapenems, monobactams. Inhibits transpeptidases (PBPs) → prevents peptidoglycan cross-linking → osmotic lysis.
+    \item \textbf{Penicillin allergy + Clavulanic acid rationale:} $\beta$-lactamase-producing bacteria (S. aureus, H. influenzae, E. coli) destroy amoxicillin. Clavulanic acid is a $\beta$-lactamase inhibitor (suicide inhibitor) → protects amoxicillin.
+    \item \textbf{Aminoglycosides:} Gentamicin, Tobramycin, Amikacin. Inhibit 30S ribosome → misreading of mRNA. Synergistic with $\beta$-lactams. Toxicity: \textbf{nephrotoxicity} (dose-related, proximal tubule) and \textbf{ototoxicity} (vestibular and cochlear; irreversible). Monitor peak and trough levels.
+    \item \textbf{Antifungal MOA:} Amphotericin B: binds ergosterol → pore formation → K$^+$ efflux → cell death (fungicidal). Azoles (fluconazole, itraconazole, voriconazole): inhibit CYP51 (lanosterol → ergosterol) → disrupts membrane. Echinocandins (caspofungin): inhibit 1,3-$\beta$-D-glucan synthase → disrupts cell wall (fungicidal for Candida).
+    \item \textbf{Anti-TB (First-line HRZE):} H = Isoniazid (inhibits mycolic acid synthesis); R = Rifampicin (inhibits RNA polymerase $\beta$-subunit); Z = Pyrazinamide (disrupts membrane potential, active in acid pH); E = Ethambutol (inhibits arabinosyl transferase → arabinogalactan synthesis). Common side effects: INH -- peripheral neuropathy (prevent with pyridoxine Vit B6), hepatotoxicity; Rifampicin -- orange urine/body fluids, enzyme inducer; Pyrazinamide -- hyperuricaemia, hepatotoxicity; Ethambutol -- optic neuritis (check colour vision monthly).
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Pharmacology Solutions ---}
+\end{center}
+
+\end{document}
