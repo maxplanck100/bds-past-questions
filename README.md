@@ -76,6 +76,16 @@ bds-past-questions/
 │       ├── oral_biology_cheatsheet.md
 │       └── BDS_1st_year_all_subjects_17-22.md
 │
+├── solutions/                        # Typeset LaTeX printable comprehensive solution manuals
+│   └── year-1/
+│       ├── anatomy.tex
+│       ├── biochemistry.tex
+│       ├── microbiology.tex
+│       ├── pathology.tex
+│       ├── pharmacology.tex
+│       ├── physiology.tex
+│       └── oral_biology.tex
+│
 └── scripts/                          # Utility and automation scripts
     └── split_pdf.py
 ```
@@ -84,27 +94,26 @@ bds-past-questions/
 
 ## Project Status
 
-| Year   | Subjects & Sets | Extracted | Answered | Analyzed | Cheatsheets |
-| ------ | --------------- | --------- | -------- | -------- | ----------- |
-| Year 1 | 7 + Multi-Set   | 8/8 (100%)| 8/8 (100%)| 8/8 (100%)| 8/8 (100%) |
-| Year 2 | —               | —         | —        | —        | —           |
-| Year 3 | —               | —         | —        | —        | —           |
-| Year 4 | —               | —         | —        | —        | —           |
-| Year 5 | —               | —         | —        | —        | —           |
+| Year   | Subjects & Sets | Extracted | Answered | Analyzed | Cheatsheets | Solutions (LaTeX) |
+| ------ | --------------- | --------- | -------- | -------- | ----------- | ----------------- |
+| Year 1 | 7 + Multi-Set   | 8/8 (100%)| 8/8 (100%)| 8/8 (100%)| 8/8 (100%)  | 7/7 (100%)        |
+| Year 2 | —               | —         | —        | —        | —           | —                 |
+| Year 3 | —               | —         | —        | —        | —           | —                 |
+| Year 4 | —               | —         | —        | —        | —           | —                 |
+| Year 5 | —               | —         | —        | —        | —           | —                 |
 
 ### Year 1 Curriculum Status
 
 All Kathmandu University BDS 1st Year core subjects and multi-subject consolidated sets have been fully processed across the entire pipeline:
 
-* [x] **Anatomy** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Biochemistry** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Microbiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Pathology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Pharmacology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Physiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **Oral Biology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet)
-* [x] **All Subjects 2017–2022 Multi-Paper Collection** (Extraction, Answers, Cross-Subject Analysis, Integrated Cheatsheet)       | —        | —        |
-| Year 5 | —        | —         | —        | —        |
+* [x] **Anatomy** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Biochemistry** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Microbiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Pathology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Pharmacology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Physiology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **Oral Biology** (Extraction, Answers, Top Topics Analysis, Quick Revision Cheatsheet, LaTeX Solution Manual)
+* [x] **All Subjects 2017–2022 Multi-Paper Collection** (Extraction, Answers, Cross-Subject Analysis, Integrated Cheatsheet)
 
 ### Current Focus
 
@@ -149,6 +158,9 @@ Past Question PDFs
         │
         ▼
  Revision Cheatsheets
+        │
+        ▼
+ Typeset LaTeX Solutions Manuals
 ```
 
 ### 1. PDF Collection & Organization
@@ -203,6 +215,19 @@ These resources are stored under:
 appendix/
 ```
 
+### 6. Typeset LaTeX Solutions Manuals
+
+Complete, publication-grade, exam-oriented solution manuals compiled in LaTeX. Each manual integrates:
+- Verified academic answers formatted in structured boxes
+- Historical topic and question frequency analysis
+- High-yield quick-revision cheatsheets
+
+These resources are stored under:
+
+```text
+solutions/
+```
+
 ---
 
 ## Tools & Methodology
@@ -213,7 +238,7 @@ The project may use a combination of:
 * OCR software
 * LLM-assisted text cleanup
 * Manual verification
-* Markdown
+* Markdown & LaTeX typesetting
 * Python automation scripts
 * Statistical/frequency analysis
 
@@ -231,7 +256,8 @@ Subject
 ├── Extracted Questions
 ├── Answers
 ├── Topic Analysis
-└── Revision Cheatsheet
+├── Revision Cheatsheet
+└── LaTeX Solutions Manual
 ```
 
 This separation keeps the original questions distinct from interpretations, answers, and derived analysis.
