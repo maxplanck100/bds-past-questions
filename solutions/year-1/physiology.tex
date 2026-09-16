@@ -1,0 +1,486 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Human Physiology Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries\color{red!70!black}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{HUMAN PHYSIOLOGY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Past Examination Questions and Solutions (2015--2022)}
+
+\subsection{Examination: May 8, 2022 (End Semester Exam)}
+\textbf{Subject:} Physiology \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [1+4 = 5 Marks]}
+Compare and contrast primary active transport and secondary active transport along with an example of each.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definitions:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Active Transport:} Carrier-mediated transport of solute across a biological membrane against its electrochemical or chemical concentration gradient ("uphill" transport), requiring metabolic energy.
+    \item \textbf{Primary Active Transport:} Transport in which the chemical energy released from the direct hydrolysis of Adenosine Triphosphate (ATP) is directly coupled to drive the transport of the solute.
+    \item \textbf{Secondary Active Transport:} Transport in which the solute is driven against its gradient by utilizing the potential energy stored in an ionic concentration gradient (usually $Na^+$) that was previously established by primary active transport (no direct ATP hydrolysis by the carrier itself).
+\end{itemize}
+
+\textbf{2. Point-by-Point Comparison:}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3.5cm}X X}
+\toprule
+\textbf{Parameter} & \textbf{Primary Active Transport} & \textbf{Secondary Active Transport} \\
+\midrule
+\textbf{Energy Source} & Direct hydrolysis of ATP ($\text{ATP} \rightarrow \text{ADP} + \text{P}_i$). & Potential energy of an ion gradient (usually $Na^+$ or $H^+$). \\
+\textbf{ATPase Activity} & Carrier protein possesses intrinsic ATPase enzymatic activity. & Carrier lacks ATPase activity; acts as a cotransporter/exchanger. \\
+\textbf{Inhibition by Metabolic Poisons} & Blocked immediately by ATP inhibitors (e.g. cyanide, DNP). & Blocked secondarily after the driving $Na^+$ gradient runs down. \\
+\textbf{Types of Carriers} & Ion pumps ($Na^+/K^+$, $Ca^{2+}$, $H^+/K^+$). & Symporters (cotransport) and Antiporters (countertransport). \\
+\textbf{Classic Example} & \textbf{$Na^+/K^+$ ATPase Pump} (pumps $3\ Na^+$ out, $2\ K^+$ in). & \textbf{SGLT-1} ($Na^+$-glucose symporter in intestinal mucosa). \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{3. Detailed Examples:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Primary: $Na^+/K^+$ ATPase:} Present in all cell membranes. Cleaves 1 ATP to pump $3\ Na^+$ ions out of the cell and $2\ K^+$ ions into the cell. Creates the resting membrane potential, maintains cell volume (prevents osmotic lysis), and builds the transmembrane $Na^+$ gradient.
+    \item \textbf{Secondary: $Na^+$-Glucose Cotransport (SGLT-1):} Located on the luminal brush-border of intestinal enterocytes and renal proximal tubules. $Na^+$ moves down its steep electrochemical gradient into the cell, dragging glucose molecules against their concentration gradient into the cell simultaneously.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [3+3 = 6 Marks]}
+Write down the stages of erythropoiesis and the factors regulating it.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition \& Site:}
+\textbf{Erythropoiesis} is the biological process of differentiation and maturation of red blood cells (erythrocytes) from pluripotent stem cells. In adults, it takes place exclusively in the red bone marrow of flat and irregular bones (sternum, vertebrae, ribs, pelvic bones, skull).
+
+\textbf{2. Stages of Erythropoiesis (Duration: $\sim$7 days):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Pluripotent Hematopoietic Stem Cell (PHSC)} $\rightarrow$ CFU-GEMM $\rightarrow$ BFU-E $\rightarrow$ CFU-E.
+    \item \textbf{Proerythroblast (Pronormoblast):} First recognizable precursor; large cell (15--20 $\mu$m); large round nucleus with fine chromatin and 2--3 nucleoli; basophilic cytoplasm due to high RNA content; no hemoglobin.
+    \item \textbf{Early Normoblast (Basophilic Normoblast):} Cell size decreases (12--16 $\mu$m); nucleoli disappear; coarse, condensed chromatin clumps; deeply basophilic cytoplasm.
+    \item \textbf{Intermediate Normoblast (Polychromatic Normoblast):} \textbf{Hemoglobin synthesis begins}; cytoplasm stains dual/polychromatic (basophilic RNA + acidophilic pink hemoglobin); nucleus becomes smaller with condensed chromatin.
+    \item \textbf{Late Normoblast (Orthochromatic Normoblast):} Cytoplasm is predominantly acidophilic (pink) like a mature RBC; \textbf{nucleus becomes pyknotic (condensed) and is extruded} from the cell at this stage.
+    \item \textbf{Reticulocyte:} Non-nucleated juvenile RBC containing remnants of ribosomal RNA network (stains with supravital stains: New Methylene Blue / Brilliant Cresyl Blue). Enters peripheral blood via diapedesis; matures into erythrocyte in 24--48 hours. Normal count: **0.5--1.5\%**.
+    \item \textbf{Mature Erythrocyte:} Biconcave, anucleated disc (diameter 7.2 $\mu$m, thickness 2.2 $\mu$m at periphery, 1 $\mu$m at center); packed with hemoglobin; normal lifespan = **120 days**.
+\end{enumerate}
+
+\textbf{3. Factors Regulating Erythropoiesis:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Erythropoietin (EPO) --- Principal Regulator:}
+    \begin{itemize}
+        \item Glycoprotein hormone synthesized primarily by **renal peritubular interstitial cells (85--90\%)** and liver hepatocytes (10--15\%).
+        \item Stimulus for secretion: **Tissue Hypoxia** (anemia, high altitude, hypoxemia, cardiovascular disease) via Hypoxia-Inducible Factor-1$\alpha$ (HIF-1$\alpha$).
+        \item Action: Binds EPO receptors on CFU-E, prevents apoptosis, stimulates proliferation and accelerates maturation into proerythroblasts.
+    \end{itemize}
+    \item \textbf{Maturation Factors (DNA Synthesis):}
+    \begin{itemize}
+        \item \textbf{Vitamin B12 (Cyanocobalamin)} and \textbf{Folic Acid:} Required for thymidine triphosphate synthesis and DNA replication. Deficiency leads to megaloblastic maturation arrest (Megaloblastic / Pernicious Anemia).
+    \end{itemize}
+    \item \textbf{Hemoglobin Synthesis Factors:}
+    \begin{itemize}
+        \item **Iron ($Fe^{2+}$):** Essential for heme synthesis. Deficiency causes Microcytic Hypochromic Anemia.
+        \item Proteins, amino acids, Copper (ceruloplasmin), and Vitamin C (maintains iron absorption).
+    \end{itemize}
+    \item \textbf{Hormonal Influences:} Androgens/Testosterone (stimulate EPO; higher RBC count in males), Thyroid hormones (stimulate metabolism and EPO), Corticosteroids, Growth Hormone.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [3+2 = 5 Marks]}
+Explain the basis of classification of human beings into the Rh system. Add a note on its importance in blood transfusion and erythroblastosis fetalis.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Basis of Classification into Rh System:}
+\begin{itemize}[leftmargin=*]
+    \item Discovered by Landsteiner and Wiener (1940) using Rhesus monkey RBCs.
+    \item The Rh system is based on the presence or absence of specific transmembrane protein antigens (agglutinogens) on the RBC surface membrane.
+    \item Major antigens: $C, D, E, c, d, e$ (Fisher-Race system). The \textbf{D antigen} is the most immunogenic and clinically significant:
+    \begin{itemize}
+        \item \textbf{Rh-Positive ($\text{Rh}^+$):} Individuals who possess the **D antigen** on their RBCs ($\sim$85\% of Caucasians, $>95\%$ of Asians/Nepalese).
+        \item \textbf{Rh-Negative ($\text{Rh}^-$):} Individuals who lack the **D antigen** on their RBCs (genotype $dd$).
+    \end{itemize}
+    \item \textit{Crucial Difference from ABO System:} Unlike the ABO system, anti-D agglutinins are \textbf{not naturally occurring}. An Rh-negative person does not possess anti-D antibodies unless exposed to Rh-positive blood via incompatible transfusion or pregnancy. Anti-D antibodies are **immune IgG antibodies** that readily cross the placenta.
+\end{itemize}
+
+\textbf{2. Importance in Blood Transfusion:}
+\begin{itemize}[leftmargin=*]
+    \item If an $\text{Rh}^-$ recipient is transfused with $\text{Rh}^+$ blood for the first time, no immediate reaction occurs, but the recipient becomes sensitized and produces anti-D antibodies over 2--4 months.
+    \item A subsequent transfusion of $\text{Rh}^+$ blood triggers a severe, life-threatening **delayed hemolytic transfusion reaction** with intravascular hemolysis, hemoglobinuria, jaundice, and acute renal tubular necrosis.
+\end{itemize}
+
+\textbf{3. Erythroblastosis Fetalis (Hemolytic Disease of the Newborn - HDN):}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Pathogenesis:} Occurs when an **$\text{Rh}^-$ mother** carries an **$\text{Rh}^+$ fetus** (father is $\text{Rh}^+$).
+    \begin{enumerate}
+        \item During first delivery, fetomaternal hemorrhage allows fetal $\text{Rh}^+$ RBCs to enter maternal circulation. The mother's immune system is sensitized to produce **anti-D antibodies (IgG)**.
+        \item In a subsequent pregnancy with an $\text{Rh}^+$ fetus, maternal anti-D IgG crosses the placental barrier into fetal circulation.
+        \item Anti-D antibodies bind fetal $\text{Rh}^+$ RBCs, causing complement-mediated extravascular hemolysis in fetal spleen and liver.
+    \end{enumerate}
+    \item \textit{Clinical Consequences:} Severe anemia, compensatory release of immature nucleated red cells (**erythroblasts** into fetal blood), hepatosplenomegaly, severe unconjugated hyperbilirubinemia crossing blood-brain barrier causing **Kernicterus** (basal ganglia damage), and **Hydrops Fetalis** (heart failure and generalized edema; fatal *in utero*).
+    \item \textit{Prevention:} Administer **anti-D immunoglobulin (RhoGAM)** to the $\text{Rh}^-$ mother at 28 weeks gestation and within **72 hours post-delivery** of an $\text{Rh}^+$ baby. RhoGAM destroys fetal $\text{Rh}^+$ RBCs before the maternal immune system can recognize them.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Functions of plasma proteins \\
+(b) Negative feedback mechanism \\
+(c) Role of platelets in hemostasis
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Functions of Plasma Proteins:}
+\begin{itemize}[leftmargin=*]
+    \item Total concentration: 6.0--8.0 g/dL (Albumin: 3.5--5.0 g/dL, Globulins: 2.0--3.5 g/dL, Fibrinogen: 0.2--0.4 g/dL).
+    \item \textbf{1. Colloid Osmotic (Oncotic) Pressure:} Exerts $\sim$25 mmHg of effective osmotic pressure across capillary endothelium. **Albumin provides 70--80\% of oncotic pressure** due to its high concentration and low molecular weight (69 kDa). Prevents fluid extravasation into interstitium (hypoalbuminemia causes edema).
+    \item \textbf{2. Transport Function:} Transports poorly water-soluble molecules: Albumin transports free fatty acids, unconjugated bilirubin, steroid hormones, calcium, and drugs; Globulins transport iron (Transferrin), copper (Ceruloplasmin), and thyroid hormones (TBG).
+    \item \textbf{3. Immunity (Defense):} Gamma-globulins act as circulating **antibodies / immunoglobulins** (IgG, IgM, IgA, IgE, IgD) produced by plasma cells to neutralize pathogens.
+    \item \textbf{4. Blood Coagulation:} Fibrinogen (Factor I) and prothrombin are essential for forming fibrin clots.
+    \item \textbf{5. Acid-Base Buffering:} Provide $\sim$15\% of the buffering capacity of blood via histidine residues.
+\end{itemize}
+
+\textbf{(b) Negative Feedback Mechanism:}
+\begin{itemize}[leftmargin=*]
+    \item The primary homeostatic regulatory control mechanism in physiology.
+    \item \textit{Definition:} A closed-loop control system where a disturbance/change in a regulated physiological variable initiates a series of compensatory responses that **oppose and reverse the initial disturbance back to its normal set-point**.
+    \item \textit{Components:} Controlled Variable $\rightarrow$ Sensor/Receptor (detects deviation) $\rightarrow$ Afferent Pathway $\rightarrow$ Integrating Center (compares against set-point) $\rightarrow$ Efferent Pathway $\rightarrow$ Effector (counteracts deviation).
+    \item \textit{Examples:}
+    \begin{enumerate}
+        \item **Arterial Blood Pressure (Baroreceptor Reflex):** Elevated BP stretches carotid sinus $\rightarrow$ increased firing to medulla $\rightarrow$ parasympathetic activation / sympathetic inhibition $\rightarrow$ heart rate and peripheral resistance decrease $\rightarrow$ BP returns to normal.
+        \item **Blood Glucose Regulation:** Hyperglycemia stimulates pancreatic $\beta$-cells to secrete insulin $\rightarrow$ increases cellular glucose uptake $\rightarrow$ blood glucose lowers to set-point.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(c) Role of Platelets in Hemostasis:}
+\begin{itemize}[leftmargin=*]
+    \item Normal count: 150,000--450,000/$\mu$L; lifespan = 7--10 days. Primary cells of **Primary Hemostasis**:
+    \item \textbf{1. Platelet Adhesion:} Following endothelial injury, exposed subendothelial collagen binds **von Willebrand Factor (vWF)**, which tethers to platelet membrane receptor **Glycoprotein Ib (GP Ib)**.
+    \item \textbf{2. Platelet Activation \& Secretion:} Platelets change shape (extend pseudopodia) and degranulate:
+    \begin{itemize}
+        \item Dense granules release **ADP** (potent platelet aggregator) and serotonin (vasoconstrictor).
+        \item Membrane phospholipids synthesize and release **Thromboxane $A_2$ ($TXA_2$)** via COX-1 (potent vasoconstrictor and aggregator).
+    \end{itemize}
+    \item \textbf{3. Platelet Aggregation (Primary Hemostatic Plug):} ADP and $TXA_2$ induce conformational activation of **Glycoprotein IIb/IIIa (GP IIb/IIIa)** receptors, crosslinking platelets via bivalent **fibrinogen** bridges into a primary plug.
+    \item \textbf{4. Procoagulant Surface:} Platelet membrane flips phosphatidylserine to outer leaflet, providing a phospholipid catalytic surface (Platelet Factor 3) for the assembly of tenase and prothrombinase complexes.
+    \item \textbf{5. Clot Retraction:} Platelet contractile proteins (**thrombosthenin / actin-myosin**) contract, shrinking the fibrin meshwork to approximate wound edges.
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [6 Marks]}
+Describe the ionic basis of action potential in a nerve fiber with its well-labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition:}
+An **Action Potential** is a rapid, transient, all-or-none reversal of the electrical membrane potential across an excitable cell membrane, propagating along the axon without decrement.
+
+\textbf{2. Resting Membrane Potential (RMP):}
+\begin{itemize}[leftmargin=*]
+    \item In large nerve fibers: **-70 mV** (inside negative relative to outside).
+    \item Established by high resting membrane permeability to $K^+$ through **$K^+$ leak channels** (close to $K^+$ equilibrium potential of -90 mV) and maintained by the electrogenic $Na^+/K^+$ pump.
+\end{itemize}
+
+\textbf{3. Phases and Ionic Mechanisms of Action Potential:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Threshold Stimulus and Firing Level:}
+    \begin{itemize}
+        \item A depolarizing stimulus reduces membrane potential from -70 mV toward **threshold ($\sim$-55 mV)**.
+        \item At -55 mV, voltage-gated $Na^+$ channel activation (m) gates open rapidly.
+    \end{itemize}
+    \item \textbf{Depolarization Phase (Upstroke):}
+    \begin{itemize}
+        \item Opening of voltage-gated $Na^+$ channels produces a massive, explosive **influx of $Na^+$ ions** into the axoplasm down their electrochemical gradient (Hodgkin cycle: depolarization $\rightarrow$ $Na^+$ influx $\rightarrow$ further depolarization).
+        \item Membrane potential rapidly moves toward the $Na^+$ equilibrium potential (+60 mV), overshooting 0 mV to reach **+35 mV**.
+    \end{itemize}
+    \item \textbf{Repolarization Phase (Downstroke):}
+    \begin{itemize}
+        \item At peak (+35 mV), two events occur simultaneously:
+        \begin{enumerate}
+            \item **Inactivation of $Na^+$ Channels:** Time-dependent inactivation (h) gates snap shut, abruptly halting $Na^+$ influx.
+            \item **Activation of Voltage-Gated $K^+$ Channels:** Slow-opening $K^+$ channels open fully $\rightarrow$ massive **efflux of $K^+$ ions** out of the axoplasm, restoring internal negativity back toward -70 mV.
+        \end{enumerate}
+    \end{itemize}
+    \item \textbf{After-Hyperpolarization (Positive After-Potential):}
+    \begin{itemize}
+        \item Voltage-gated $K^+$ channels are slow to close, remaining open for a few milliseconds after repolarization reaches RMP. Excessive $K^+$ efflux temporarily drives membrane potential down to $\sim$-80 mV (closer to $E_K$).
+        \item Closed state is restored by the $Na^+/K^+$ pump and $K^+$ leak channels.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{4. Refractory Periods:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Absolute Refractory Period (ARP):} From threshold firing level until 1/3 of repolarization. $Na^+$ channels are already open or fully inactivated. **No stimulus, regardless of strength, can elicit a second action potential**. Limits maximum spike frequency.
+    \item \textbf{Relative Refractory Period (RRP):} From end of ARP until return to RMP. Some $Na^+$ channels have reset to resting closed state, but $K^+$ conductance remains elevated. **A suprathreshold (stronger than normal) stimulus can trigger an action potential** with reduced amplitude.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [6 Marks]}
+Define synapse. Write the steps of synaptic transmission with diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition:}
+A \textbf{synapse} is a specialized anatomical junction of functional communication between two neurons, or between a neuron and an effector cell (muscle fiber or glandular cell), mediating directional transmission of electrical signals.
+
+\textbf{2. Classification:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Chemical Synapse (Dominant):} Utilizes neurotransmitter molecules diffusing across a synaptic cleft (20--40 nm). Demonstrates synaptic delay ($\sim$0.5 ms), one-way conduction, and susceptibility to fatigue.
+    \item \textbf{Electrical Synapse:} Cytoplasmic continuity via **gap junctions** (connexons); permits direct ionic current flow with zero synaptic delay; bidirectional (e.g. cardiac muscle, retinal neurons).
+\end{itemize}
+
+\textbf{3. Sequential Steps of Chemical Synaptic Transmission:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Arrival of Action Potential:} Depolarizing action potential propagates down axon to reach the presynaptic terminal (bouton).
+    \item \textbf{Opening of Voltage-Gated Calcium Channels:} Depolarization opens voltage-gated $Ca^{2+}$ channels located in presynaptic terminal membrane $\rightarrow$ rapid **influx of $Ca^{2+}$ ions** into the axoplasm.
+    \item \textbf{Vesicle Exocytosis:} Intracellular $Ca^{2+}$ binds **synaptotagmin**, activating SNARE complexes (synaptobrevin, syntaxin, SNAP-25) to fuse synaptic vesicles with presynaptic membrane, releasing neurotransmitter (e.g. Acetylcholine, Glutamate, GABA) into the synaptic cleft by exocytosis.
+    \item \textbf{Diffusion \& Receptor Binding:} Neurotransmitter diffuses across the 20--40 nm cleft and binds stereospecifically to postsynaptic receptors (ionotropic ligand-gated ion channels or metabotropic G-protein coupled receptors).
+    \item \textbf{Postsynaptic Potential Generation:}
+    \begin{itemize}
+        \item \textbf{Excitatory Postsynaptic Potential (EPSP):} Binding opens ligand-gated cation channels ($Na^+$ or $Ca^{2+}$ influx) $\rightarrow$ local, graded, non-propagated depolarization. If threshold (-55 mV) is reached at axon hillock via spatial/temporal summation, an action potential fires.
+        \item \textbf{Inhibitory Postsynaptic Potential (IPSP):} Binding opens ligand-gated $Cl^-$ channels ($Cl^-$ influx) or $K^+$ channels ($K^+$ efflux) $\rightarrow$ local hyperpolarization, moving membrane potential farther from threshold.
+    \end{itemize}
+    \item \textbf{Termination of Synaptic Action:} Rapid removal of neurotransmitter to prevent continuous excitation:
+    \begin{itemize}
+        \item Enzymatic degradation (e.g. Acetylcholinesterase cleaves ACh into acetate and choline).
+        \item Presynaptic reuptake via active transporters (e.g. Norepinephrine, Serotonin).
+        \item Glial uptake and simple diffusion away from cleft.
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Describe the mechanical events of the cardiac cycle with the help of a diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{The Cardiac Cycle (Wiggers Sequence):}
+The sequence of alternating electrical, pressure, and mechanical volume events occurring in the heart from the beginning of one heartbeat to the beginning of the next. At resting heart rate of 75 bpm, one cycle lasts **0.8 seconds**.
+
+\textbf{1. Ventricular Systole (Total Duration: 0.3 s):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Isovolumetric Contraction (0.05 s):}
+    \begin{itemize}
+        \item Ventricular depolarization (QRS complex) triggers ventricular contraction. Intraventricular pressure rises steeply above atrial pressure $\rightarrow$ **Mitral and Tricuspid (AV) valves snap shut**.
+        \item Semilunar (Aortic and Pulmonary) valves are not yet open.
+        \item Ventricles contract as closed cavities; **volume remains constant while pressure spikes**.
+        \item Produces the **First Heart Sound ($S_1$)**.
+    \end{itemize}
+    \item \textbf{Rapid Ejection (0.10 s):}
+    \begin{itemize}
+        \item Left ventricular pressure exceeds aortic diastolic pressure (80 mmHg) $\rightarrow$ Aortic and Pulmonary valves open.
+        \item Ventricular muscle fibers shorten rapidly; about 2/3 of stroke volume ($\sim$50 mL) is forcefully ejected into aorta.
+    \end{itemize}
+    \item \textbf{Reduced Ejection (0.15 s):}
+    \begin{itemize}
+        \item Ventricular repolarization begins (T-wave). Rate of ejection slows down; remaining 1/3 of stroke volume is ejected. Intraventricular pressure begins falling.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{2. Ventricular Diastole (Total Duration: 0.5 s):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Isovolumetric Relaxation (0.08 s):}
+    \begin{itemize}
+        \item Intraventricular pressure falls below arterial pressure in aorta/pulmonary artery $\rightarrow$ retrograde blood flow snaps **Aortic and Pulmonary (Semilunar) valves shut**.
+        \item Produces the **Second Heart Sound ($S_2$)**.
+        \item All valves are closed; ventricular muscle relaxes; intraventricular pressure plummets to near 0 mmHg without volume change.
+    \end{itemize}
+    \item \textbf{Rapid Inflow / Rapid Filling (0.11 s):}
+    \begin{itemize}
+        \item Ventricular pressure falls below atrial pressure $\rightarrow$ AV valves open.
+        \item Accumulated blood in atria rushes rapidly into ventricles, accounting for **70\% of total ventricular filling**. May produce physiological 3rd heart sound ($S_3$) in youth.
+    \end{itemize}
+    \item \textbf{Diastasis / Reduced Filling (0.22 s):}
+    \begin{itemize}
+        \item Slow, passive venous blood inflow directly from venae cavae through atria into ventricles (accounts for $\sim$10\% of filling).
+    \end{itemize}
+    \item \textbf{Atrial Systole (0.10 s):}
+    \begin{itemize}
+        \item Atria contract (following P wave), boosting final 20\% of ventricular filling ("atrial kick"). Preload reaches **End-Diastolic Volume (EDV $\approx$ 120 mL)**.
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Functional difference between sympathetic and parasympathetic nervous system in heart and urinary bladder \\
+(b) Pulmonary surfactant and Infant Respiratory Distress Syndrome \\
+(c) Factors affecting Glomerular Filtration Rate (GFR)
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Sympathetic vs. Parasympathetic Nervous System:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{In the Heart:}
+    \begin{itemize}
+        \item \textit{Sympathetic (Cardiac nerves, T1--T4):} Releases Noradrenaline acting on **$\beta_1$-adrenergic receptors**. Produces positive chronotropy (increases SA node heart rate), positive inotropy (increases ventricular contractility), and positive dromotropy (increases AV nodal conduction velocity).
+        \item \textit{Parasympathetic (Vagus nerve, CN X):} Releases Acetylcholine acting on **$M_2$ muscarinic receptors**. Produces negative chronotropy (decreases SA node rate by hyperpolarizing via $K^+$ channel opening) and negative dromotropy (slows AV conduction). Minimal effect on ventricular contractility.
+    \end{itemize}
+    \item \textbf{In the Urinary Bladder:}
+    \begin{itemize}
+        \item \textit{Sympathetic (Hypogastric nerve, L1--L2):} Promotes **Urine Storage**. Relaxes detrusor muscle ($\beta_2/\beta_3$) and contracts internal urethral sphincter ($\alpha_1$).
+        \item \textit{Parasympathetic (Pelvic splanchnic nerves, S2--S4):} Promotes **Micturition (Urination)**. Contracts detrusor muscle ($M_3$) and relaxes internal urethral sphincter ($M_3$).
+    \end{itemize}
+\end{itemize}
+
+\textbf{(b) Pulmonary Surfactant and IRDS:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Source \& Composition:} Synthesized by **Type II alveolar epithelial cells**. Complex of phospholipids (predominantly **Dipalmitoylphosphatidylcholine - DPPC**, 80\%), surfactant apoproteins (SP-A, SP-B, SP-C, SP-D), and calcium ions.
+    \item \textit{Mechanism \& Law of Laplace:} Alveoli behave like fluid-lined bubbles governed by Laplace's law: $P = 2T / r$. Surfactant molecules intersperse between water molecules, markedly lowering surface tension ($T$). By lowering surface tension proportionally more in smaller alveoli than larger ones, it **prevents smaller alveoli from collapsing into larger ones (prevents atelectasis)**, increases lung compliance, and reduces work of breathing.
+    \item \textit{Infant Respiratory Distress Syndrome (IRDS):} Seen in premature infants born before 32--34 weeks. Surfactant deficiency leads to massive alveolar collapse, severe hypoxemia, tachypnea, grunting, intercostal retractions, and exudation of protein-rich fluid forming **hyaline membranes**. Prevented by maternal glucocorticoids (dexamethasone) before preterm delivery; treated with intratracheal exogenous surfactant.
+\end{itemize}
+
+\textbf{(c) Factors Affecting Glomerular Filtration Rate (GFR):}
+\begin{itemize}[leftmargin=*]
+    \item Normal GFR: **125 mL/min** (180 L/day). Governed by Starling equation:
+    $$\text{GFR} = K_f \times [(P_{GC} - P_{BS}) - (\pi_{GC} - \pi_{BS})]$$
+    \item \textbf{1. Glomerular Capillary Hydrostatic Pressure ($P_{GC} \approx 60\ \text{mmHg}$):} Primary determinant favoring filtration:
+    \begin{itemize}
+        \item Afferent arteriolar dilation (e.g. prostaglandins) $\rightarrow P_{GC} \uparrow \rightarrow \text{GFR} \uparrow$.
+        \item Efferent arteriolar constriction (e.g. low-dose Angiotensin II) $\rightarrow P_{GC} \uparrow \rightarrow \text{GFR} \uparrow$.
+    \end{itemize}
+    \item \textbf{2. Bowman's Space Hydrostatic Pressure ($P_{BS} \approx 18\ \text{mmHg}$):} Opposes filtration. Elevated by urinary tract obstruction (renal calculi, BPH) $\rightarrow \text{GFR} \downarrow$.
+    \item \textbf{3. Glomerular Capillary Oncotic Pressure ($\pi_{GC} \approx 32\ \text{mmHg}$):} Opposes filtration. Determined by plasma protein concentration and filtration fraction.
+    \item \textbf{4. Glomerular Capillary Filtration Coefficient ($K_f$):} Product of capillary surface area and hydraulic conductivity. Reduced in diabetic glomerulosclerosis and chronic glomerulonephritis $\rightarrow \text{GFR} \downarrow$.
+    \item \textbf{5. Renal Blood Flow (Autoregulation):} Myogenic mechanism and tubuloglomerular feedback (macula densa) keep RBF and GFR constant between mean arterial pressures of 80--180 mmHg.
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\section{Frequency-Based Question Classification (2015--2022)}
+
+\subsection{Very Frequently Repeated Topics ($\ge 80\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Action Potential in Excitable Tissues (100\%):} Ionic basis of resting membrane potential (-70 mV), depolarization ($Na^+$ influx), repolarization ($K^+$ efflux), after-hyperpolarization, and absolute/relative refractory periods. Tested in all 10 exam sessions.
+    \item \textbf{Erythropoiesis (90\%):} Stages of erythrocyte differentiation (proerythroblast to reticulocyte), regulation by erythropoietin, nutritional factors (B12, folic acid, iron).
+    \item \textbf{Blood Grouping \& Rh Incompatibility (90\%):} ABO system, Landsteiner's law, D antigen immunogenicity, erythroblastosis fetalis pathogenesis, prevention with RhoGAM.
+    \item \textbf{Hemostasis \& Platelets (80\%):} Three phases of hemostasis, platelet plug adhesion (vWF), activation ($TXA_2$/ADP), aggregation (GP IIb/IIIa), intrinsic/extrinsic/common coagulation cascades.
+    \item \textbf{Cardiac Cycle \& Mechanical Events (80\%):} Wiggers diagram sequence (isovolumetric contraction, rapid ejection, isovolumetric relaxation, rapid filling), heart sounds ($S_1$, $S_2$), end-diastolic volume.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Transport Across Cell Membranes (70\%):} Primary vs secondary active transport, $Na^+/K^+$ ATPase pump mechanism, SGLT-1 cotransporter, facilitated diffusion.
+    \item \textbf{Synaptic Transmission \& NMJ (70\%):} Synapse definition, $Ca^{2+}$-dependent vesicle exocytosis, EPSP vs IPSP, end-plate potential, Myasthenia Gravis pathogenesis and Tensilon test.
+    \item \textbf{Homeostasis \& Feedback Mechanisms (70\%):} Negative vs positive feedback loops, baroreceptor blood pressure control, temperature regulation.
+    \item \textbf{Regulation of Blood Pressure (60\%):} Short-term baroreceptor reflex (carotid sinus, aortic arch), long-term Renin-Angiotensin-Aldosterone System (RAAS).
+    \item \textbf{Functions of Plasma Proteins (60\%):} Albumin oncotic pressure (25 mmHg), globulin transport/immunity, fibrinogen clotting, A:G ratio.
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Autonomic Nervous System Differences (50\%):} Sympathetic vs parasympathetic effects on heart, bladder, pupils, and bronchi.
+    \item \textbf{Mechanics of Respiration \& Surfactant (50\%):} Diaphragm mechanics, compliance, pulmonary surfactant DPPC, Laplace's law, IRDS.
+    \item \textbf{Lung Volumes and Capacities (50\%):} Spirometry definitions: TV (500 mL), IRV, ERV, RV (1200 mL), Vital Capacity (4600 mL), TLC.
+    \item \textbf{Glomerular Filtration Rate (40\%):} Starling forces ($P_{GC}, P_{BS}, \pi_{GC}$), autoregulation mechanisms, tubuloglomerular feedback.
+    \item \textbf{Leukocytes \& Immunity (40\%):} Neutrophil phagocytosis, respiratory burst, humoral vs cell-mediated immunity.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Cardiac Output Determinants (30\%):} Stroke volume, Frank-Starling law of the heart, preload, afterload, contractility.
+    \item \textbf{Electrocardiogram (ECG) (30\%):} P wave, PR interval, QRS complex, ST segment, T wave intervals and clinical correlates.
+    \item \textbf{Countercurrent Mechanism (30\%):} Loop of Henle multiplier, vasa recta exchanger, medullary hyperosmolarity.
+    \item \textbf{Endocrine Regulation (20\%):} Thyroid hormone metabolic effects, insulin vs glucagon.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Cerebrospinal fluid formation, circulation, and blood-brain barrier.
+    \item Regulation of salivary secretion in the oral cavity.
+    \item Body fluid compartments (ECF vs ICF composition and volume estimation).
+\end{itemize}
+
+\newpage
+\appendix
+\section{Human Physiology Quick Revision Cheatsheet}
+
+\subsection{General \& Nerve-Muscle Physiology Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Action Potential Points:} RMP = -70 mV; Threshold = -55 mV; Upstroke = voltage-gated $Na^+$ channel opening ($Na^+$ influx); Peak = +35 mV; Repolarization = $Na^+$ channel inactivation + voltage-gated $K^+$ channel opening ($K^+$ efflux); ARP = absolutely no 2nd AP; RRP = suprathreshold stimulus can fire.
+    \item \textbf{Active Transport:} Primary directly hydrolyzes ATP ($Na^+/K^+$ ATPase: $3\ Na^+$ out, $2\ K^+$ in); Secondary utilizes $Na^+$ gradient (Symport: SGLT-1 $Na^+$-glucose; Antiport: $Na^+/H^+$, $Na^+/Ca^{2+}$).
+    \item \textbf{Neuromuscular Junction:} Motor nerve terminal $\rightarrow Ca^{2+}$ influx $\rightarrow$ ACh exocytosis $\rightarrow N_M$ receptor binding $\rightarrow$ End Plate Potential (EPP). Myasthenia Gravis: autoantibodies against $N_M$ receptors.
+\end{itemize}
+
+\subsection{Hematology Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Erythropoiesis Sequence:} Proerythroblast $\rightarrow$ Early normoblast $\rightarrow$ Intermediate normoblast (Hb appears) $\rightarrow$ Late normoblast (nucleus extruded) $\rightarrow$ Reticulocyte (0.5--1.5\%, supravital stain) $\rightarrow$ Mature RBC (120 days). Regulated by **Erythropoietin (EPO)** from kidneys in hypoxia.
+    \item \textbf{Hemostasis Phases:} 1. Vascular spasm; 2. Platelet plug (vWF adhesion, ADP/$TXA_2$ activation, GP IIb/IIIa aggregation); 3. Coagulation (Factor Xa + Va + $Ca^{2+} +$ PL $\rightarrow$ Thrombin $\rightarrow$ Fibrin $\rightarrow$ crosslinked by Factor XIIIa).
+    \item \textbf{Rh Incompatibility:} $\text{Rh}^-$ mother $+$ $\text{Rh}^+$ fetus $\rightarrow$ maternal anti-D IgG crosses placenta in subsequent pregnancy $\rightarrow$ erythroblastosis fetalis. Prevent with **RhoGAM (anti-D Ig)** within 72 hrs post-partum.
+\end{itemize}
+
+\subsection{Cardiovascular \& Renal Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Cardiac Cycle (0.8 s):} Systole (0.3 s): Isovolumetric contraction ($S_1$ closure of AV valves), Rapid ejection, Reduced ejection; Diastole (0.5 s): Isovolumetric relaxation ($S_2$ closure of semilunar valves), Rapid inflow (70\% filling), Diastasis, Atrial systole (20\% filling).
+    \item \textbf{Blood Pressure Control:} Short-term = Carotid sinus (CN IX) and aortic arch (CN X) baroreceptors; Long-term = Renin-Angiotensin-Aldosterone System (RAAS).
+    \item \textbf{ECG Waves:} P = atrial depolarization; PR = AV nodal delay (0.12--0.20 s); QRS = ventricular depolarization ($<0.10$ s); ST = isoelectric plateau; T = ventricular repolarization.
+    \item \textbf{Pulmonary Surfactant:} Type II pneumocytes; DPPC; reduces surface tension; prevents atelectasis (Laplace's Law $P=2T/r$); deficiency = IRDS.
+    \item \textbf{GFR (125 mL/min):} Favored by $P_{GC}$ (60 mmHg); opposed by $P_{BS}$ (18 mmHg) and $\pi_{GC}$ (32 mmHg).
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Human Physiology Solutions ---}
+\end{center}
+
+\end{document}
