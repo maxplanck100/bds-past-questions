@@ -1,0 +1,504 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Biochemistry Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries\color{green!50!black}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=green!5!white,
+  colframe=green!60!black,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{BIOCHEMISTRY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Past Examination Questions and Solutions (2015--2022)}
+
+\subsection{Examination: May 10, 2022 (End Semester Exam)}
+\textbf{Subject:} Biochemistry \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [1+3+2 = 6 Marks]}
+List the components of the electron transport chain (ETC). Explain the chemiosmotic hypothesis of oxidative phosphorylation. Add a note on uncouplers.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Components of the Electron Transport Chain (ETC):}
+Located in the inner mitochondrial membrane; organized into four multi-protein complexes and two mobile electron carriers:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Complex I (NADH-Q Oxidoreductase / NADH Dehydrogenase):} Flavoprotein containing FMN and Fe-S clusters; accepts electrons from NADH, transfers them to Coenzyme Q, and pumps **$4\ \text{H}^+$** into intermembrane space.
+    \item \textbf{Complex II (Succinate-Q Reductase / Succinate Dehydrogenase):} Contains FAD and Fe-S centers; oxidizes succinate to fumarate in TCA cycle and transfers electrons to Coenzyme Q; **does not pump protons**.
+    \item \textbf{Coenzyme Q (Ubiquinone):} Lipid-soluble mobile carrier residing in the lipid bilayer; collects electrons from Complexes I and II and shuttles them to Complex III.
+    \item \textbf{Complex III (Q-Cytochrome c Oxidoreductase / Cytochrome $bc_1$ Complex):} Contains Cytochromes $b_L, b_H$, Fe-S Rieske center, and Cytochrome $c_1$; transfers electrons to Cytochrome $c$ and pumps **$4\ \text{H}^+$** per electron pair.
+    \item \textbf{Cytochrome c:} Water-soluble, peripheral mobile hemoprotein in the intermembrane space; shuttles single electrons from Complex III to Complex IV.
+    \item \textbf{Complex IV (Cytochrome c Oxidase):} Contains Cytochromes $a, a_3$ and copper centers ($Cu_A, Cu_B$); transfers 4 electrons to molecular oxygen ($\text{O}_2$) to form $2\ \text{H}_2\text{O}$; pumps **$2\ \text{H}^+$** into intermembrane space.
+\end{itemize}
+
+\textbf{2. Chemiosmotic Hypothesis (Peter Mitchell, 1961):}
+\begin{enumerate}[leftmargin=*]
+    \item As high-energy electrons flow down the respiratory chain from NADH/FADH$_2$ to $\text{O}_2$, the free energy released drives active extrusion of protons ($\text{H}^+$) from the mitochondrial matrix across the inner mitochondrial membrane into the intermembrane space via Complexes I, III, and IV.
+    \item The inner mitochondrial membrane is strictly impermeable to protons. Thus, proton pumping establishes a steep **electrochemical proton gradient ($\Delta \mu_{\text{H}^+}$)** across the membrane, comprising both an electrical membrane potential ($\Delta \Psi$, inside negative) and a pH gradient ($\Delta \text{pH}$, inside alkaline). This gradient is called the **Proton-Motive Force (PMF)**.
+    \item Protons flow thermodynamically downhill back into the mitochondrial matrix exclusively through the proton-conducting channel ($F_0$ subunit) of **ATP Synthase (Complex V)**.
+    \item The kinetic energy of proton translocation rotates the $c$-ring of $F_0$, inducing conformational transitions in the catalytic $\beta$-subunits of the $F_1$ headpiece ("binding change mechanism" of Paul Boyer), driving the phosphorylation of ADP by inorganic phosphate: $\text{ADP} + \text{P}_i \rightarrow \text{ATP}$.
+\end{enumerate}
+
+\textbf{3. Uncouplers of Oxidative Phosphorylation:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Mechanism:} Lipophilic weak acids that readily cross the inner mitochondrial membrane in both protonated and deprotonated states. They short-circuit the membrane by translocating protons back into the matrix, **dissipating the electrochemical proton gradient as heat without producing ATP**. Electron transport accelerates to maximal rate while ATP synthesis is abolished.
+    \item \textit{Examples:}
+    \begin{enumerate}
+        \item \textbf{2,4-Dinitrophenol (2,4-DNP):} Classic synthetic chemical uncoupler; causes hyperthermia and metabolic collapse.
+        \item \textbf{Thermogenin (UCP-1):} Physiological uncoupling protein in brown adipose tissue; generates non-shivering thermogenesis in neonates.
+        \item High-dose Salicylates (Aspirin).
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [1+2+2 = 5 Marks]}
+What are ketone bodies? Name them. Describe their synthesis and utilization. In which conditions is their synthesis increased?
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition and Names:}
+\textbf{Ketone bodies} are water-soluble organic compounds synthesized by liver mitochondria from Acetyl-CoA during periods of high fatty acid oxidation. They serve as an essential alternative circulating fuel for extrahepatic tissues. The three ketone bodies are:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Acetoacetate} (the primary metabolic ketone body).
+    \item \textbf{$\beta$-Hydroxybutyrate} (chemically a hydroxy acid; quantitatively the predominant form in blood).
+    \item \textbf{Acetone} (volatile, non-metabolizable side-product excreted via breath; causes characteristic fruity odor in ketoacidosis).
+\end{enumerate}
+
+\textbf{2. Ketogenesis (Synthesis in Liver Mitochondria):}
+\begin{enumerate}[leftmargin=*]
+    \item $2\ \text{Acetyl-CoA} \xrightarrow{\text{Thiolase}} \text{Acetoacetyl-CoA} + \text{CoA}$.
+    \item $\text{Acetoacetyl-CoA} + \text{Acetyl-CoA} \xrightarrow{\text{\textbf{HMG-CoA Synthase (Rate-Limiting)}}} \beta\text{-Hydroxy-}\beta\text{-methylglutaryl-CoA (HMG-CoA)} + \text{CoA}$.
+    \item $\text{HMG-CoA} \xrightarrow{\text{HMG-CoA Lyase}} \text{\textbf{Acetoacetate}} + \text{Acetyl-CoA}$.
+    \item Fates of Acetoacetate:
+    \begin{itemize}
+        \item Reduced reversibly to **$\beta$-hydroxybutyrate** by $\beta$-hydroxybutyrate dehydrogenase (using NADH).
+        \item Non-enzymatic spontaneous decarboxylation yields **Acetone** + $\text{CO}_2$.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{3. Ketolysis (Utilization by Extrahepatic Tissues):}
+\begin{itemize}[leftmargin=*]
+    \item Utilized by cardiac muscle, skeletal muscle, renal cortex, and the **brain during prolonged fasting/starvation** (saves muscle protein catabolism).
+    \item \textit{Reactivation:} Acetoacetate is activated to Acetoacetyl-CoA by the enzyme **Thiophorase ($\beta$-ketoacyl-CoA transferase)** using Succinyl-CoA from the TCA cycle.
+    \item Thiolase then cleaves Acetoacetyl-CoA into $2\ \text{Acetyl-CoA}$, which enter the TCA cycle to yield ATP.
+    \item \textbf{Crucial Rule:} The **liver cannot utilize ketone bodies** because it lacks the enzyme **Thiophorase**.
+\end{itemize}
+
+\textbf{4. Conditions with Increased Ketone Body Synthesis (Ketosis):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Uncontrolled Diabetes Mellitus (Diabetic Ketoacidosis - DKA):} Insulin deficiency and glucagon excess stimulate massive adipose lipolysis, flooding the liver with free fatty acids. Oxaloacetate is depleted by excessive gluconeogenesis, diverting excess Acetyl-CoA into ketogenesis.
+    \item \textbf{Prolonged Starvation / Fasting:} Carbohydrate deprivation forces tissues to rely on fatty acids and ketone bodies.
+    \item High-fat, low-carbohydrate (ketogenic) diets and persistent starvation vomiting in children.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [2+3 = 5 Marks]}
+Write down the irreversible steps of glycolysis with regulatory enzymes. Add a note on the Rapoport-Luebering cycle and its significance in RBCs.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Irreversible Steps of Glycolysis:}
+Glycolysis features three thermodynamically irreversible, highly exergonic reactions that serve as major regulatory checkpoints:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Reaction 1 (Phosphorylation of Glucose):}
+    $$\text{Glucose} + \text{ATP} \xrightarrow{\text{\textbf{Hexokinase / Glucokinase}}} \text{Glucose-6-Phosphate} + \text{ADP}$$
+    \begin{itemize}
+        \item *Hexokinase:* Present in all tissues; low $K_m$ (high affinity); inhibited by product Glucose-6-P.
+        \item *Glucokinase:* In liver and pancreatic $\beta$-cells; high $K_m$ (active post-prandially); stimulated by insulin.
+    \end{itemize}
+    \item \textbf{Reaction 3 (Committed Rate-Limiting Step):}
+    $$\text{Fructose-6-Phosphate} + \text{ATP} \xrightarrow{\text{\textbf{Phosphofructokinase-1 (PFK-1)}}} \text{Fructose-1,6-Bisphosphate} + \text{ADP}$$
+    \begin{itemize}
+        \item Allosterically activated by **Fructose-2,6-bisphosphate** (most potent) and AMP.
+        \item Allosterically inhibited by high ATP and Citrate.
+    \end{itemize}
+    \item \textbf{Reaction 10 (Substrate-Level Phosphorylation):}
+    $$\text{Phosphoenolpyruvate (PEP)} + \text{ADP} \xrightarrow{\text{\textbf{Pyruvate Kinase}}} \text{Pyruvate} + \text{ATP}$$
+    \begin{itemize}
+        \item Activated by Fructose-1,6-bisphosphate (feed-forward activation).
+        \item Inhibited by ATP, Alanine, and glucagon-mediated phosphorylation.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{2. The Rapoport-Luebering Cycle in Erythrocytes (RBCs):}
+\begin{itemize}[leftmargin=*]
+    \item A supplementary metabolic shunt unique to mature red blood cells that bypasses the phosphoglycerate kinase step of glycolysis:
+    \begin{enumerate}
+        \item 1,3-Bisphosphoglycerate (1,3-BPG) is converted into **2,3-Bisphosphoglycerate (2,3-BPG)** by the bifunctional enzyme **Bisphosphoglycerate Mutase**.
+        \item 2,3-BPG is subsequently hydrolyzed by **2,3-Bisphosphoglycerate Phosphatase** to 3-Phosphoglycerate, which re-enters the main glycolytic pathway.
+    \end{enumerate}
+    \item \textit{Energetic Cost:} Bypassing the 1,3-BPG $\rightarrow$ 3-PG step forfeits the synthesis of 1 ATP per triose (yields 0 net ATP), but is essential for respiratory physiology.
+    \item \textit{Physiological Significance:}
+    \begin{itemize}
+        \item **2,3-BPG binds specifically to the central cavity of deoxygenated Hemoglobin (HbA)**, stabilizing the low-affinity T-state (tense state).
+        \item This markedly **decreases hemoglobin's affinity for oxygen, shifting the oxygen-hemoglobin dissociation curve to the RIGHT**.
+        \item Promotes efficient unloading of oxygen from oxyhemoglobin to peripheral tissues.
+        \item 2,3-BPG levels increase adaptively in chronic hypoxia, high altitude, and chronic obstructive pulmonary disease.
+    \end{itemize}
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Free radicals and antioxidant defense systems \\
+(b) Classification and functions of lipoproteins \\
+(c) Competitive vs. Non-competitive enzyme inhibition
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Free Radicals & Antioxidants:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Free Radicals:} Chemical species possessing one or more unpaired electrons in their outer valence orbital, making them highly reactive and unstable. Include **Reactive Oxygen Species (ROS)**: Superoxide anion ($O_2^{\bullet-}$), Hydroxyl radical ($OH^{\bullet}$ - most reactive), Hydrogen peroxide ($H_2O_2$). Cause membrane lipid peroxidation, protein oxidation, and DNA strand breaks.
+    \item \textit{Antioxidant Defenses:}
+    \begin{enumerate}
+        \item \textbf{Enzymatic Antioxidants:}
+        \begin{itemize}
+            \item *Superoxide Dismutase (SOD):* $2\ O_2^{\bullet-} + 2\ \text{H}^+ \rightarrow H_2O_2 + O_2$.
+            \item *Catalase:* $2\ H_2O_2 \rightarrow 2\ H_2O + O_2$.
+            \item *Glutathione Peroxidase (Selenium-dependent):* Neutralizes $H_2O_2$ to $H_2O$ by oxidizing reduced glutathione (GSH $\rightarrow$ GSSG).
+        \end{itemize}
+        \item \textbf{Non-Enzymatic Antioxidants:} **Vitamin E (Alpha-Tocopherol)** (chain-breaking lipid-soluble antioxidant in membranes), **Vitamin C (Ascorbic acid)** (water-soluble radical scavenger), Glutathione, Uric acid, and Carotenoids.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(b) Classification and Functions of Lipoproteins:}
+\begin{itemize}[leftmargin=*]
+    \item Spherical macromolecular complexes consisting of a neutral hydrophobic non-polar lipid core (triglycerides and cholesteryl esters) enveloped by an amphipathic shell of phospholipids, free cholesterol, and apolipoproteins:
+    \begin{enumerate}
+        \item \textbf{Chylomicrons (Apo B-48, C-II, E):} Lowest density; transport **dietary (exogenous) triglycerides** from small intestine to peripheral tissues (adipose/muscle via Lipoprotein Lipase).
+        \item \textbf{VLDL (Apo B-100, C-II, E):} Transports **endogenous triglycerides** synthesized by the liver to peripheral tissues.
+        \item \textbf{LDL (Apo B-100):} Formed from VLDL via IDL; rich in cholesterol; delivers cholesterol to peripheral extrahepatic cells via LDL receptor endocytosis. **Atherogenic ("Bad Cholesterol")**.
+        \item \textbf{HDL (Apo A-I, C-II, E):} Synthesized by liver and intestine; mediates **Reverse Cholesterol Transport** (scavenges excess cholesterol from peripheral tissues and foam cells and returns it to liver for biliary excretion). **Cardioprotective ("Good Cholesterol")**.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(c) Competitive vs. Non-Competitive Enzyme Inhibition:}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3.2cm}X X}
+\toprule
+\textbf{Feature} & \textbf{Competitive Inhibition} & \textbf{Non-Competitive Inhibition} \\
+\midrule
+\textbf{Inhibitor Structure} & Structurally closely resembles substrate. & Chemically unrelated to substrate. \\
+\textbf{Binding Site} & Binds directly to the \textbf{active catalytic site}. & Binds to a distinct \textbf{allosteric site}. \\
+\textbf{Effect on $V_{max}$} & \textbf{Unchanged} (high substrate concentration overcomes inhibition). & \textbf{Decreased} (cannot be overcome by increasing substrate). \\
+\textbf{Effect on $K_m$} & \textbf{Increased} (affinity appears decreased). & \textbf{Unchanged} (affinity is unaffected). \\
+\textbf{Lineweaver-Burk Plot} & Lines intersect on the y-axis ($1/V_{max}$ unchanged; slope increases). & Lines intersect on the negative x-axis ($-1/K_m$ unchanged; y-intercept shifts upward). \\
+\textbf{Clinical Examples} & Statins (inhibit HMG-CoA reductase); Methotrexate (inhibits DHFR); Allopurinol. & Cyanide (inhibits Cytochrome oxidase); Heavy metals (lead, mercury binding $-SH$ groups). \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [6 Marks]}
+Write down the steps of the TCA (Krebs) cycle. Explain why it is called the common terminal metabolic pathway and an amphibolic pathway.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Reactions of the TCA (Citric Acid / Krebs) Cycle (Mitochondrial Matrix):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Condensation:} $\text{Acetyl-CoA (2C)} + \text{Oxaloacetate (4C)} + \text{H}_2\text{O} \xrightarrow{\text{\textbf{Citrate Synthase}}} \text{Citrate (6C)} + \text{CoA}$.
+    \item \textbf{Isomerization:} $\text{Citrate} \xrightarrow{\text{Aconitase}} \text{Isocitrate (6C)}$.
+    \item \textbf{First Oxidative Decarboxylation:} $\text{Isocitrate} + \text{NAD}^+ \xrightarrow{\text{\textbf{Isocitrate Dehydrogenase}}} \alpha\text{-Ketoglutarate (5C)} + \text{NADH} + \text{H}^+ + \text{CO}_2$.
+    \item \textbf{Second Oxidative Decarboxylation:} $\alpha\text{-Ketoglutarate} + \text{NAD}^+ + \text{CoA} \xrightarrow{\text{\textbf{$\alpha$-Ketoglutarate Dehydrogenase Complex}}} \text{Succinyl-CoA (4C)} + \text{NADH} + \text{H}^+ + \text{CO}_2$.
+    \item \textbf{Substrate-Level Phosphorylation:} $\text{Succinyl-CoA} + \text{GDP} + \text{P}_i \xrightarrow{\text{Succinate Thiokinase}} \text{Succinate (4C)} + \text{GTP} + \text{CoA}$.
+    \item \textbf{Dehydrogenation:} $\text{Succinate} + \text{FAD} \xrightarrow{\text{Succinate Dehydrogenase (Complex II)}} \text{Fumarate (4C)} + \text{FADH}_2$.
+    \item \textbf{Hydration:} $\text{Fumarate} + \text{H}_2\text{O} \xrightarrow{\text{Fumarase}} \text{L-Malate (4C)}$.
+    \item \textbf{Regeneration of Oxaloacetate:} $\text{L-Malate} + \text{NAD}^+ \xrightarrow{\text{Malate Dehydrogenase}} \text{Oxaloacetate (4C)} + \text{NADH} + \text{H}^+$.
+\end{enumerate}
+\textit{Net Yield per Acetyl-CoA:} $3\ \text{NADH} + 1\ \text{FADH}_2 + 1\ \text{GTP} + 2\ \text{CO}_2 \rightarrow \mathbf{10\ \text{ATP}}$ (via oxidative phosphorylation).
+
+\textbf{2. Why TCA is the "Common Terminal Metabolic Pathway":}
+Carbohydrates (via pyruvate), Lipids (via fatty acid $\beta$-oxidation), and Proteins (glucogenic/ketogenic amino acid transamination) all converge biochemically to form **Acetyl-CoA** (or intermediate metabolites of the cycle). The TCA cycle is the final shared pathway where carbon skeletons from all classes of food are completely oxidized to $\text{CO}_2$ and $\text{H}_2\text{O}$.
+
+\textbf{3. Why TCA is an "Amphibolic Pathway":}
+Serves dual functions, acting simultaneously in **catabolic** and **anabolic** processes:
+\begin{itemize}[leftmargin=*]
+    \item \textit{Catabolic Role:} Oxidative breakdown of Acetyl-CoA to generate reducing equivalents (NADH, FADH$_2$) for energy production.
+    \item \textit{Anabolic Role (Precursor Reservoir):}
+    \begin{itemize}
+        \item **Succinyl-CoA:** Essential substrate for **Heme biosynthesis**.
+        \item **Oxaloacetate:** Transaminated to Aspartate (for purine/pyrimidine synthesis) or utilized for **Gluconeogenesis**.
+        \item **$\alpha$-Ketoglutarate:** Transaminated to Glutamate, Glutamine, Proline, and GABA.
+        \item **Citrate:** Transported out of mitochondria into cytosol to provide Acetyl-CoA for **Fatty Acid and Cholesterol synthesis**.
+    \end{itemize}
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [6 Marks]}
+Discuss diagrammatically the absorption of non-heme iron, its transport, and storage. How does hepcidin regulate iron absorption?
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Absorption of Non-Heme Iron (Duodenum and Upper Jejunum):}
+\begin{itemize}[leftmargin=*]
+    \item Dietary non-heme iron exists predominantly as insoluble ferric iron ($\text{Fe}^{3+}$).
+    \item At the apical enterocyte brush border, **Duodenal Cytochrome b (Dcytb)** (a ferrireductase stimulated by Vitamin C/gastric acid) reduces insoluble $\text{Fe}^{3+}$ to absorbable ferrous iron ($\text{Fe}^{2+}$).
+    \item $\text{Fe}^{2+}$ is transported into the enterocyte cytoplasm via the **Divalent Metal Transporter-1 (DMT-1)** ($H^+$-coupled symporter).
+\end{itemize}
+
+\textbf{2. Basolateral Export and Blood Transport:}
+\begin{itemize}[leftmargin=*]
+    \item Intracellular $\text{Fe}^{2+}$ is exported across the basolateral membrane into the bloodstream by the transmembrane iron efflux channel **Ferroportin-1**.
+    \item On the capillary side, the ferroxidase **Hephaestin** (and circulating ceruloplasmin) oxidizes $\text{Fe}^{2+}$ back to $\text{Fe}^{3+}$.
+    \item In plasma, $\text{Fe}^{3+}$ binds tightly to the transport glycoprotein **Transferrin** (each transferrin molecule binds $2\ \text{Fe}^{3+}$ ions). Normal transferrin saturation is 20--45\%.
+\end{itemize}
+
+\textbf{3. Intracellular Iron Storage:}
+\begin{itemize}[leftmargin=*]
+    \item Excess iron inside cells (hepatocytes, reticuloendothelial macrophages of spleen/bone marrow, enterocytes) is stored in the protein shell of **Ferritin** (apoferritin + ferric phosphate core, storing up to 4,500 iron atoms).
+    \item When iron stores are excessively overloaded, ferritin aggregates into insoluble, visible golden-brown **Hemosiderin** granules.
+\end{itemize}
+
+\textbf{4. Regulation by Hepcidin (Master Iron Regulator):}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Origin:} Small 25-amino acid peptide hormone synthesized and secreted by the **liver**.
+    \item \textit{Mechanism of Action:} Hepcidin binds directly to the cellular iron exporter **Ferroportin-1** on the basolateral surface of duodenal enterocytes and reticuloendothelial macrophages.
+    \item This induces internalization, ubiquitination, and lysosomal degradation of ferroportin.
+    \item \textit{Consequences:}
+    \begin{itemize}
+        \item Enterocytes cannot export absorbed iron into blood; trapped iron is lost when enterocytes desquamate (reduces dietary iron absorption).
+        \item Macrophages cannot release recycled iron from senescent RBCs into plasma.
+    \end{itemize}
+    \item \textit{Regulation of Hepcidin Secretion:} Upregulated by high iron stores and inflammatory cytokines (**IL-6** in chronic infections/autoimmunity, leading to **Anemia of Chronic Disease**); downregulated by iron deficiency, hypoxia, and active erythropoiesis.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Define neurotransmitter. Write down the criteria for considering a substance as a neurotransmitter and classify them. Outline catecholamine synthesis.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition:}
+A \textbf{neurotransmitter} is an endogenous chemical messenger synthesized within a neuron, packaged into synaptic vesicles, and released into the synaptic cleft upon depolarization, binding to specific postsynaptic receptors to alter the electrical or biochemical activity of the target cell.
+
+\textbf{2. Classical Criteria to Qualify as a Neurotransmitter:}
+\begin{enumerate}[leftmargin=*]
+    \item Must be synthesized within the presynaptic neuron.
+    \item Must be present in presynaptic terminals in sufficient concentrations to exert a physiological effect.
+    \item Must be released upon presynaptic depolarization in a $Ca^{2+}$-dependent exocytotic mechanism.
+    \item Exogenous application to the postsynaptic membrane must mimic the exact response produced by endogenous nerve stimulation.
+    \item Specific mechanisms for rapid inactivation or termination must exist (enzymatic breakdown or cellular reuptake).
+\end{enumerate}
+
+\textbf{3. Classification of Neurotransmitters:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Small-Molecule Neurotransmitters:}
+    \begin{itemize}
+        \item *Acetylcholine (ACh):* Neuromuscular junction, parasympathetic nerves.
+        \item *Biogenic Amines (Catecholamines \& Indolamines):* Dopamine, Norepinephrine, Epinephrine, Serotonin (5-HT), Histamine.
+        \item *Amino Acids:*
+        \begin{itemize}
+            \item Excitatory: **Glutamate** (primary in CNS), Aspartate.
+            \item Inhibitory: **GABA** (Gamma-Aminobutyric Acid - primary in brain), **Glycine** (primary in spinal cord).
+        \end{itemize}
+        \item *Purines:* ATP, Adenosine.
+    \end{itemize}
+    \item \textbf{Neuropeptides (Large-Molecule):} Substance P (pain), Endorphins/Enkephalins, Neuropeptide Y, VIP.
+    \item \textbf{Gas Neurotransmitters:} Nitric Oxide (NO), Carbon Monoxide (CO).
+\end{enumerate}
+
+\textbf{4. Pathway of Catecholamine Biosynthesis:}
+Occurs in the adrenal medulla and adrenergic neurons from the amino acid **L-Tyrosine**:
+\begin{enumerate}[leftmargin=*]
+    \item $\text{L-Tyrosine} \xrightarrow{\text{\textbf{Tyrosine Hydroxylase (Rate-Limiting)}}} \text{\textbf{L-DOPA}}$ (requires Tetrahydrobiopterin - $BH_4$).
+    \item $\text{L-DOPA} \xrightarrow{\text{DOPA Decarboxylase}} \text{\textbf{Dopamine}} + \text{CO}_2$ (requires Pyridoxal Phosphate - Vitamin B6).
+    \item $\text{Dopamine} \xrightarrow{\text{Dopamine $\beta$-Hydroxylase}} \text{\textbf{Norepinephrine}}$ (requires Vitamin C and $Cu^{2+}$; occurs inside storage vesicles).
+    \item $\text{Norepinephrine} \xrightarrow{\text{PNMT}} \text{\textbf{Epinephrine}}$ (Phenylethanolamine N-methyltransferase uses S-Adenosylmethionine / SAM as methyl donor; stimulated by cortisol in adrenal medulla).
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Cardiac markers in myocardial infarction \\
+(b) Hemoglobinopathies: Sickle cell anemia vs. Thalassemia \\
+(c) Watson-Crick model of DNA structure
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Cardiac Markers in Myocardial Infarction (MI):}
+\begin{itemize}[leftmargin=*]
+    \item Biomarkers released into peripheral circulation following ischemic myocardial cell membrane necrosis:
+    \begin{enumerate}
+        \item \textbf{Cardiac Troponins (cTnI and cTnT) --- Gold Standard:}
+        \begin{itemize}
+            \item Highest clinical sensitivity and specificity for myocardial injury.
+            \item *Timeline:* Rise within **3--6 hours**, peak at **12--24 hours**, and remain elevated for **7--10 days** (cTnI) or **10--14 days** (cTnT). Useful for delayed diagnosis.
+        \end{itemize}
+        \item \textbf{Creatine Kinase-MB Isoenzyme (CK-MB):}
+        \begin{itemize}
+            \item Specific for cardiac tissue ($>6\%$ of total CK).
+            \item *Timeline:* Rises in **4--6 hours**, peaks at **18--24 hours**, and normalizes rapidly within **48--72 hours**.
+            \item *Unique Clinical Value:* **Detection of early re-infarction** (a secondary rise after 3 days indicates a new infarct).
+        \end{itemize}
+        \item \textbf{Myoglobin:} Earliest marker to rise (within **1--3 hours**); non-specific (present in skeletal muscle); high negative predictive value.
+        \item \textbf{Lactate Dehydrogenase (LDH):} Shows a "flipped pattern" ($\text{LDH}_1 > \text{LDH}_2$) peaking at 3--4 days.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(b) Sickle Cell Anemia vs. Thalassemia:}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3.2cm}X X}
+\toprule
+\textbf{Parameter} & \textbf{Sickle Cell Anemia (HbS)} & \textbf{$\beta$-Thalassemia} \\
+\midrule
+\textbf{Defect Nature} & \textbf{Qualitative} hemoglobinopathy (abnormal structural globin chain). & \textbf{Quantitative} hemoglobinopathy (decreased synthesis of normal globin chains). \\
+\textbf{Molecular Mutation} & Point mutation (transversion $A \rightarrow T$) in $\beta$-globin gene: **Glutamic acid $\rightarrow$ Valine at codon 6**. & Variable mutations (nonsense, frameshift, promoter) causing reduced ($\beta^+$) or absent ($\beta^0$) $\beta$-chain synthesis. \\
+\textbf{Pathogenesis} & Deoxy-HbS polymerizes into long insoluble fibrous polymers, distorting RBCs into rigid sickle shapes $\rightarrow$ vaso-occlusive crisis. & Excess unpaired $\alpha$-globin chains precipitate, damaging RBC precursors $\rightarrow$ severe ineffective erythropoiesis and hemolysis. \\
+\textbf{Red Cell Indices} & Normocytic normochromic anemia with sickled RBCs on smear. & Marked **Microcytic Hypochromic** anemia with target cells and basophilic stippling. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{(c) Watson-Crick Model of DNA Double Helix (1953):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Double Helical Architecture:} Two polynucleotide chains wound around a central axis to form a right-handed B-DNA double helix.
+    \item \textbf{Antiparallel Orientation:} One strand runs in the $5' \rightarrow 3'$ direction; the complementary strand runs in the $3' \rightarrow 5'$ direction.
+    \item \textbf{Backbone vs. Core:} Hydrophilic sugar-phosphate backbones form the outside of the helix; hydrophobic nitrogenous bases stack inside perpendicular to axis.
+    \item \textbf{Complementary Base Pairing (Chargaff's Rule):}
+    \begin{itemize}
+        \item Adenine (A) pairs with Thymine (T) via **2 Hydrogen bonds** ($A = T$).
+        \item Guanine (G) pairs with Cytosine (C) via **3 Hydrogen bonds** ($G \equiv C$).
+    \end{itemize}
+    \item \textbf{Dimensions:} Diameter of helix is **2.0 nm** (20 \AA); one complete helical turn spans **3.4 nm** (34 \AA) containing **10 base pairs** (3.4 \AA\ rise per base pair).
+    \item Displays alternating **Major Grooves** (2.2 nm) and **Minor Grooves** (1.2 nm) providing access for regulatory DNA-binding proteins.
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\section{Frequency-Based Question Classification (2015--2022)}
+
+\subsection{Very Frequently Repeated Topics ($\ge 80\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Oxidative Phosphorylation \& ETC (91\%):} Complexes I--IV, Chemiosmotic theory, proton-motive force, ATP synthase mechanism, uncouplers (DNP), and inhibitors.
+    \item \textbf{Lipoprotein Metabolism (82\%):} Classification (Chylomicrons, VLDL, LDL, HDL), apolipoproteins, atherogenesis, reverse cholesterol transport.
+    \item \textbf{Enzyme Kinetics \& Inhibition (82\%):} Coenzymes, isoenzymes, $K_m$ and $V_{max}$, competitive vs non-competitive inhibition, Lineweaver-Burk plots.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Iron Metabolism (64\%):} Non-heme iron absorption, DMT-1, ferroportin, transferrin, ferritin, hemosiderin, hepcidin regulation.
+    \item \textbf{Free Radicals \& Antioxidant Defense (64\%):} ROS generation, superoxide dismutase, catalase, glutathione peroxidase, Vitamin C and E.
+    \item \textbf{Protein Structure (64\%):} Primary, secondary ($\alpha$-helix, $\beta$-sheet), tertiary, and quaternary structural bonds and organization.
+    \item \textbf{Neurotransmitters \& Catecholamine Biosynthesis (64\%):} Synthesis of DOPA, dopamine, norepinephrine, epinephrine, and degradation.
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{TCA Cycle (55\%):} Steps, enzymes, energetics (10 ATP), amphibolic nature, common terminal pathway.
+    \item \textbf{Cardiac Markers (55\%):} Troponin I/T, CK-MB, myoglobin kinetics in myocardial infarction.
+    \item \textbf{Heme Biosynthesis \& Porphyrias (55\%):} ALA synthase rate-limiting step, lead poisoning, acute intermittent porphyria.
+    \item \textbf{Ketone Body Metabolism (45\%):} HMG-CoA synthase, ketogenesis in liver, ketolysis in extrahepatic tissues, diabetic ketoacidosis.
+    \item \textbf{Glycolysis Steps \& Regulation (45\%):} Hexokinase, PFK-1, pyruvate kinase, Rapoport-Luebering cycle in RBCs (2,3-BPG).
+    \item \textbf{Hemoglobinopathies (36\%):} Sickle cell anemia molecular mutation vs $\beta$-thalassemia.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Fatty Acid Oxidation (30\%):} Carnitine shuttle, $\beta$-oxidation steps (dehydrogenation, hydration, oxidation, thiolysis).
+    \item \textbf{Vitamins (30\%):} Vitamin B12 and folate trap, Vitamin C collagen hydroxylation in scurvy.
+    \item \textbf{Watson-Crick DNA Double Helix (27\%):} Antiparallel strands, base pairing rules, dimensions.
+    \item \textbf{HMP Shunt / Pentose Phosphate Pathway (27\%):} G6PD, NADPH generation, glutathione reduction.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Nucleotide salvage pathway and Lesch-Nyhan syndrome.
+    \item Mineral metabolism: Calcium and Phosphorus regulation by PTH, Calcitriol, Calcitonin.
+    \item Biochemical basis of Organophosphorus poisoning (Acetylcholinesterase inhibition).
+\end{itemize}
+
+\newpage
+\appendix
+\section{Biochemistry Quick Revision Cheatsheet}
+
+\subsection{Carbohydrate Metabolism Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Glycolysis Irreversible Steps:} 1. Glucose $\rightarrow$ G-6-P (Hexokinase/Glucokinase); 2. F-6-P $\rightarrow$ F-1,6-bisP (PFK-1, **Rate-Limiting**); 3. PEP $\rightarrow$ Pyruvate (Pyruvate kinase).
+    \item \textbf{Rapoport-Luebering Cycle (RBCs):} Bypasses PGK to make **2,3-BPG**; shifts $\text{O}_2$-dissociation curve to the RIGHT (promotes $\text{O}_2$ release to tissues).
+    \item \textbf{HMP Shunt:} Yields **NADPH** (for biosynthetic reactions and maintaining reduced glutathione against oxidative hemolysis) and Ribose-5-P (for nucleotide synthesis).
+    \item \textbf{TCA Cycle:} Yields $3\ \text{NADH}, 1\ \text{FADH}_2, 1\ \text{GTP} \rightarrow 10\ \text{ATP}$ per Acetyl-CoA. Amphibolic: provides precursors for heme (Succinyl-CoA), glucose/aspartate (OAA), and fatty acids (Citrate).
+\end{itemize}
+
+\subsection{Lipids \& Bioenergetics Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ketone Bodies:} Acetoacetate, $\beta$-hydroxybutyrate, Acetone. Liver synthesizes them (HMG-CoA synthase) but **cannot utilize them** (lacks thiophorase). Increased in starvation and DKA.
+    \item \textbf{Lipoproteins:} Chylomicrons (dietary TG); VLDL (hepatic endogenous TG); LDL (cholesterol to tissues, atherogenic); HDL (reverse cholesterol transport, cardioprotective).
+    \item \textbf{ETC Complexes:} I (NADH-Q, pumps $4\ \text{H}^+$), II (Succinate-Q, no $\text{H}^+$ pump), III (Cytochrome $bc_1$, pumps $4\ \text{H}^+$), IV (Cytochrome oxidase, pumps $2\ \text{H}^+$).
+    \item \textbf{Chemiosmotic Theory:} Proton-motive force drives ATP synthesis via Complex V ($F_0F_1$ ATP synthase). Uncouplers (2,4-DNP, thermogenin) dissipate gradient as heat.
+\end{itemize}
+
+\subsection{Proteins, Enzymes \& Clinical Chemistry}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Enzyme Inhibition:}
+    \begin{itemize}
+        \item *Competitive:* Inhibitor binds active site; **$V_{max}$ unchanged, $K_m$ increased**. Overcome by high $[S]$ (e.g. Statins).
+        \item *Non-Competitive:* Inhibitor binds allosteric site; **$V_{max}$ decreased, $K_m$ unchanged** (e.g. Cyanide).
+    \end{itemize}
+    \item \textbf{Iron Homeostasis:} Absorbed as $\text{Fe}^{2+}$ via DMT-1; transported as $\text{Fe}^{3+}$ on Transferrin; stored in Ferritin. **Hepcidin** degrades ferroportin to block iron export.
+    \item \textbf{Cardiac Markers:} **cTnI/cTnT** (rises 3--6h, peaks 24h, stays elevated 10--14d); **CK-MB** (rises 4--6h, normalizes in 48--72h; ideal for re-infarction).
+    \item \textbf{Sickle Cell Mutation:} $\beta$-globin codon 6: Glutamic acid $\rightarrow$ Valine.
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Biochemistry Solutions ---}
+\end{center}
+
+\end{document}
