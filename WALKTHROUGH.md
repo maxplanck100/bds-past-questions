@@ -13,8 +13,8 @@ Before sending anything to an LLM, split the combined PDF (e.g., an
 83-page scan spanning all subjects) into one file per subject.
 
 **Tools (pick one):**
-- [iLovePDF – Split PDF](ilovepdf.com/split_pdf) — preferred
-- [PDFlyer](pdflyer.netlify.app/tools/split) — fallback
+- [iLovePDF – Split PDF](https://ilovepdf.com/split_pdf) — preferred
+- [PDFlyer](https://pdflyer.netlify.app/tools/split) — fallback
 
 Split manually by subject boundary (identify page ranges by skimming
 headers), not by fixed page count. Save each output as:
