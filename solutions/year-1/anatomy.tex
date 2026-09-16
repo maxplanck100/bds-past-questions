@@ -1,0 +1,1415 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Setup page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Kathmandu University BDS 1st Year}}
+\fancyhead[R]{\textbf{Human Anatomy Solutions}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+
+% Section styling
+\titleformat{\section}{\Large\bfseries\color{blue!70!black}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{black!85}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{black!75}}{\thesubsubsection}{1em}{}
+
+% Custom boxes
+\newtcolorbox{qbox}[2][]{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries,
+  title={#2},
+  arc=2mm,
+  breakable,
+  #1
+}
+
+\newtcolorbox{ansbox}[1][]{
+  colback=white,
+  colframe=gray!50!black,
+  fonttitle=\bfseries,
+  title={Answer},
+  arc=1mm,
+  breakable,
+  #1
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge \textbf{Kathmandu University}}\\[0.5cm]
+    {\LARGE \textbf{Bachelor of Dental Surgery (BDS) 1st Year}}\\[1.5cm]
+    {\Huge \textbf{HUMAN ANATOMY}}\\[0.8cm]
+    {\Large \textbf{Comprehensive Exam Solutions \& Question Bank}}\\[0.5cm]
+    {\large Complete Question Papers, Exam-Oriented Answers, Frequency Analysis \& Revision Cheatsheet}\\[2cm]
+    \vfill
+    {\large \textbf{Compiled from Past Papers: 2015--2022}}\\[0.5cm]
+    {\small Kathmandu University School of Medical Sciences (KUSMS) \& Affiliated Colleges}
+    \vspace*{1.5cm}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Past Examination Questions and Solutions (2015--2022)}
+
+\subsection{Examination: May 6, 2022 (End Semester Exam)}
+\textbf{Subject:} Anatomy \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [1+3+2 = 6 Marks]}
+Mention the boundaries, contents and applied anatomy of the femoral triangle.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Boundaries of Femoral Triangle:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Superior (Base):} Inguinal ligament (running from anterior superior iliac spine to pubic tubercle).
+    \item \textbf{Medial:} Medial border of the adductor longus muscle.
+    \item \textbf{Lateral:} Medial border of the sartorius muscle.
+    \item \textbf{Apex:} Directed inferiorly; formed where sartorius crosses the adductor longus (continuous below with the adductor/Hunter's canal).
+    \item \textbf{Roof:} Skin, superficial fascia (containing superficial inguinal lymph nodes, great saphenous vein, superficial branches of femoral artery), and fascia lata (with cribriform fascia over the saphenous opening).
+    \item \textbf{Floor:} Formed from lateral to medial by: Iliopsoas, Pectineus, and Adductor longus.
+\end{itemize}
+
+\textbf{2. Contents (arranged from lateral to medial):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Femoral Nerve:} Lies outside the femoral sheath in the groove between iliacus and psoas major; divides into anterior and posterior divisions.
+    \item \textbf{Femoral Artery and its Branches:} Enclosed in the middle compartment of the femoral sheath. Gives off the profunda femoris artery and three superficial branches (superficial epigastric, superficial circumflex iliac, superficial external pudendal).
+    \item \textbf{Femoral Vein:} Lies medial to the artery in the femoral sheath; receives the great saphenous vein and profunda femoris vein.
+    \item \textbf{Femoral Canal:} The medial compartment of the femoral sheath; contains loose connective tissue, lymph vessels, and the deep inguinal lymph node of Cloquet/Rosenmuller.
+\end{enumerate}
+
+\textbf{3. Applied Anatomy:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Femoral Hernia:} Protrusion of abdominal viscus through the femoral ring into the femoral canal. More common in females due to a wider pelvis and larger femoral ring. High risk of strangulation due to rigid boundaries (lacunar ligament).
+    \item \textbf{Femoral Artery Catheterization / Puncture:} The femoral artery pulse is palpated at the midinguinal point (halfway between ASIS and pubic symphysis). Used for coronary angiography and arterial blood gas sampling.
+    \item \textbf{Psoas Abscess:} Tuberculous cold abscess of lumbar vertebrae can track down within the psoas sheath into the floor of the femoral triangle, presenting as a reducible groin mass.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [5 Marks]}
+Describe the histological differences between skeletal muscle and cardiac muscle with labeled diagrams.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Comparison of Skeletal and Cardiac Muscle Histology:}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3.5cm}X X}
+\toprule
+\textbf{Feature} & \textbf{Skeletal Muscle} & \textbf{Cardiac Muscle} \\
+\midrule
+\textbf{Fiber Architecture} & Long, cylindrical, unbranched fibers running parallel. & Shorter, cylindrical fibers that \textbf{branch and anastomose}. \\
+\textbf{Nuclei} & Multinucleated; nuclei are flattened and located \textbf{peripherally} under the sarcolemma. & Single (occasionally dual), oval, located \textbf{centrally}. \\
+\textbf{Intercalated Discs} & Absent. & \textbf{Present}; diagnostic hallmark (step-like junctions with gap junctions and desmosomes). \\
+\textbf{Cross-Striations} & Prominent and distinct A and I bands. & Less prominent; myofibrils separate around the central nucleus. \\
+\textbf{T-Tubule System} & Triad system (1 T-tubule + 2 terminal cisternae) at the A--I junction. & Diad system (1 T-tubule + 1 terminal cisterna) located at the \textbf{Z-disc}. \\
+\textbf{Control \& Innervation} & Voluntary; innervated by somatic motor nerves. & Involuntary; intrinsic myogenic rhythm modulated by ANS. \\
+\textbf{Regenerative Capacity} & Limited (satellite cells present). & Negligible; injured myocardium heals by fibrous scar tissue. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{Histological Organization Notes:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Skeletal Muscle:} Surrounded by epimysium; fascicles wrapped by perimysium; individual fibers enclosed by endomysium. Shows well-defined cross-striations with alternating dark A-bands (myosin) and light I-bands (actin) bisected by Z-lines.
+    \item \textit{Cardiac Muscle:} Demonstrates branching cells joined end-to-end by darkly staining transverse bands called intercalated discs. Perinuclear cytoplasm contains glycogen, lipid droplets, and lipofuscin pigment granules (wear-and-tear pigment in elderly).
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [5 Marks]}
+Enlist the types of synovial joints with one example of each.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Classification of Synovial Joints (based on shape of articulating surfaces and axes of movement):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Plane (Gliding) Synovial Joint:} Articular surfaces are flat or slightly curved; permits non-axial gliding movements.
+    \begin{itemize}
+        \item \textit{Example:} Intercarpal joints, Intertarsal joints, Acromioclavicular joint.
+    \end{itemize}
+    \item \textbf{Hinge (Ginglymus) Joint:} Uniaxial joint; allows movement in one plane (flexion and extension) around a transverse axis.
+    \begin{itemize}
+        \item \textit{Example:} Elbow joint (humeroulnar), Interphalangeal joints of fingers and toes, Ankle joint.
+    \end{itemize}
+    \item \textbf{Pivot (Trochoid) Joint:} Uniaxial joint; allows rotational movement around a central longitudinal axis within an osteoligamentous ring.
+    \begin{itemize}
+        \item \textit{Example:} Superior and Inferior radioulnar joints (pronation/supination), Median atlantoaxial joint.
+    \end{itemize}
+    \item \textbf{Condylar / Bicondylar Joint:} Biaxial joint; two distinct convex condyles articulate with corresponding concave surfaces; allows flexion, extension, and limited rotation.
+    \begin{itemize}
+        \item \textit{Example:} Knee joint, \textbf{Temporomandibular Joint (TMJ)}.
+    \end{itemize}
+    \item \textbf{Ellipsoid Joint:} Biaxial joint; oval convex surface articulates with an elliptical concave cavity; permits flexion, extension, abduction, adduction, and circumduction (no axial rotation).
+    \begin{itemize}
+        \item \textit{Example:} Wrist (radiocarpal) joint, Metacarpophalangeal (MCP) joints.
+    \end{itemize}
+    \item \textbf{Saddle (Sellar) Joint:} Biaxial joint; reciprocal concavo-convex opposing surfaces fitting together like a rider in a saddle; permits multiaxial movements except full rotation.
+    \begin{itemize}
+        \item \textit{Example:} First carpometacarpal joint of the thumb, Sternoclavicular joint.
+    \end{itemize}
+    \item \textbf{Ball and Socket (Spheroidal) Joint:} Multiaxial joint; globular ball-like head fits into a cup-shaped socket; allows maximal range of motion in all planes.
+    \begin{itemize}
+        \item \textit{Example:} Shoulder (glenohumeral) joint, Hip joint.
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Radial nerve origin, course, and applied anatomy \\
+(b) Histology of thick skin \\
+(c) Sesamoid bones with two examples
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Radial Nerve:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Origin:} Largest branch of the \textbf{posterior cord of the brachial plexus} (root values C5, C6, C7, C8, T1).
+    \item \textit{Course:} Descends behind the 3rd part of axillary artery; enters the arm behind brachial artery; passes through the lower triangular space into the \textbf{radial (spiral) groove} on the posterior aspect of humerus between lateral and medial heads of triceps, accompanied by the profunda brachii artery. Pierces lateral intermuscular septum to enter anterior compartment, passes between brachialis and brachioradialis, and divides at the lateral epicondyle into superficial and deep (posterior interosseous) branches.
+    \item \textit{Applied Anatomy:} Fracture of the midshaft of humerus damages the radial nerve in the spiral groove, leading to paralysis of wrist and finger extensors, causing \textbf{"Wrist Drop"} and loss of sensation over the dorsal surface of the first web space.
+\end{itemize}
+
+\textbf{(b) Histology of Thick Skin (Palms and Soles):}
+\begin{itemize}[leftmargin=*]
+    \item Lined by stratified squamous keratinized epithelium. Composed of five distinct epidermal layers:
+    \begin{enumerate}
+        \item \textit{Stratum Basale:} Single layer of columnar/cuboidal stem cells resting on basement membrane; shows mitotic figures and contains melanocytes and Merkel cells.
+        \item \textit{Stratum Spinosum:} Polyhedral prickle cells connected by prominent desmosomal spines; contains Langerhans cells.
+        \item \textit{Stratum Granulosum:} 3--5 layers of flattened cells filled with basophilic \textbf{keratohyalin granules}.
+        \item \textit{Stratum Lucidum:} Diagnostic clear, translucent layer composed of flattened dead cells containing \textbf{eleidin} (absent in thin skin).
+        \item \textit{Stratum Corneum:} Very thick, compact, anucleated layer of cornified dead scales filled with mature keratin.
+    \end{enumerate}
+    \item \textit{Special Features:} Thick skin has prominent dermal papillae (dermatoglyphics/fingerprints), abundant eccrine sweat glands, but \textbf{completely lacks hair follicles, sebaceous glands, and arrector pili muscles}.
+\end{itemize}
+
+\textbf{(c) Sesamoid Bones:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Definition:} Small, rounded or oval nodules of bone that develop embedded within the substance of tendons or joint capsules where they cross bony prominences.
+    \item \textit{Unique Morphological Features:}
+    \begin{enumerate}
+        \item Lack a periosteum covering.
+        \item Devoid of a Haversian canal system.
+        \item Ossify after birth (intracartilaginous ossification).
+    \end{enumerate}
+    \item \textit{Functions:} Protect tendons from excessive wear and friction, modify tendon angle of pull, and increase mechanical advantage of the attached muscle.
+    \item \textit{Examples:}
+    \begin{enumerate}
+        \item \textbf{Patella (Kneecap):} The largest sesamoid bone in the body, embedded within the quadriceps femoris tendon.
+        \item \textbf{Pisiform:} Embedded within the flexor carpi ulnaris tendon.
+        \item Fabella (in lateral head of gastrocnemius).
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [6 Marks]}
+Discuss the interior of the right atrium with a well-labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Interior of the Right Atrium:}
+Divided into three distinct developmental parts:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Smooth Posterior Part (Sinus Venarum):}
+    \begin{itemize}
+        \item Derived embryologically from the right horn of the \textbf{sinus venosus}.
+        \item Walls are smooth, thin, and glistening.
+        \item \textit{Openings:}
+        \begin{itemize}
+            \item \textbf{Superior Vena Cava (SVC):} Opens into the upper and posterior part; has no valve.
+            \item \textbf{Inferior Vena Cava (IVC):} Opens into the lower and posterior part; guarded by the rudimentary, semilunar \textbf{Eustachian valve} (directs oxygenated blood toward foramen ovale in fetus).
+            \item \textbf{Coronary Sinus:} Opens between IVC orifice and atrioventricular orifice; guarded by the semilunar \textbf{Thebesian valve}.
+            \item \textbf{Foramina Venarum Minimarum:} Tiny openings of Thebesian veins (venae cordis minimae) that return blood directly into the atrium.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Rough Anterior Part (Atrium Proper):}
+    \begin{itemize}
+        \item Derived from the primitive embryonic atrium.
+        \item Displays parallel muscular ridges called \textbf{pectinate muscles (musculi pectinati)}, resembling teeth of a comb.
+        \item Runs forward and medially into the right auricle (which covers the root of the ascending aorta).
+    \end{itemize}
+    \item \textbf{Crista Terminalis and Sulcus Terminalis:}
+    \begin{itemize}
+        \item \textbf{Crista Terminalis:} A prominent vertical internal muscular ridge separating the smooth sinus venarum from the rough atrium proper. Extends from SVC orifice to IVC orifice.
+        \item Corresponds externally to a shallow vertical groove called the \textbf{sulcus terminalis}.
+        \item The \textbf{Sinoatrial (SA) node} is embedded in the upper part of crista terminalis immediately below the SVC opening.
+    \end{itemize}
+    \item \textbf{Interatrial Septum:}
+    \begin{itemize}
+        \item Separates right atrium from left atrium.
+        \item \textbf{Fossa Ovalis:} An oval depression in the lower part of the septum; represents the embryonic site of the foramen ovale. Its floor is formed by the embryonic \textbf{septum primum}.
+        \item \textbf{Limbus Fossa Ovalis (Annulus Ovalis):} The prominent raised upper and lateral muscular margin of the fossa ovalis; formed by the lower edge of the \textbf{septum secundum}.
+        \item \textit{Triangle of Koch:} Delimited by the base of septal leaflet of tricuspid valve, tendon of Todaro, and coronary sinus orifice. Contains the \textbf{Atrioventricular (AV) node}.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Applied Anatomy:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Atrial Septal Defect (ASD):} Failure of fusion between septum primum and septum secundum causes patent foramen ovale, resulting in a left-to-right cardiac shunt.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [6 Marks]}
+Name the muscles of mastication with their origin, insertion, action, and nerve supply.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{The Muscles of Mastication:}
+There are four primary muscles of mastication. All four develop from the mesoderm of the \textbf{1st Pharyngeal (Branchial) Arch} and are innervated by the \textbf{Mandibular Nerve ($V_3$)}:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Masseter Muscle:}
+    \begin{itemize}
+        \item \textit{Origin:}
+        \begin{itemize}
+            \item Superficial layer: Anterior 2/3 of lower border of zygomatic arch.
+            \item Deep layer: Posterior 1/3 of lower border and whole medial surface of zygomatic arch.
+        \end{itemize}
+        \item \textit{Insertion:} Lateral surface of mandibular ramus, coronoid process, and angle of mandible.
+        \item \textit{Action:} Powerful elevator of the mandible (closes jaw for crushing food).
+        \item \textit{Nerve Supply:} Masseteric nerve (branch of anterior trunk of mandibular nerve $V_3$).
+    \end{itemize}
+    
+    \item \textbf{Temporalis Muscle:}
+    \begin{itemize}
+        \item \textit{Origin:} Floor of the temporal fossa (below inferior temporal line) and overlying deep temporal fascia.
+        \item \textit{Insertion:} Medial surface, apex, and anterior border of the coronoid process of mandible, extending down the anterior border of the ramus.
+        \item \textit{Action:} Anterior and vertical fibers \textbf{elevate} the mandible; posterior horizontal fibers \textbf{retract} the protruded mandible.
+        \item \textit{Nerve Supply:} Deep temporal nerves (branches of anterior trunk of mandibular nerve $V_3$).
+    \end{itemize}
+
+    \item \textbf{Medial Pterygoid Muscle:}
+    \begin{itemize}
+        \item \textit{Origin:}
+        \begin{itemize}
+            \item Deep head (major): Medial surface of lateral pterygoid plate and pyramidal process of palatine bone.
+            \item Superficial head (minor): Maxillary tuberosity and adjoining palatine bone.
+        \end{itemize}
+        \item \textit{Insertion:} Medial surface of the ramus and angle of the mandible (opposite to masseter insertion).
+        \item \textit{Action:} Elevates mandible; assists in protrusion; alternates with lateral pterygoid for side-to-side chewing grinding movements.
+        \item \textit{Nerve Supply:} Nerve to medial pterygoid (branch from the \textbf{main trunk} of mandibular nerve $V_3$).
+    \end{itemize}
+
+    \item \textbf{Lateral Pterygoid Muscle (Key Functional Opener):}
+    \begin{itemize}
+        \item \textit{Origin:}
+        \begin{itemize}
+            \item Upper head: Infratemporal surface and crest of greater wing of sphenoid.
+            \item Lower head (larger): Lateral surface of lateral pterygoid plate.
+        \end{itemize}
+        \item \textit{Insertion:} Pterygoid fovea on the anterior neck of the mandibular condyle, anterior margin of TMJ articular disc and fibrous capsule.
+        \item \textit{Action:}
+        \begin{itemize}
+            \item \textbf{Depresses mandible to open the mouth} (only muscle of mastication that opens the mouth; assisted by digastric and geniohyoid).
+            \item Bilateral contraction causes \textbf{protrusion} of the mandible.
+            \item Unilateral contraction moves chin to the opposite side (rotational grinding).
+        \end{itemize}
+        \item \textit{Nerve Supply:} Nerve to lateral pterygoid (branch from anterior trunk of mandibular nerve $V_3$).
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Mention the derivatives of the branchial (pharyngeal) apparatus.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{The Branchial (Pharyngeal) Apparatus} consists of Pharyngeal Arches (mesoderm + neural crest), Pharyngeal Pouches (endodermal internal outpocketings), Pharyngeal Clefts/Grooves (ectodermal external indentations), and Pharyngeal Membranes.
+
+\textbf{1. Derivatives of Pharyngeal Arches:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{1st Arch (Mandibular Arch) --- Nerve: Mandibular Nerve ($V_3$):}
+    \begin{itemize}
+        \item \textit{Skeletal/Cartilage (Meckel's cartilage):} Malleus, Incus, Sphenomandibular ligament, Anterior ligament of malleus.
+        \item \textit{Muscles:} Muscles of mastication (masseter, temporalis, medial and lateral pterygoids), Mylohyoid, Anterior belly of digastric, Tensor tympani, Tensor veli palatini.
+    \end{itemize}
+    \item \textbf{2nd Arch (Hyoid Arch) --- Nerve: Facial Nerve (CN VII):}
+    \begin{itemize}
+        \item \textit{Skeletal (Reichert's cartilage):} Stapes, Styloid process, Stylohyoid ligament, Lesser horn and upper body of hyoid bone.
+        \item \textit{Muscles:} Muscles of facial expression, Stapedius, Stylohyoid, Posterior belly of digastric, Auricular muscles.
+    \end{itemize}
+    \item \textbf{3rd Arch --- Nerve: Glossopharyngeal Nerve (CN IX):}
+    \begin{itemize}
+        \item \textit{Skeletal:} Greater horn and lower body of hyoid bone.
+        \item \textit{Muscles:} Stylopharyngeus muscle.
+    \end{itemize}
+    \item \textbf{4th and 6th Arches --- Nerve: Vagus Nerve (CN X):}
+    \begin{itemize}
+        \item \textit{Skeletal:} Thyroid, Cricoid, Arytenoid, Corniculate, and Cuneiform laryngeal cartilages.
+        \item \textit{Muscles (4th Arch - Superior laryngeal nerve):} Cricothyroid, Pharyngeal constrictors, Levator veli palatini.
+        \item \textit{Muscles (6th Arch - Recurrent laryngeal nerve):} Intrinsic muscles of larynx (except cricothyroid).
+    \end{itemize}
+\end{itemize}
+
+\textbf{2. Derivatives of Pharyngeal Pouches (Endoderm):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{1st Pouch:} Tubotympanic recess $\rightarrow$ Middle ear cavity, Eustachian (auditory) tube, internal surface of tympanic membrane.
+    \item \textbf{2nd Pouch:} Palatine tonsil stroma and tonsillar crypts.
+    \item \textbf{3rd Pouch:} Inferior parathyroid gland (dorsal wing) and Thymus (ventral wing).
+    \item \textbf{4th Pouch:} Superior parathyroid gland (dorsal wing) and Ultimobranchial body / Parafollicular C-cells of thyroid (ventral wing).
+\end{itemize}
+
+\textbf{3. Derivatives of Pharyngeal Clefts and Membranes:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{1st Cleft:} External auditory meatus. (2nd, 3rd, 4th clefts are overgrown by the 2nd arch forming the cervical sinus, which normally obliterates).
+    \item \textbf{1st Membrane:} Tympanic membrane (ear drum).
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Sternal angle and its anatomical significance \\
+(b) Recesses of the pleura \\
+(c) Dangerous area of the scalp
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Sternal Angle (Angle of Louis):}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Definition:} The transverse fibrocartilaginous joint formed by the junction of the manubrium and the body of the sternum (manubriosternal joint). Lies at vertebral level **T4--T5 intervertebral disc**.
+    \item \textit{Anatomical Landmarks / Significance:}
+    \begin{enumerate}
+        \item Marks the level of articulation of the **2nd costal cartilage** (primary reference landmark for counting ribs and intercostal spaces).
+        \item Marks the boundary plane separating the **Superior Mediastinum from the Inferior Mediastinum**.
+        \item Marks the beginning and termination of the **Arch of the Aorta**.
+        \item Marks the bifurcation of the **Trachea** into right and left primary bronchi (Carina).
+        \item Marks the bifurcation of the **Pulmonary Trunk**.
+        \item Marks the point where the **Azygos Vein** arches over the right main bronchus to join the SVC.
+        \item Marks the crossing of the **Thoracic Duct** from right to left across the vertebral column.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(b) Recesses of the Pleura:}
+\begin{itemize}[leftmargin=*]
+    \item Slit-like potential spaces within the pleural cavity where two layers of parietal pleura become apposed to each other. They provide reserve volume for lung expansion during deep inspiration.
+    \item \textbf{1. Costodiaphragmatic Recess:}
+    \begin{itemize}
+        \item Located inferiorly between the costal pleura and diaphragmatic pleura.
+        \item Deepest along the midaxillary line (extends from the 8th to 10th rib).
+        \item \textit{Clinical Importance:} Lowest dependent part of the pleural cavity in upright posture; pleural fluid preferentially accumulates here in **pleural effusion** (blunting of costophrenic angle on chest X-ray). Site for **pleural tap / thoracocentesis** in the 8th or 9th intercostal space along the midaxillary line.
+    \end{itemize}
+    \item \textbf{2. Costomediastinal Recess:}
+    \begin{itemize}
+        \item Located anteriorly behind the sternum where costal pleura meets mediastinal pleura.
+        \item Larger on the left side overlying the cardiac notch of the left lung.
+    \end{itemize}
+\end{itemize}
+
+\textbf{(c) Dangerous Area of the Scalp:}
+\begin{itemize}[leftmargin=*]
+    \item Refers to the **4th layer of the scalp: Loose Areolar Connective Tissue**.
+    \item \textit{Anatomical Connections:}
+    \begin{itemize}
+        \item Traversed by valveless **emissary veins** that connect extracranial scalp veins directly with intracranial dural venous sinuses (especially the superior sagittal sinus).
+    \end{itemize}
+    \item \textit{Applied Clinical Significance:}
+    \begin{enumerate}
+        \item \textbf{Intracranial Spread of Infection:} Infection in this layer can easily travel retrogradely via emissary veins into the cranial cavity, causing fatal conditions: **meningitis, brain abscess, and superior sagittal/cavernous sinus thrombosis**.
+        \item \textbf{Black Eye (Periorbital Hematoma):} Blood or purulent collections easily spread throughout this loose plane. Because the frontalis muscle has no bony insertion into the skull anteriorly (attaches to skin of eyebrows and root of nose), extravasated blood gravitates forward into the upper eyelids and periorbital tissue, producing bilateral **"Black Eyes"**.
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\subsection{Examination: December 22, 2017 (BDS I New Course)}
+\textbf{Subject:} Anatomy \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [3+3 = 6 Marks]}
+Classify glands and draw a labeled histological diagram of a mixed gland.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Classification of Glands:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Based on Presence or Absence of Ducts:}
+    \begin{itemize}
+        \item \textit{Exocrine Glands:} Possess ducts to discharge secretions onto an epithelial surface (e.g. salivary glands, sweat glands).
+        \item \textit{Endocrine Glands:} Ductless; discharge hormones directly into the bloodstream (e.g. thyroid, pituitary, adrenal).
+        \item \textit{Paracrine / Heterocrine:} Affect adjacent cells directly (e.g. enteroendocrine cells of GIT) or mixed exo-endocrine (e.g. Pancreas).
+    \end{itemize}
+    \item \textbf{Based on Nature of Secretion (Exocrine):}
+    \begin{itemize}
+        \item \textit{Serous Glands:} Thin, watery, protein- and enzyme-rich secretion. Acinar cells have central round nuclei and basophilic cytoplasm with apical zymogen granules (e.g. \textbf{Parotid gland}, Pancreas).
+        \item \textit{Mucous Glands:} Thick, viscous, mucin-rich lubricating secretion. Acini have flattened nuclei compressed against the basal membrane with pale, vacuolated cytoplasm (e.g. \textbf{Sublingual gland}, buccal glands).
+        \item \textit{Mixed (Seromucous) Glands:} Contain both serous and mucous acini. Mucous acini are frequently capped by crescentic serous cells called **Serous Demilunes of Gianuzzi** (e.g. \textbf{Submandibular gland}).
+    \end{itemize}
+    \item \textbf{Based on Mode of Secretion:}
+    \begin{itemize}
+        \item \textit{Merocrine (Eccrine):} Secretory granules discharged by exocytosis without any loss of cellular cytoplasm (e.g. salivary glands, eccrine sweat glands).
+        \item \textit{Apocrine:} Apical portion of the secretory cell cytoplasm is pinched off with secretion (e.g. mammary gland, axillary apocrine sweat glands).
+        \item \textit{Holocrine:} Entire mature secretory cell disintegrates and is shed with secretion (e.g. \textbf{sebaceous glands}).
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Histological Structure of a Mixed Gland (Submandibular Gland):}
+\begin{itemize}[leftmargin=*]
+    \item Capsule sends connective tissue septa dividing parenchyma into distinct lobules.
+    \item \textit{Mucous Acini:} Tubular structures with large lumen, lined by pyramidal cells with pale foamy cytoplasm and flattened nuclei at the base.
+    \item \textit{Serous Demilunes (of Gianuzzi):} Moon-shaped cap of serous cells seated over the terminal ends of mucous acini.
+    \item \textit{Duct System:} Intercalated ducts (cuboidal) $\rightarrow$ Striated ducts (columnar with basal mitochondrial striations) $\rightarrow$ Excretory ducts (pseudostratified/stratified).
+    \item \textit{Myoepithelial Cells (Basket Cells):} Spindle-shaped contractile cells lying between basal lamina and acinar cells; assist in expelling secretions.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [1+2+2 = 5 Marks]}
+What is the notochord? Write its formation and fate.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Definition:}
+The \textbf{notochord} is a transient, midline, solid cellular rod of mesodermal origin that develops in the early embryo along the cranio-caudal axis. It serves as the primitive axial skeleton of the vertebrate embryo.
+
+\textbf{2. Formation of Notochord (3rd week of Intrauterine Life):}
+\begin{enumerate}[leftmargin=*]
+    \item Epiblast cells invaginate through the **primitive node (Hensen's node)** at the cranial end of the primitive streak.
+    \item These cells migrate cranially in the midline between the ectoderm and endoderm until they reach the **prechordal plate**, forming the solid **notochordal process**.
+    \item The notochordal process canalizes to form the **notochordal canal**.
+    \item The floor of the canal fuses with underlying embryonic endoderm and degenerates, leaving a temporary communication between the amniotic cavity and yolk sac called the **neurenteric canal**.
+    \item The remaining notochordal plate proliferates, rolls up, and separates completely from the endoderm to form the definitive solid cylindrical rod: the **Notochord**.
+\end{enumerate}
+
+\textbf{3. Functions and Fate of the Notochord:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Primary Induction:} Induces overlying ectoderm to thicken and fold into the **neural tube** (future brain and spinal cord).
+    \item \textit{Axial Skeleton Development:} Signals surrounding sclerotome cells to migrate around it to form the vertebral column.
+    \item \textit{Definitive Fate / Adult Remnants:}
+    \begin{itemize}
+        \item The portion inside vertebral bodies completely regresses.
+        \item Between adjacent vertebrae, it persists as the central gelatinous core of the intervertebral disc: the \textbf{Nucleus Pulposus}.
+        \item Persists as the **apical ligament of the dens** (odontoid process of axis).
+    \end{itemize}
+    \item \textit{Pathology:} Persistent embryonic notochordal remnants can undergo malignant transformation, giving rise to rare tumors called \textbf{Chordomas} (most common at spheno-occipital clivus and sacrococcygeal regions).
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [3+2 = 5 Marks]}
+Describe the special features of sesamoid bone with two examples.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Special Anatomical Features of Sesamoid Bones:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Intratendinous Location:} Develop entirely embedded within the substance of tendons or joint capsules where they wrap across bony pulleys.
+    \item \textbf{Absence of Periosteum:} Unlike all other bones, sesamoid bones are not invested by a true periosteum.
+    \item \textbf{Avascular / Devoid of Haversian Systems:} Lack classic Haversian osteon architecture and medullary cavity.
+    \item \textbf{Ossification Timing:} Ossify late by endochondral ossification, usually after birth during childhood or puberty.
+    \item \textbf{Biomechanical Role:}
+    \begin{itemize}
+        \item Protect the parent tendon from compressive stress and friction.
+        \item Alter the direction of pull of the tendon, increasing the angle of insertion and mechanical torque of the muscle.
+        \item Maintain local tendon vascularity by preventing tissue strangulation.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Examples:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Patella (Kneecap):} The largest sesamoid bone in the human body; embedded within the tendon of the quadriceps femoris muscle; articulates with the patellar surface of the femur.
+    \item \textbf{Pisiform Bone:} Small, pea-shaped sesamoid bone embedded within the tendon of the **flexor carpi ulnaris (FCU)** muscle at the wrist.
+    \item Sesmoids of flexor hallucis brevis (ball of the foot) and flexor pollicis brevis (thumb).
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Sympathetic trunk \\
+(b) Histology of thin skin \\
+(c) Sciatic nerve
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Sympathetic Trunk:}
+\begin{itemize}[leftmargin=*]
+    \item Paired, ganglionated nerve cord extending alongside the vertebral column from the base of the skull to the coccyx, where the two trunks converge at the **ganglion impar**.
+    \item Composed of 21--24 ganglia: 3 cervical (superior, middle, inferior/stellate), 11--12 thoracic, 4 lumbar, 4--5 sacral.
+    \item Receives preganglionic fibers (myelinated) from the thoracolumbar spinal cord (T1--L2) via **white rami communicantes**.
+    \item Sends postganglionic fibers (unmyelinated) to all 31 pairs of spinal nerves via **gray rami communicantes**.
+    \item \textit{Clinical:} Superior cervical ganglion injury causes **Horner's Syndrome** (ptosis, miosis, anhidrosis, enophthalmos).
+\end{itemize}
+
+\textbf{(b) Histology of Thin Skin:}
+\begin{itemize}[leftmargin=*]
+    \item Covers the entire body except palms and soles. Lined by keratinized stratified squamous epithelium with four layers:
+    \begin{enumerate}
+        \item \textit{Stratum Basale:} Single layer of cuboidal/columnar stem cells.
+        \item \textit{Stratum Spinosum:} Thinner prickle cell layer (2--3 cell layers).
+        \item \textit{Stratum Granulosum:} Discontinuous, thin 1--2 cell layer.
+        \item \textit{Stratum Corneum:} Very thin, loose, flake-like keratin layer.
+    \end{enumerate}
+    \item \textbf{Diagnostic Distinctions from Thick Skin:} Lacks stratum lucidum; possesses **hair follicles**, **sebaceous glands**, and **arrector pili smooth muscles**. Dermal papillae are lower and less numerous.
+\end{itemize}
+
+\textbf{(c) Sciatic Nerve:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Origin:} Largest nerve in the human body; arises from the **Sacral Plexus** (ventral rami of L4, L5, S1, S2, S3).
+    \item \textit{Course:} Leaves pelvis through the greater sciatic foramen below the piriformis muscle; descends in the posterior thigh resting on adductor magnus; terminates at the superior angle of the popliteal fossa by dividing into the **Tibial nerve** and **Common fibular (peroneal) nerve**.
+    \item \textit{Branches:} Supplies hamstring muscles (semitendinosus, semimembranosus, biceps femoris) and ischial part of adductor magnus.
+    \item \textit{Applied Anatomy:} Intramuscular injections in the gluteal region must be administered strictly in the **upper outer quadrant** to avoid impaling the sciatic nerve. Compression causes **Sciatica** (shooting pain down posterior thigh and leg).
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [3+2 = 5 Marks]}
+Describe the histological features of lung with a well-labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Histological Features of Normal Lung Tissue:}
+Composed of conducting and respiratory zones surrounded by visceral pleura:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Intrapulmonary Bronchi:} Lined by respiratory epithelium (pseudostratified ciliated columnar with goblet cells). Supported by irregular plates of **hyaline cartilage**, a distinct circular smooth muscle layer, and bronchial seromucous glands in the submucosa.
+    \item \textbf{Bronchioles:} Lack cartilage plates and submucosal glands. Lined by simple ciliated columnar to cuboidal epithelium with **Clara cells (Club cells)** that secrete surfactant-like components and detoxify xenobiotics. Surrounded by a thick, complete circular smooth muscle coat (responsive to autonomic regulation and asthma).
+    \item \textbf{Alveoli (Respiratory Unit):}
+    \begin{itemize}
+        \item Honeycomb network of thin-walled polyhedral air sacs opening into alveolar ducts.
+        \item \textbf{Type I Pneumocytes (Squamous Alveolar Cells):} Very thin, flattened cells covering 95\% of alveolar surface; specialized for rapid gas exchange.
+        \item \textbf{Type II Pneumocytes (Septal Cells):} Rounded, cuboidal cells with foamy cytoplasm; contain characteristic **lamellar bodies**; synthesize and secrete **pulmonary surfactant** (dipalmitoylphosphatidylcholine - DPPC) to reduce alveolar surface tension. Act as stem cells to regenerate Type I pneumocytes.
+        \item \textbf{Alveolar Macrophages (Dust Cells):} Scavenge carbon particles, dust, and hemosiderin ("heart failure cells").
+    \end{itemize}
+    \item \textbf{Blood-Air Barrier (Respiratory Membrane):}
+    Consists of: Surfactant layer $\rightarrow$ Type I pneumocyte cytoplasm $\rightarrow$ Fused epithelial and capillary basement membranes $\rightarrow$ Capillary endothelial cytoplasm. Total thickness is only 0.2--0.5 $\mu$m.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [3+2 = 5 Marks]}
+Describe briefly the parts of the bronchial tree with its normal histological structural changes.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Parts of the Bronchial Tree (Conduction to Respiration):}
+\begin{center}
+Trachea $\rightarrow$ Primary (Principal) Bronchi $\rightarrow$ Secondary (Lobar) Bronchi $\rightarrow$ Tertiary (Segmental) Bronchi $\rightarrow$ Smaller Bronchi $\rightarrow$ Terminal Bronchioles $\rightarrow$ Respiratory Bronchioles $\rightarrow$ Alveolar Ducts $\rightarrow$ Alveolar Sacs $\rightarrow$ Alveoli.
+\end{center}
+
+\textbf{2. Histological Transitions along the Tree:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Epithelial Transition:}
+    \begin{itemize}
+        \item Trachea and main bronchi: Pseudostratified ciliated columnar with abundant goblet cells.
+        \item Segmental bronchi to large bronchioles: Simple ciliated columnar with decreasing goblet cells.
+        \item Terminal bronchioles: Simple ciliated cuboidal with non-ciliated **Clara (Club) cells**; goblet cells completely absent (prevents mucus clogging small airways).
+        \item Alveoli: Simple squamous (Type I pneumocytes).
+    \end{itemize}
+    \item \textbf{Cartilage Framework:}
+    \begin{itemize}
+        \item Trachea: C-shaped hyaline cartilage rings open posteriorly.
+        \item Extrapulmonary bronchi: Complete cartilage rings.
+        \item Intrapulmonary bronchi: Discontinuous, irregular hyaline cartilage plates.
+        \item Bronchioles ($<1$ mm diameter): **Complete disappearance of cartilage**.
+    \end{itemize}
+    \item \textbf{Smooth Muscle Development:}
+    \begin{itemize}
+        \item Increases proportionally down the tree; reaches maximal relative thickness in the walls of terminal and respiratory bronchioles.
+    \end{itemize}
+    \item \textbf{Submucosal Glands:} Seromucous glands abundant in trachea and bronchi; completely disappear at the bronchiolar level.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [3+3 = 6 Marks]}
+Describe briefly the action and nerve supply of the muscles of mastication.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{The Four Primary Muscles of Mastication:}
+All are innervated by the \textbf{Mandibular division of Trigeminal Nerve ($V_3$)}:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Masseter Muscle:}
+    \begin{itemize}
+        \item \textit{Nerve Supply:} Masseteric nerve (anterior trunk of $V_3$).
+        \item \textit{Actions:} Powerful elevation of the mandible (closes jaws to crush food against molar occlusal tables); superficial fibers assist in protrusion.
+    \end{itemize}
+    \item \textbf{Temporalis Muscle:}
+    \begin{itemize}
+        \item \textit{Nerve Supply:} Anterior and posterior deep temporal nerves (anterior trunk of $V_3$).
+        \item \textit{Actions:}
+        \begin{itemize}
+            \item Anterior vertical and middle oblique fibers: Rapid \textbf{elevation} of mandible to close jaw.
+            \item Posterior horizontal fibers: \textbf{Retraction} of the protruded mandible.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Medial Pterygoid Muscle:}
+    \begin{itemize}
+        \item \textit{Nerve Supply:} Nerve to medial pterygoid (arises from the \textbf{main trunk} of $V_3$).
+        \item \textit{Actions:} Elevates mandible; works with masseter to form a pincer sling around mandibular ramus; assists lateral pterygoid in protrusion and side-to-side chewing.
+    \end{itemize}
+    \item \textbf{Lateral Pterygoid Muscle (Essential Opener):}
+    \begin{itemize}
+        \item \textit{Nerve Supply:} Nerve to lateral pterygoid (anterior trunk of $V_3$).
+        \item \textit{Actions:}
+        \begin{itemize}
+            \item \textbf{Depression of Mandible:} Pulls condylar process and articular disc forward along articular eminence, initiating **mouth opening** (assisted by digastric and geniohyoid).
+            \item \textbf{Protrusion:} Bilateral simultaneous contraction pulls the lower jaw forward.
+            \item \textbf{Chewing Grinding Movements:} Alternate unilateral contraction swings the mandible and chin toward the opposite side.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Pericardium with its nerve supply \\
+(b) Paranasal air sinuses \\
+(c) Lacrimal apparatus
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Pericardium:}
+\begin{itemize}[leftmargin=*]
+    \item Fibroserous sac enclosing the heart and roots of the great vessels.
+    \item \textit{Subdivisions:}
+    \begin{enumerate}
+        \item \textbf{Fibrous Pericardium:} Tough, conical, non-distensible outer fibrous sac; base fused to the central tendon of diaphragm; apex continuous with adventitia of great vessels.
+        \item \textbf{Serous Pericardium:} Closed invaginated serous sac with:
+        \begin{itemize}
+            \item \textit{Parietal layer:} Lines deep surface of fibrous pericardium.
+            \item \textit{Visceral layer (Epicardium):} Closely adheres to the myocardium.
+        \end{itemize}
+        \item \textit{Pericardial Cavity:} Slit-like potential space containing 15--50 mL of lubricating serous fluid. Features two sinuses: \textbf{Transverse sinus} (behind aorta and pulmonary trunk) and \textbf{Oblique sinus} (behind left atrium).
+    \end{enumerate}
+    \item \textit{Nerve Supply:} Fibrous and parietal serous pericardium are innervated by the somatic \textbf{Phrenic Nerve (C3, C4, C5)} (pain referred to tip of shoulder). Visceral epicardium is innervated by autonomic nerves and is insensitive to ordinary pain.
+\end{itemize}
+
+\textbf{(b) Paranasal Air Sinuses:}
+\begin{itemize}[leftmargin=*]
+    \item Paired, air-filled cavities situated inside the frontal, ethmoid, sphenoid, and maxillary bones, lined by ciliated pseudostratified respiratory epithelium.
+    \item \textit{Sinuses and Openings:}
+    \begin{itemize}
+        \item \textbf{Maxillary Sinus (Antrum of Highmore):} Largest sinus; opens into the hiatus semilunaris of the middle nasal meatus.
+        \item \textbf{Frontal Sinus:} Drains via frontonasal duct into the middle meatus (infundibulum).
+        \item \textbf{Ethmoidal Sinuses:} Anterior and middle open into middle meatus (bulla ethmoidalis); posterior opens into superior meatus.
+        \item \textbf{Sphenoidal Sinus:} Opens into the sphenoethmoidal recess above superior concha.
+    \end{itemize}
+    \item \textit{Functions:} Lighten skull weight, provide resonance to voice, humidify inspired air.
+    \item \textit{Dental Importance:} Roots of maxillary 1st and 2nd molars lie immediately beneath the floor of the maxillary sinus; periapical dental infection can lead to maxillary sinusitis or oroantral fistula following extraction.
+\end{itemize}
+
+\textbf{(c) Lacrimal Apparatus:}
+\begin{itemize}[leftmargin=*]
+    \item Group of structures responsible for producing, circulating, and draining lacrimal fluid (tears).
+    \item \textit{Components:}
+    \begin{enumerate}
+        \item \textbf{Lacrimal Gland:} Serous gland situated in the lacrimal fossa in the anterolateral roof of the orbit. Secretes tears via 10--12 ducts into superior conjunctival fornix.
+        \item \textbf{Lacrimal Puncta and Canaliculi:} Minute orifices on upper and lower eyelid margins leading into superior and inferior canaliculi.
+        \item \textbf{Lacrimal Sac:} Dilated membranous pouch situated in the lacrimal groove behind the medial palpebral ligament.
+        \item \textbf{Nasolacrimal Duct:} 18 mm long duct directed downward to open into the **inferior meatus of the nose**, guarded by the mucosal valve of Hasner.
+    \end{enumerate}
+    \item \textit{Secretomotor Nerve Supply:} Greater petrosal nerve (CN VII) $\rightarrow$ nerve of pterygoid canal $\rightarrow$ pterygopalatine ganglion $\rightarrow$ maxillary nerve $\rightarrow$ zygomatic nerve $\rightarrow$ lacrimal nerve.
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\subsection{Examination: December 30, 2016 (BDS I New Course)}
+\textbf{Subject:} Anatomy \quad \textbf{Marks:} 50 (Section B: 25, Section C: 25)
+
+\subsubsection{Section B [25 Marks]}
+
+\begin{qbox}{Question 1 [3+3 = 6 Marks]}
+Describe the histological structure of the thymus with a labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Histological Structure of the Thymus:}
+Primary central lymphoid organ responsible for T-lymphocyte maturation and immunocompetence.
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Capsule and Lobulation:}
+    \begin{itemize}
+        \item Enclosed by a thin fibrous connective tissue capsule.
+        \item Sends vascular septa (trabeculae) into the parenchyma, dividing each lobe into incomplete lobules (0.5--2 mm wide). The cortex is compartmentalized into lobules, whereas the central medulla remains continuous throughout the organ.
+    \end{itemize}
+    \item \textbf{Cortex (Outer Dark Region):}
+    \begin{itemize}
+        \item Densely packed with proliferating, immature small T-lymphocytes (\textbf{thymocytes}), making the cortex stain deeply basophilic with hematoxylin.
+        \item T-cells undergo positive selection here (interaction with self-MHC molecules).
+        \item \textbf{Blood-Thymus Barrier:} Formed by non-fenestrated capillary endothelium, thick basement membrane, and Type I epithelial reticular cells; shields maturing thymocytes from exposure to circulating foreign antigens.
+    \end{itemize}
+    \item \textbf{Medulla (Inner Pale Region):}
+    \begin{itemize}
+        \item Stains lightly eosinophilic due to a lower lymphocyte density and higher proportion of Epithelioreticular cells (Types IV, V, VI). Maturing T-cells undergo negative selection (elimination of autoreactive clones).
+        \item \textbf{Hassall's Corpuscles (Thymic Corpuscles) --- Diagnostic Landmark:}
+        \begin{itemize}
+            \item Concentric, whorled arrangements of flattened, eosinophilic, degenerated Type VI epithelioreticular cells with central keratinization and calcification.
+            \item Unique to the thymic medulla (not found in any other lymphoid organ).
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Absence of Germinal Centers and Afferent Lymphatics:} The thymus does not possess B-cell lymphoid follicles, germinal centers, or afferent lymphatics; it contains only efferent lymphatics at trabeculae.
+    \item \textbf{Age Involution:} Reaches peak development at puberty, after which it undergoes progressive physiological atrophy (involution), with cortical lymphocytes being replaced by adipose tissue.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [3+2 = 5 Marks]}
+Give the origin, course, and applied anatomy of the radial nerve.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Origin:}
+Largest branch of the **posterior cord of the brachial plexus** in the axilla; carries nerve fibers from root values **C5, C6, C7, C8, and T1**.
+
+\textbf{2. Course and Relations:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{In the Axilla:} Lies behind the third part of the axillary artery on the subscapularis, teres major, and latissimus dorsi.
+    \item \textit{In the Arm:} Descends into the upper arm behind the brachial artery; enters the lower triangular space to access the posterior compartment of the arm.
+    \item \textit{In the Radial (Spiral) Groove:} Winds obliquely downward and laterally around the middle third of the humerus, resting directly against the bony groove between the lateral and medial heads of the triceps muscle, accompanied by the **profunda brachii vessels**.
+    \item \textit{In the Anterior Compartment:} At the lower third of the arm, it pierces the lateral intermuscular septum to enter the anterior compartment, running in a muscular groove between brachialis medially and brachioradialis/extensor carpi radialis longus laterally.
+    \item \textit{Terminal Division:} At the level of the lateral epicondyle of the humerus, it divides into two terminal branches:
+    \begin{enumerate}
+        \item \textbf{Superficial Radial Nerve:} Sensory; travels under brachioradialis to supply the skin of the lateral 2/3 of the dorsum of the hand and dorsal aspects of the lateral $3\frac{1}{2}$ digits up to the nail beds.
+        \item \textbf{Deep Branch (Posterior Interosseous Nerve):} Motor; pierces the supinator muscle to supply the extensor muscles of the forearm.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{3. Applied Anatomy:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Midshaft Humeral Fracture:} Causes injury in the spiral groove, paralyzing wrist and finger extensors, leading to **Wrist Drop** (inability to extend wrist and fingers) and sensory impairment over the dorsal first web space.
+    \item \textbf{Crutch Palsy / Saturday Night Palsy:} High compression of the nerve against the humerus in the axilla or spiral groove (e.g. falling asleep with the arm draped over a chair) produces temporary motor neuropraxia with wrist drop.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [3+2 = 5 Marks]}
+Describe the layers of the skin with a labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Layers of the Skin (Integument):}
+Consists of two primary structural layers: the outer superficial **Epidermis** and the underlying vascular **Dermis**, resting on the subcutaneous hypodermis.
+
+\textbf{1. Epidermis (Stratified Squamous Keratinized Epithelium):}
+Composed of five layers in thick skin (four in thin skin), listed from deep to superficial:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Stratum Basale (Germinativum):} Single layer of basophilic columnar/cuboidal keratinocyte stem cells attached to the basement membrane by hemidesmosomes. Demonstrates continuous mitotic division. Also contains **Melanocytes** (synthesize melanin for UV photoprotection) and **Merkel cells** (mechanoreceptors for light touch).
+    \item \textbf{Stratum Spinosum (Prickle Cell Layer):} 4--8 layers of polyhedral cells connected by prominent desmosomes that appear as "spines" or prickles. Synthesizes cytokeratin tonofilaments. Contains antigen-presenting **Langerhans cells**.
+    \item \textbf{Stratum Granulosum:} 3--5 layers of flattened keratinocytes containing dark, basophilic **keratohyalin granules** (contain profilaggrin) and membrane-coating lamellar granules (release lipid seal).
+    \item \textbf{Stratum Lucidum:} Thin, clear, refractile, eosinophilic band found \textbf{only in thick skin} (palms and soles). Composed of flattened dead cells filled with **eleidin**.
+    \item \textbf{Stratum Corneum:} Outermost protective layer consisting of 15--30 layers of dead, anucleated, flattened horny squames filled with cross-linked keratin embedded in a lipid matrix.
+\end{enumerate}
+
+\textbf{2. Dermis (Connective Tissue Layer):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Papillary Layer:} Superficial layer composed of loose areolar connective tissue with Type III collagen and elastin. Interdigitates with epidermal rete pegs via dermal papillae containing capillary loops and **Meissner's corpuscles** (tactile corpuscles).
+    \item \textbf{Reticular Layer:} Deep, thick layer of dense irregular connective tissue containing coarse Type I collagen bundles and thick elastic fibers. Contains hair follicles, sebaceous glands, sweat glands, blood vessels, and **Pacinian corpuscles** (vibration/pressure receptors).
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Great saphenous vein \\
+(b) Histological structure of neurons \\
+(c) Structural features of thick skin
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Great Saphenous Vein:}
+\begin{itemize}[leftmargin=*]
+    \item Longest superficial vein of the human body.
+    \item \textit{Origin:} Formed by the union of the dorsal digital vein of the great toe with the dorsal venous arch of the foot.
+    \item \textit{Course:} Ascends **1 cm anterior to the medial malleolus**; travels along medial side of leg with the saphenous nerve; passes a hand's breadth posterior to medial border of patella; ascends medial thigh, pierces the cribriform fascia at the **saphenous opening**, and terminates in the **femoral vein**.
+    \item \textit{Clinical:} Contains 10--20 valves. Used for **saphenous cutdown** at the medial malleolus for emergency IV access and harvested for **Coronary Artery Bypass Grafting (CABG)**. Valve incompetence causes **varicose veins**.
+\end{itemize}
+
+\textbf{(b) Histology of Neurons:}
+\begin{itemize}[leftmargin=*]
+    \item The structural and functional unit of the nervous system.
+    \item \textit{Cell Body (Soma / Perikaryon):} Contains large spherical euchromatic nucleus with prominent nucleolus. Cytoplasm contains abundant rough ER and free polyribosomes forming basophilic clumps called **Nissl bodies (Nissl substance)**, which extend into dendrites but are conspicuously **absent from the axon hillock**.
+    \item \textit{Dendrites:} Multiple, short, branching tapered processes that receive afferent impulses; surface studded with dendritic spines.
+    \item \textit{Axon:} Single, long cylindrical process of uniform diameter originating from the **axon hillock**; generates and conducts action potentials away from the soma. Terminate in terminal boutons.
+\end{itemize}
+
+\textbf{(c) Thick Skin:}
+\begin{itemize}[leftmargin=*]
+    \item Specialized skin found exclusively on the **palmar surfaces of hands** and **plantar surfaces of feet**.
+    \item \textit{Histological Landmarks:}
+    \begin{enumerate}
+        \item Exceptionally prominent, thick stratum corneum.
+        \item Presence of a distinct **stratum lucidum**.
+        \item Highly developed dermal papillae forming epidermal friction ridges (fingerprints).
+        \item Completely lacks hair follicles, sebaceous glands, and arrector pili muscles.
+        \item Contains high density of eccrine sweat glands and sensory receptors (Meissner's and Pacinian corpuscles).
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section C [25 Marks]}
+
+\begin{qbox}{Question 5 [1+2+4 = 6 Marks]}
+Describe the type, capsular attachments, and muscles causing different movements of the temporomandibular joint (TMJ).
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Type of Temporomandibular Joint (TMJ):}
+An atypical synovial joint classified as a \textbf{Bicondylar Joint} or \textbf{Ginglymoarthrodial Joint} (permits both hinge-like rotational and gliding translational movements). Articular surfaces are covered by **fibrocartilage** (not hyaline cartilage).
+
+\textbf{2. Capsular Attachments:}
+The fibrous capsule is thin, loose, and envelops the joint:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Above (Superior):} Attached to the anterior margin of the articular eminence, the margins of the mandibular (glenoid) fossa, and posteriorly to the squamotympanic and petrotympanic fissures.
+    \item \textbf{Below (Inferior):} Attached around the neck of the condyle of the mandible.
+    \item \textbf{Circumference:} Firmly attached to the periphery of the biconcave **fibrocartilaginous articular disc**, dividing the joint cavity into an **upper meniscotemporal compartment** (for translation/sliding) and a **lower meniscocondylar compartment** (for rotation/hinge).
+    \item \textbf{Lateral Reinforcement:} Thickened laterally to form the strong **Lateral (Temporomandibular) Ligament**, which prevents posterior and inferior condylar displacement.
+\end{itemize}
+
+\textbf{3. Movements and Muscles Acting on TMJ:}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3.5cm}p{4cm}X}
+\toprule
+\textbf{Movement} & \textbf{Compartment} & \textbf{Primary Muscles Responsible} \\
+\midrule
+\textbf{Depression} (Mouth opening) & Hinge in lower; sliding in upper & \textbf{Lateral pterygoid} (initiates); assisted by digastric, geniohyoid, and mylohyoid (gravity). \\
+\textbf{Elevation} (Mouth closing) & Hinge in lower; sliding in upper & \textbf{Temporalis}, \textbf{Masseter}, and \textbf{Medial pterygoid}. \\
+\textbf{Protrusion} (Protraction) & Gliding in upper compartment & \textbf{Lateral and Medial pterygoids} acting simultaneously on both sides. \\
+\textbf{Retraction} & Gliding in upper compartment & Posterior horizontal fibers of \textbf{Temporalis}, deep part of masseter, and digastric. \\
+\textbf{Lateral Excursion} (Chewing/grinding) & Gliding in upper compartment & Alternate unilateral action of **Lateral and Medial pterygoid** of the opposite side. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [2+2+1 = 5 Marks]}
+Mention the boundaries and structures present in the nasopharynx with its applied anatomy.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Boundaries of the Nasopharynx:}
+The uppermost part of the pharynx, situated behind the nasal cavities and above the soft palate:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Anterior:} Communicates directly with nasal cavity through the paired posterior nasal apertures (\textbf{Choanae}).
+    \item \textbf{Posterior:} Upper cervical vertebrae (C1 atlas, C2 axis) and prevertebral muscles covered by prevertebral fascia.
+    \item \textbf{Roof:} Body of the sphenoid bone and basilar part of the occipital bone (basisphenoid).
+    \item \textbf{Floor:} Upper sloping surface of the soft palate; communicates inferiorly with the oropharynx via the **pharyngeal isthmus**.
+    \item \textbf{Lateral Walls:} Bounded by the medial pterygoid plate and pharyngobasilar fascia.
+\end{itemize}
+
+\textbf{2. Structures Present in Nasopharynx:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Pharyngeal Tonsil (Adenoid):} Submucosal collection of lymphoid tissue situated at the junction of the roof and posterior wall.
+    \item \textbf{Pharyngeal Opening of the Auditory (Eustachian) Tube:} Located on the lateral wall, 1--1.25 cm behind the inferior nasal concha.
+    \item \textbf{Torus Tubarius:} Prominent curved cartilaginous elevation bounding the upper and posterior margins of the tubal orifice.
+    \item \textbf{Salpingopharyngeal Fold:} Vertical mucosal fold descending from torus tubarius containing the salpingopharyngeus muscle.
+    \item \textbf{Pharyngeal Recess (Fossa of Rosenmuller):} Deep slit-like depression behind the torus tubarius.
+    \item \textbf{Tubal Tonsil:} Aggregation of lymphoid nodules lying near the tubal opening around torus tubarius.
+\end{enumerate}
+
+\textbf{3. Applied Anatomy:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Adenoid Hypertrophy:} Pathological enlargement of the pharyngeal tonsil in children blocks the choanae and Eustachian tube, leading to **obligate mouth breathing, "adenoid facies"**, recurrent serous otitis media, and conductive hearing loss.
+    \item \textbf{Nasopharyngeal Carcinoma:} Commonly originates in the fossa of Rosenmuller; presents with painless upper cervical lymphadenopathy.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Mention briefly the different stages of maturation of the lungs.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Stages of Fetal Lung Maturation (Embryology):}
+Lung development is divided into four chronological histological stages:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Pseudoglandular Stage (Weeks 5 to 16):}
+    \begin{itemize}
+        \item Developing lung resembles an exocrine tubuloacinar gland histologically.
+        \item Major branching of bronchial tree up to terminal bronchioles occurs.
+        \item Lined by simple cuboidal epithelium.
+        \item No respiratory bronchioles or alveoli are present; \textbf{respiration is not possible; fetuses born during this period cannot survive}.
+    \end{itemize}
+    \item \textbf{Canalicular Stage (Weeks 16 to 26):}
+    \begin{itemize}
+        \item Lumina of bronchi and terminal bronchioles enlarge significantly.
+        \item Terminal bronchioles divide into two or more **respiratory bronchioles**, which subsequently divide into 3--6 primordial alveolar ducts.
+        \item Tissue becomes highly vascularized with capillary ingrowth.
+        \item Respiration becomes possible at the end of this stage (around week 24--26) with specialized intensive care.
+    \end{itemize}
+    \item \textbf{Terminal Sac (Saccular) Stage (Weeks 26 to Birth):}
+    \begin{itemize}
+        \item Numerous thin-walled primitive terminal sacs (primitive alveoli) develop.
+        \item Capillaries bulge prominently into the sacs, establishing the definitive **blood-air barrier**.
+        \item Epithelium differentiates into:
+        \begin{itemize}
+            \item \textbf{Type I Pneumocytes:} Thin squamous cells for gas exchange.
+            \item \textbf{Type II Pneumocytes:} Cuboidal cells that begin synthesizing and secreting **pulmonary surfactant**.
+        \end{itemize}
+        \item Surfactant levels increase significantly by week 34--36, preventing alveolar collapse during expiration.
+    \end{itemize}
+    \item \textbf{Alveolar Stage (Week 32 to 8 Years of Age):}
+    \begin{itemize}
+        \item Primitive terminal sacs mature into definitive alveoli with thin epithelial-endothelial membranes.
+        \item About 85--90\% of all mature alveoli (approx. 300 million) develop **postnatally** through secondary septation during the first 8 years of life.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Clinical Correlation:} Premature infants born before week 28 develop **Neonatal Respiratory Distress Syndrome (NRDS)** due to surfactant deficiency, causing massive alveolar collapse (atelectasis) and hyaline membrane formation.
+\end{ansbox}
+
+\begin{qbox}{Question 8 [3 $\times$ 3 = 9 Marks]}
+Write short notes on:
+(a) Carotid sheath \\
+(b) Blood supply of the heart \\
+(c) Sternal angle
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Carotid Sheath:}
+\begin{itemize}[leftmargin=*]
+    \item Tubular condensation of deep cervical fascia extending from the base of the skull (around carotid canal and jugular foramen) to the root of the neck (merges with adventitia of aortic arch).
+    \item \textit{Contents:}
+    \begin{enumerate}
+        \item \textbf{Arteries (Medial):} Common carotid artery (inferiorly) and Internal carotid artery (superiorly).
+        \item \textbf{Vein (Lateral):} Internal jugular vein (thinner-walled, lies laterally).
+        \item \textbf{Nerve (Posterior):} \textbf{Vagus nerve (CN X)}, lying in the posterior groove between the artery and vein.
+    \end{enumerate}
+    \item \textit{Relations:} The **Ansa Cervicalis** is embedded in the anterior wall of the sheath; the cervical sympathetic trunk lies directly behind the posterior wall.
+\end{itemize}
+
+\textbf{(b) Blood Supply of the Heart (Coronary Circulation):}
+\begin{itemize}[leftmargin=*]
+    \item Arterial supply from two coronary arteries arising from the aortic sinuses at the base of the ascending aorta:
+    \begin{enumerate}
+        \item \textbf{Right Coronary Artery (RCA):} Arises from anterior aortic sinus; runs in coronary sulcus; gives off marginal branch and terminates as the **Posterior Interventricular Artery (PIVA)**. Supplies right atrium, right ventricle, posterior 1/3 of interventricular septum, SA node (60\%), and AV node (80\%).
+        \item \textbf{Left Coronary Artery (LCA):} Arises from left posterior aortic sinus; divides into **Anterior Interventricular Artery (LAD)** and **Circumflex Artery**. Supplies left atrium, left ventricle, anterior 2/3 of interventricular septum, and apex.
+    \end{enumerate}
+    \item \textit{Coronary Dominance:} Determined by which artery gives off the PIVA (90\% right dominant).
+\end{itemize}
+
+\textbf{(c) Sternal Angle (Angle of Louis):}
+\begin{itemize}[leftmargin=*]
+    \item Manubriosternal joint (symphysis) palpable as a transverse ridge approximately 5 cm below the jugular notch; lies at the level of **T4--T5 intervertebral disc**.
+    \item \textit{Key Landmarks:} Marks articulation of 2nd costal cartilage, boundary between superior and inferior mediastinum, beginning and ending of arch of aorta, bifurcation of trachea, and entry of azygos vein into SVC.
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\subsection{Examination: October 17, 2016 (70 Marks Paper)}
+\textbf{Subject:} Anatomy \quad \textbf{Marks:} 70 (Section A: 35, Section B: 35)
+
+\subsubsection{Section A [35 Marks]}
+
+\begin{qbox}{Question 1 [3+2 = 5 Marks]}
+Describe the histological structure of skeletal muscle with a well-labeled diagram.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Histological Structure of Skeletal Muscle:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Connective Tissue Investments:}
+    \begin{itemize}
+        \item \textit{Epimysium:} Dense irregular collagenous connective tissue sheath enveloping the whole anatomical muscle.
+        \item \textit{Perimysium:} Connective tissue septa surrounding bundles of muscle fibers called **fascicles**. Contains larger blood vessels and intramuscular nerves.
+        \item \textit{Endomysium:} Delicate network of reticular fibers and capillaries wrapping each individual muscle fiber.
+    \end{itemize}
+    \item \textbf{Muscle Fiber Characteristics:}
+    \begin{itemize}
+        \item Extremely long, cylindrical, non-branching multinucleated cells (syncytium).
+        \item \textbf{Nuclei:} Multiple flattened, oval nuclei located strictly in the **peripheral cytoplasm immediately beneath the sarcolemma**.
+        \item \textbf{Cross-Striations (Myofibrils):} Alternating dark **A-bands** (anisotropic, composed of thick myosin filaments with overlapping thin actin filaments) and light **I-bands** (isotropic, composed of thin actin filaments).
+        \item Each I-band is bisected by a dark transverse **Z-disc (Z-line)**.
+        \item The structural and functional contractile unit between two consecutive Z-lines is the **Sarcomere** (2.5 $\mu$m long at rest).
+        \item The central pale zone of the A-band is the **H-zone**, bisected by the dark **M-line**.
+    \end{itemize}
+    \item \textbf{Sarcoplasmic Triad System:} Located at the **A--I junction** in human skeletal muscle; consists of one central transverse tubule (T-tubule: invagination of sarcolemma) flanked by two terminal cisternae of sarcoplasmic reticulum ($Ca^{2+}$ storage sites). Transmits depolarization rapidly into deep myofibrils to trigger contraction.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 2 [5 Marks]}
+Describe the different stages of endochondral (intracartilaginous) ossification.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{Stages of Endochondral Ossification (Long Bone Formation):}
+Process by which a pre-existing hyaline cartilage model is progressively degraded and replaced by mineralized bone:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Formation of Hyaline Cartilage Model:} Mesenchymal cells condense and differentiate into chondroblasts, secreting a mini hyaline cartilage model covered by perichondrium.
+    \item \textbf{Formation of Periosteal Bone Collar:} Vascularization of the perichondrium around the diaphysis triggers osteoprogenitor cells to become osteoblasts, forming a collar of compact bone by intramembranous ossification. The perichondrium is now the **periosteum**.
+    \item \textbf{Chondrocyte Hypertrophy and Calcification:} Chondrocytes in the center of the diaphysis swell (hypertrophy), secrete alkaline phosphatase, and calcify the surrounding cartilage matrix. Nutrients are cut off, causing chondrocytes to die, leaving empty communicating lacunae.
+    \item \textbf{Invasion of Periosteal Bud (Primary Center of Ossification):} Blood vessels, osteogenic cells, and osteoclasts (the periosteal bud) invade the cavities. Osteoclasts resorb calcified cartilage; osteoblasts lay down unmineralized bone matrix (\textbf{osteoid}) upon calcified cartilage trabeculae, establishing the primary ossification center in the diaphysis.
+    \item \textbf{Secondary Ossification Centers and Epiphyseal Plate:} Appear in the epiphyses after birth. A disc of cartilage persists between diaphysis and epiphysis: the **Epiphyseal Plate**, allowing longitudinal bone growth.
+\end{enumerate}
+
+\textbf{Zones of the Epiphyseal Plate (from Epiphysis toward Diaphysis):}
+\begin{enumerate}[leftmargin=*]
+    \item \textit{Zone of Resting (Reserve) Cartilage:} Quiescent hyaline cartilage anchoring plate to epiphysis.
+    \item \textit{Zone of Proliferation:} Chondrocytes divide rapidly, stacking in longitudinal columns ("coins").
+    \item \textit{Zone of Hypertrophy:} Chondrocytes swell markedly and glycogen accumulates.
+    \item \textit{Zone of Calcification:} Matrix calcifies; chondrocytes undergo apoptosis.
+    \item \textit{Zone of Ossification:} Osteoblasts deposit woven bone over calcified spicules.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 3 [1+3+2 = 6 Marks]}
+Write down the boundaries, contents, and applied anatomy of the axilla.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Boundaries of Axilla (Pyramidal Space):}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Apex (Cervicoaxillary Canal):} Directed upward and medially into root of neck; bounded by the clavicle (anterior), superior border of scapula (posterior), and outer border of 1st rib (medial).
+    \item \textbf{Base:} Formed by skin, subcutaneous tissue, and the vaulted axillary fascia.
+    \item \textbf{Anterior Wall:} Pectoralis major, pectoralis minor, subclavius, and clavipectoral fascia.
+    \item \textbf{Posterior Wall:} Subscapularis (upper), Teres major, and Latissimus dorsi (lower).
+    \item \textbf{Medial Wall:} Upper 4--5 ribs with intercostal spaces, covered by serratus anterior.
+    \item \textbf{Lateral Wall:} Very narrow; intertubercular sulcus of the humerus, coracobrachialis, and short head of biceps brachii.
+\end{itemize}
+
+\textbf{2. Contents of Axilla:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Axillary Artery and its Branches:} Enclosed with brachial plexus in axillary sheath; divided into 3 parts by pectoralis minor.
+    \item \textbf{Axillary Vein and Tributaries:} Lies medial to axillary artery; receives cephalic vein.
+    \item \textbf{Brachial Plexus:} Lateral, medial, and posterior cords and their terminal branches.
+    \item \textbf{Axillary Lymph Nodes:} Arranged in five structural groups:
+    \begin{itemize}
+        \item Anterior (pectoral), Posterior (subscapular), Lateral (brachial), Central, and Apical groups.
+    \end{itemize}
+    \item \textbf{Long Thoracic Nerve (of Bell)} and \textbf{Intercostobrachial Nerve} (T2).
+    \item Abundant axillary fat and loose connective tissue.
+\end{enumerate}
+
+\textbf{3. Applied Anatomy:}
+\begin{itemize}[leftmargin=*]
+    \item \textit{Axillary Lymph Node Dissection:} Staging and surgical clearance in breast carcinoma. Danger of injuring:
+    \begin{itemize}
+        \item Long thoracic nerve $\rightarrow$ paralysis of serratus anterior $\rightarrow$ **"Winged Scapula"**.
+        \item Thoracodorsal nerve $\rightarrow$ weakness of latissimus dorsi (adduction and internal rotation).
+    \end{itemize}
+    \item \textit{Axillary Abscess:} Can track upward through the cervicoaxillary canal into the neck.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 4 [4 $\times$ 3.5 = 14 Marks]}
+Write short notes on:
+(a) Cubital fossa boundaries and contents \\
+(b) Synovial joint general features \\
+(c) Stomach bed \\
+(d) Oogenesis
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Cubital Fossa:}
+\begin{itemize}[leftmargin=*]
+    \item Triangular hollow situated on the anterior aspect of the elbow joint.
+    \item \textit{Boundaries:} Superior (Base): Imaginary line connecting medial and lateral epicondyles of humerus; Medial: Lateral border of pronator teres; Lateral: Medial border of brachioradialis; Floor: Brachialis and supinator; Roof: Skin, superficial fascia with median cubital vein, deep fascia with bicipital aponeurosis.
+    \item \textit{Contents (Medial to Lateral: MBBR):}
+    \begin{enumerate}
+        \item \textbf{M}edian Nerve.
+        \item \textbf{B}rachial Artery (bifurcates into radial and ulnar arteries).
+        \item \textbf{B}iceps Brachii Tendon.
+        \item \textbf{R}adial Nerve (deep under brachioradialis).
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(b) Synovial Joint Features:}
+\begin{itemize}[leftmargin=*]
+    \item Highly mobile joint characterized by:
+    \begin{enumerate}
+        \item Articular surfaces covered by smooth, avascular **hyaline articular cartilage**.
+        \item Completely enclosed by a fibrous **joint capsule** reinforced by intrinsic/extrinsic ligaments.
+        \item Joint cavity lined by vascular **synovial membrane** (except over articular cartilage and disc).
+        \item Cavity filled with viscous **synovial fluid** (rich in hyaluronic acid and lubricin) for lubrication and chondrocyte nutrition.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(c) Stomach Bed:}
+\begin{itemize}[leftmargin=*]
+    \item Structures forming the posterior wall bed on which the stomach rests (separated by the lesser sac):
+    \begin{enumerate}
+        \item Left dome of Diaphragm.
+        \item Spleen (gastrosplenic ligament).
+        \item Left suprarenal gland and upper pole of Left Kidney.
+        \item Splenic artery (tortuous course along upper border of pancreas).
+        \item Body and tail of Pancreas.
+        \item Transverse mesocolon and Transverse colon.
+        \item Left colic (splenic) flexure.
+    \end{enumerate}
+\end{itemize}
+
+\textbf{(d) Oogenesis:}
+\begin{itemize}[leftmargin=*]
+    \item Process of ovum formation in the female ovary:
+    \begin{enumerate}
+        \item \textit{Prenatal Stage:} Primordial germ cells migrate to genital ridge $\rightarrow$ differentiate into oogonia $\rightarrow$ proliferate by mitosis $\rightarrow$ enter Meiosis I and arrest in **Diplotene stage of Prophase I** as primary oocytes enclosed in primordial follicles before birth.
+        \item \textit{Puberty to Menopause:} Each ovarian cycle, a cohort resumes meiosis. Immediately before ovulation, the dominant follicle completes Meiosis I, producing a large **Secondary Oocyte** and a small **First Polar Body**.
+        \item \textit{Arrest in Meiosis II:} Secondary oocyte enters Meiosis II and arrests at **Metaphase II**. It is ovulated in this state.
+        \item \textit{Completion of Meiosis II:} Occurs **only if fertilization takes place**; releases mature Ovum and Second Polar Body.
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\subsubsection{Section B [35 Marks]}
+
+\begin{qbox}{Question 5 [6 Marks]}
+Describe the boundaries, contents, and applied anatomy of the carotid triangle.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Boundaries of the Carotid Triangle:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Superior:} Posterior belly of digastric and stylohyoid muscles.
+    \item \textbf{Anteroinferior:} Superior belly of the omohyoid muscle.
+    \item \textbf{Posterior:} Anterior border of the sternocleidomastoid (SCM) muscle.
+    \item \textbf{Floor:} Formed by the thyrohyoid, hyoglossus, and inferior and middle pharyngeal constrictor muscles.
+    \item \textbf{Roof:} Skin, superficial fascia (containing platysma, cervical branch of facial nerve, and transverse cervical nerve), investing layer of deep cervical fascia.
+\end{itemize}
+
+\textbf{2. Contents of the Carotid Triangle:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Arteries:}
+    \begin{itemize}
+        \item \textbf{Common Carotid Artery:} Bifurcates at upper border of thyroid cartilage (C3--C4 disc) into internal and external carotids. Displays **Carotid Sinus** (baroreceptor) and **Carotid Body** (chemoreceptor).
+        \item \textbf{Internal Carotid Artery:} Enters carotid canal without giving any branches in the neck.
+        \item \textbf{External Carotid Artery and its Branches:} Superior thyroid, Lingual, Facial, Ascending pharyngeal, and Occipital arteries.
+    \end{itemize}
+    \item \textbf{Veins:} Internal Jugular Vein (IJV) and its tributaries (common facial, lingual, superior thyroid veins).
+    \item \textbf{Nerves:}
+    \begin{itemize}
+        \item \textbf{Vagus Nerve (CN X):} Runs in posterior carotid sheath.
+        \item \textbf{Hypoglossal Nerve (CN XII):} Hooks around occipital artery and crosses superficial to both internal and external carotid arteries.
+        \item \textbf{Ansa Cervicalis:} Superior root ($C_1$) and inferior root ($C_2, C_3$) lie embedded in anterior wall of carotid sheath; innervates infrahyoid muscles.
+        \item \textbf{Accessory Nerve (CN XI):} Crosses transverse process of atlas.
+        \item Cervical sympathetic trunk (posterior to sheath).
+    \end{itemize}
+    \item \textbf{Lymph Nodes:} Deep cervical lymph nodes (including jugulodigastric node).
+\end{enumerate}
+
+\textbf{3. Applied Anatomy:}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Carotid Pulse:} Readily palpated against the anterior tubercle of C6 vertebra (Chassaignac's tubercle) at the anterior border of SCM.
+    \item \textbf{Carotid Sinus Massage:} Stimulates CN IX baroreceptor afferents to treat supraventricular tachycardia by slowing SA node rate.
+    \item \textbf{Carotid Endarterectomy:} Surgical removal of atheromatous plaque at bifurcation to prevent ischemic strokes.
+\end{itemize}
+\end{ansbox}
+
+\begin{qbox}{Question 6 [6 Marks]}
+Describe the development of the interatrial septum and mention its congenital anomalies.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Embryological Development of Interatrial Septum (4th--6th Weeks):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Septum Primum:}
+    \begin{itemize}
+        \item Crescent-shaped thin membrane grows downward from the roof of the common atrium toward the fused endocardial cushions.
+        \item The opening between its lower free margin and the endocardial cushions is the **Foramen (Ostium) Primum**.
+        \item Before foramen primum closes, apoptosis creates perforations in the upper part of septum primum, coalescing into the **Foramen (Ostium) Secundum**.
+    \end{itemize}
+    \item \textbf{Septum Secundum:}
+    \begin{itemize}
+        \item Thick, muscular crescentic fold grows downward from atrial roof immediately to the right of septum primum.
+        \item Does not reach endocardial cushions; leaves an oval aperture called the **Foramen Ovale**.
+        \item The remaining lower portion of the flexible septum primum acts as a one-way flutter valve for the foramen ovale, allowing right-to-left blood shunting during fetal life.
+    \end{itemize}
+    \item \textbf{Postnatal Closure:}
+    \begin{itemize}
+        \item At birth, first breath expands lungs $\rightarrow$ pulmonary venous return spikes left atrial pressure $\rightarrow$ presses flap-like septum primum against rigid septum secundum, functionally sealing foramen ovale. Complete anatomical fusion occurs by 3--6 months.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{2. Congenital Anomalies (Atrial Septal Defects - ASD):}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Ostium Secundum Defect (Most Common, 75\%):} Excessive resorption of septum primum or defective growth of septum secundum leaves a large aperture at the fossa ovalis.
+    \item \textbf{Patent Foramen Ovale (Probe Patency, 20\%):} Incomplete anatomical fusion; functionally competent but allows probe passage.
+    \item \textbf{Ostium Primum Defect (5\%):} Incomplete closure of foramen primum; associated with endocardial cushion defects and cleft mitral leaflet.
+    \item \textbf{Sinus Venosus Defect:} Defect high near SVC opening; associated with anomalous pulmonary venous drainage.
+    \item \textbf{Common Atrium (Cor Triloculare Biventriculare):} Complete failure of both septa to form.
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 7 [5 Marks]}
+Describe the boundaries and contents of the infratemporal fossa.
+\end{qbox}
+
+\begin{ansbox}
+\textbf{1. Boundaries of the Infratemporal Fossa:}
+An irregularly shaped anatomical space situated behind the maxilla and deep to the ramus of the mandible:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Anterior:} Infratemporal surface of the maxilla and inferior orbital fissure.
+    \item \textbf{Posterior:} Styloid process, carotid sheath, and articular tubercle of temporal bone.
+    \item \textbf{Roof (Superior):} Infratemporal surface and crest of the greater wing of the sphenoid bone and squamous temporal bone. Displays the **Foramen Ovale** and **Foramen Spinosum**.
+    \item \textbf{Medial:} Lateral pterygoid plate of sphenoid and pyramidal process of palatine bone; pterygomaxillary fissure opens anteriorly into the pterygopalatine fossa.
+    \item \textbf{Lateral:} Medial surface of the ramus and coronoid process of the mandible.
+\end{itemize}
+
+\textbf{2. Contents of Infratemporal Fossa:}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Muscles:} Lateral pterygoid and Medial pterygoid muscles; lower tendon of temporalis.
+    \item \textbf{Arteries:}
+    \begin{itemize}
+        \item \textbf{Maxillary Artery (1st and 2nd parts):} Terminal branch of external carotid artery.
+        \item Branches: Middle meningeal artery (enters foramen spinosum), Inferior alveolar artery, accessory meningeal, and muscular branches.
+    \end{itemize}
+    \item \textbf{Veins:} \textbf{Pterygoid Venous Plexus} (surrounds lateral pterygoid; communicates with cavernous sinus via emissary veins and facial vein via deep facial vein).
+    \item \textbf{Nerves:}
+    \begin{itemize}
+        \item \textbf{Mandibular Nerve ($V_3$):} Enters via foramen ovale; branches include:
+        \begin{itemize}
+            \item Lingual nerve (joined by chorda tympani).
+            \item Inferior alveolar nerve (enters mandibular canal).
+            \item Auriculotemporal nerve (encircles middle meningeal artery).
+            \item Buccal nerve (sensory to cheek).
+            \item Muscular branches to masticatory muscles.
+        \end{itemize}
+        \item \textbf{Chorda Tympani (CN VII):} Joins lingual nerve at acute angle; carries taste from anterior $2/3$ of tongue and secretomotor to submandibular/sublingual glands.
+        \item \textbf{Otic Ganglion:} Parasympathetic ganglion situated immediately below foramen ovale on medial side of mandibular nerve trunk.
+    \end{itemize}
+\end{enumerate}
+\end{ansbox}
+
+\begin{qbox}{Question 8 [4 $\times$ 3.5 = 14 Marks]}
+Write short notes on:
+(a) Vocal cord structure and innervation \\
+(b) Facial nerve course in temporal bone \\
+(c) Parotid gland relations and duct \\
+(d) Medial wall of middle ear cavity
+\end{qbox}
+
+\begin{ansbox}
+\textbf{(a) Vocal Cord (True Vocal Fold):}
+\begin{itemize}[leftmargin=*]
+    \item Extends from angle of thyroid cartilage anteriorly to vocal process of arytenoid cartilage posteriorly.
+    \item Covered by non-keratinized stratified squamous epithelium (withstands mechanical vibration).
+    \item Devoid of submucosa, blood vessels, and lymphatics; contains the **Vocal Ligament** (thickened upper free border of cricovocal membrane/conus elasticus) and **Vocalis muscle**.
+    \item \textit{Nerve Supply:} Recurrent Laryngeal Nerve (motor and sensory below vocal cords).
+\end{itemize}
+
+\textbf{(b) Facial Nerve in Temporal Bone:}
+\begin{itemize}[leftmargin=*]
+    \item Enters Internal Acoustic Meatus with CN VIII $\rightarrow$ enters facial canal in petrous bone.
+    \item Turns sharply backward at the **Geniculum** (containing Geniculate Ganglion; gives off Greater Petrosal Nerve).
+    \item Runs horizontally in medial wall of middle ear above promontory and oval window.
+    \item Bends vertically downward behind middle ear in posterior wall; gives off Nerve to Stapedius and **Chorda Tympani**.
+    \item Exits temporal bone via **Stylomastoid Foramen**.
+\end{itemize}
+
+\textbf{(c) Parotid Gland:}
+\begin{itemize}[leftmargin=*]
+    \item Largest salivary gland (purely serous); situated in parotid bed below external acoustic meatus.
+    \item \textit{Relations:} Superficial: Great auricular nerve, skin; Anteromedial: Ramus of mandible, masseter, medial pterygoid; Posteromedial: Mastoid process, SCM, posterior belly of digastric, styloid apparatus, internal carotid artery, IJV.
+    \item \textit{Structures within gland (Superficial to Deep):} Facial nerve branches $\rightarrow$ Retromandibular vein $\rightarrow$ External Carotid Artery.
+    \item \textbf{Parotid Duct (Stensen's duct):} 5 cm long; emerges from anterior border; crosses masseter, pierces buccopharyngeal fascia, bucco-fat pad, and **buccinator** muscle; opens into oral vestibule opposite **crown of maxillary second molar tooth**.
+\end{itemize}
+
+\textbf{(d) Medial Wall of Middle Ear (Tympanic Cavity):}
+\begin{itemize}[leftmargin=*]
+    \item Separates middle ear from internal ear (labyrinth):
+    \begin{enumerate}
+        \item \textbf{Promontory:} Rounded central bony bulge produced by the basal turn of the cochlea; covered by tympanic plexus of nerves.
+        \item \textbf{Fenestra Vestibuli (Oval Window):} Located posterosuperior to promontory; closed by the footplate of the stapes and anular ligament.
+        \item \textbf{Fenestra Cochleae (Round Window):} Located posteroinferior to promontory; closed by the **secondary tympanic membrane**.
+        \item \textbf{Prominence of Facial Canal:} Rounded horizontal ridge running above the oval window.
+        \item \textbf{Prominence of Lateral Semicircular Canal:} Located above facial canal prominence.
+    \end{enumerate}
+\end{itemize}
+\end{ansbox}
+
+\newpage
+\section{Frequency-Based Question Classification (2015--2022)}
+
+Based on systematic question frequency analysis across all 10 Kathmandu University examination sets:
+
+\subsection{Very Frequently Repeated Topics ($\ge 80\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Muscles of Mastication (90\% frequency):} Masseter, Temporalis, Medial and Lateral pterygoids (origin, insertion, action, nerve supply). Tested in 9 of 10 papers.
+    \item \textbf{Histology of Lymphoid Organs (90\% frequency):} Spleen red/white pulp, Lymph node cortex/medulla, Palatine tonsil crypts, Thymus Hassall's corpuscles.
+    \item \textbf{Joints \& Temporomandibular Joint (TMJ) (80\% frequency):} Synovial joint classification with examples, TMJ articulating surfaces, disc, ligaments, and mechanics.
+    \item \textbf{Triangles of the Neck (80\% frequency):} Carotid triangle boundaries, contents, carotid sheath, and digastric triangle.
+\end{itemize}
+
+\subsection{Frequently Repeated Topics (60\%--79\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Brachial Plexus \& Upper Limb Nerves (70\%):} Formation of brachial plexus, Erb's and Klumpke's palsy, Radial nerve course and wrist drop.
+    \item \textbf{Interior of Right Atrium \& Heart Blood Supply (70\%):} Sinus venarum, pectinate muscles, crista terminalis, fossa ovalis, coronary arteries, dominance.
+    \item \textbf{Ossification \& Bone Architecture (70\%):} Endochondral ossification stages, epiphyseal plate zones, blood supply of long bones, sesamoid bones.
+    \item \textbf{General Histology of Skin and Muscle (70\%):} Thick vs thin skin layers, skeletal vs cardiac muscle comparison.
+    \item \textbf{Axilla (60\%):} Pyramidal boundaries, cords of brachial plexus, axillary artery, axillary lymph nodes.
+    \item \textbf{Branchial (Pharyngeal) Apparatus (60\%):} Derivatives of 1st, 2nd, 3rd, 4th/6th arches and pouches.
+    \item \textbf{Infratemporal Fossa (60\%):} Boundaries, maxillary artery branches, mandibular nerve branches, pterygoid venous plexus.
+\end{itemize}
+
+\subsection{Moderately Repeated Topics (40\%--59\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Scalp (50\%):} Five layers, loose areolar tissue as the "dangerous area", emissary veins, black eyes.
+    \item \textbf{Respiratory Tree \& Lungs (50\%):} Bronchopulmonary segments, histology of lung, maturation stages of lung, recesses of pleura.
+    \item \textbf{Femoral Triangle (50\%):} Boundaries, contents, femoral canal, femoral hernia.
+    \item \textbf{Interatrial Septum (40\%):} Septum primum, septum secundum, foramen ovale, ASD types.
+    \item \textbf{Paranasal Air Sinuses (40\%):} Locations, drainage into meatuses, maxillary sinus dental relations.
+\end{itemize}
+
+\subsection{Rarely Repeated Topics (20\%--39\% of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Notochord (30\%):} Formation, primary induction, fate (nucleus pulposus).
+    \item \textbf{Spermatogenesis vs Oogenesis (30\%):} Meiotic arrest, stages, timing.
+    \item \textbf{Sternal Angle (30\%):} Level T4--T5, anatomical relations.
+    \item \textbf{Sciatic Nerve (30\%):} Sacral plexus origin, course, sciatica.
+    \item \textbf{Lacrimal Apparatus (20\%):} Gland, puncta, sac, nasolacrimal duct.
+    \item \textbf{Middle Ear & Vocal Cords (20\%):} Walls of tympanic cavity, vocal fold structure.
+\end{itemize}
+
+\subsection{Unique / One-Time Questions ($<20\%$ of Papers)}
+\begin{itemize}[leftmargin=*]
+    \item Great saphenous vein cutdown course.
+    \item Stomach bed anatomical relations.
+    \item Cubital fossa boundaries and contents.
+    \item Nasopharynx boundaries and adenoid hypertrophy.
+    \item Deep cervical fascia tracing of investing layer.
+\end{itemize}
+
+\newpage
+\appendix
+\section{Human Anatomy Quick Revision Cheatsheet}
+
+\subsection{Head and Neck Anatomy Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Muscles of Mastication ($V_3$ innervated):}
+    \begin{itemize}
+        \item \textit{Masseter:} Zygomatic arch $\rightarrow$ Ramus/angle of mandible. Action: Elevates jaw (crushing).
+        \item \textit{Temporalis:} Temporal fossa $\rightarrow$ Coronoid process. Action: Elevates; posterior fibers retract jaw.
+        \item \textit{Medial Pterygoid:} Medial surface of lateral pterygoid plate $\rightarrow$ Medial angle of mandible. Action: Elevates and protrudes.
+        \item \textit{Lateral Pterygoid:} Greater wing of sphenoid + lateral surface of lateral pterygoid plate $\rightarrow$ Pterygoid fovea + TMJ disc. Action: \textbf{Depresses (opens mouth)}, protrudes, lateral chewing.
+    \end{itemize}
+    \item \textbf{TMJ Articulation:} Atypical bicondylar synovial joint; articular fibrocartilage; disc divides into upper (gliding) and lower (hinge) compartments.
+    \item \textbf{Carotid Sheath:} Deep cervical fascia enclosing CCA/ICA (medial), IJV (lateral), and Vagus nerve (posterior). Ansa cervicalis embedded in anterior wall; sympathetic chain posterior.
+    \item \textbf{Scalp Layers (SCALP):} \textbf{S}kin, \textbf{C}onnective tissue, \textbf{A}poneurosis (Galea), \textbf{L}oose areolar tissue (\textbf{Dangerous area} with emissary veins), \textbf{P}ericranium.
+    \item \textbf{1st Branchial Arch:} Meckel's cartilage (malleus, incus, sphenomandibular ligament); Muscles of mastication, mylohyoid, anterior digastric, tensor tympani, tensor veli palatini. Nerve: $V_3$.
+\end{itemize}
+
+\subsection{Thorax \& Locomotor Anatomy Summary}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Right Atrium Interior:} Smooth sinus venarum (SVC, IVC, coronary sinus with Thebesian valve); Rough atrium proper (pectinate muscles); Crista terminalis (SA node at top); Fossa ovalis (septum primum floor, septum secundum limbus).
+    \item \textbf{Coronary Arteries:} RCA (marginal, posterior interventricular PIVA); LCA (LAD anterior interventricular, circumflex). Right dominance in 90\%.
+    \item \textbf{Bronchopulmonary Segments:} 10 right, 8--10 left; pyramidal; apex to hilum; intrasegmental artery, **intersegmental vein** (surgical plane).
+    \item \textbf{Brachial Plexus Injuries:}
+    \begin{itemize}
+        \item \textit{Erb's Palsy (Upper trunk C5--C6):} "Waiter's tip" deformity; adducted, internally rotated arm, extended pronated forearm.
+        \item \textit{Klumpke's Palsy (Lower trunk C8--T1):} True claw hand (paralysis of lumbricals and interossei); Horner's syndrome if T1 sympathetics damaged.
+    \end{itemize}
+    \item \textbf{Endochondral Ossification Zones:} Resting $\rightarrow$ Proliferation (columns) $\rightarrow$ Hypertrophy $\rightarrow$ Calcification $\rightarrow$ Ossification.
+\end{itemize}
+
+\subsection{Histology Quick Landmarks}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Spleen:} Red pulp (sinusoids, cords of Billroth); White pulp (PALS around central arteriole); no cortex/medulla.
+    \item \textbf{Thymus:} Cortex (dense thymocytes, blood-thymus barrier); Medulla (pale, Hassall's corpuscles); no germinal centers.
+    \item \textbf{Lymph Node:} Cortex (lymphoid follicles with germinal centers); Paracortex (T-cells, HEVs); Medulla (cords and sinuses).
+    \item \textbf{Skeletal vs Cardiac Muscle:} Skeletal = peripheral multinucleated, unbranched; Cardiac = central single nucleus, branched, intercalated discs.
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textbf{--- End of Human Anatomy Solutions ---}
+\end{center}
+
+\end{document}
