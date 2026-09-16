@@ -619,7 +619,7 @@ answers/year-1/
 ├── pathology.md
 ├── pharmacology.md
 ├── oral_biology.md
-└── DS_1st_year_all_subjects_17-22.md
+└── BDS_1st_year_all_subjects_17-22.md
 
 
 analysis/year-1/
@@ -630,7 +630,7 @@ analysis/year-1/
 ├── pathology_top_topics.md
 ├── pharmacology_top_topics.md
 ├── oral_biology_top_topics.md
-└── DS_1st_year_all_subjects_17-22.md
+└── BDS_1st_year_all_subjects_17-22.md
 
 appendix/year-1/
 ├── anatomy_cheatsheet.md
@@ -640,7 +640,7 @@ appendix/year-1/
 ├── pathology_cheatsheet.md
 ├── pharmacology_cheatsheet.md
 ├── oral_biology_cheatsheet.md
-└── DS_1st_year_all_subjects_17-22.md
+└── BDS_1st_year_all_subjects_17-22.md
 ```
 
 ---
